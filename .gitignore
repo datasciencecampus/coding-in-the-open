@@ -9,7 +9,6 @@ outputs/*
 
 *.Rproj
 
-*.html
 *.pdf
 *.zip
 *.csv
@@ -282,9 +281,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
@@ -322,3 +318,10 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,r,python
+
+# quarto specific folders
+/.quarto/
+/_site/
+/.vscode/
+!assets/images/*
+!docs/assets/images/*

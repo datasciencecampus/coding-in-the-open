@@ -1,0 +1,25 @@
+---
+title: "General Considerations"
+---
+
+::: {.callout-note}
+Placeholder page
+:::
+
+Points to consider (not necessarily in this order):
+
+- Publishing with/without History
+- Repository tagging/labelling
+- Key and Credential Management
+- Publishing with intention for further development and/or on-going maintenance:
+    - contribution guidance (issues/PR templates)
+    - semantic versioning
+    - change log
+- Following coding good practices:
+    - recommend ONS code quality assurance as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore,
+- Documentation (readmes, and more?)
+- Licenses
+- Use open source tools/software/data
+- Dummy data
+- Notebooks or not to notebooks... (what about gists? maybe part of documentation)
+- Skill-sets/training

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.163">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Coding in the Open</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./common/general_considerations.html" rel="next">
+<link href=".//assets/favicon.ico" rel="icon">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="./assets/styles.css">
+<meta name="twitter:title" content="Coding in the Open">
+<meta name="twitter:description" content="Some guidance, with a public sector perspective">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Coding in the Open</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./" class="sidebar-logo-link">
+      <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Coding in the Open</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://twitter.com/DataSciCampus" title="" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+    <a href="https://github.com/datasciencecampus" title="" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://datasciencecampus.ons.gov.uk/" title="" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">Coding in the Open</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Guidance</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./common/general_considerations.html" class="sidebar-item-text sidebar-link">General Considerations</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./private_to_public/guidance.html" class="sidebar-item-text sidebar-link">Private to Public</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./common/references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.</p>
+</div>
+</div>
+</div></div></nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#sec-who-for" id="toc-sec-who-for" class="nav-link" data-scroll-target="#sec-who-for">Who is this Guidance For?</a></li>
+  <li><a href="#sec-intentions" id="toc-sec-intentions" class="nav-link" data-scroll-target="#sec-intentions">What are the Guidance Intentions?</a></li>
+  <li><a href="#sec-why-open" id="toc-sec-why-open" class="nav-link" data-scroll-target="#sec-why-open">Why Develop in the Open?</a></li>
+  <li><a href="#sec-why-closed" id="toc-sec-why-closed" class="nav-link" data-scroll-target="#sec-why-closed">Why Develop Privately?</a></li>
+  <li><a href="#sec-open-v-closed" id="toc-sec-open-v-closed" class="nav-link" data-scroll-target="#sec-open-v-closed">Coding Openly (<em>the premise</em>) or Privately (<em>the exception</em>)?</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-git"></i></div><div class="action-links"><p><a href="./issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Coding in the Open</h1>
+<p class="subtitle lead">Some guidance, with a public sector perspective</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<p>The following pages aim to provide guidance on ‘coding in the open’ - that is developing open-source codebases or transiting codebases from private to public domains. The term open-source captures work that is made freely available for others to use and modify <span class="citation" data-cites="OpenSourceInitiative"><a href="#ref-OpenSourceInitiative" role="doc-biblioref">[1]</a></span>.</p>
+<p>This guidance is split into 3 main pages:</p>
+<div id="tbl-pages" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: Summary of guidance pages.</caption>
+<colgroup>
+<col style="width: 18%">
+<col style="width: 82%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Page</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="./index.html">Overview</a><br>(this page)</td>
+<td>Provides a ‘coding in the open’ overview, covering; <a href="@sec-who-for">who this guidance is for</a>, <a href="@sec-intentions">what the intentions are</a>, <a href="@sec-why-open">why develop in the open</a>, <a href="@sec-why-closed">why private/closed development</a> maybe more appropriate in some instances, and proposes an <a href="@sec-open-v-closed">‘open first, closed by exception’</a> strategy for codebase development.</td>
+</tr>
+<tr class="even">
+<td><a href="./common/general_considerations.html">General Considerations</a></td>
+<td>Provides a range of considerations for developing and working in the open.</td>
+</tr>
+<tr class="odd">
+<td><a href="./private_to_public/guidance.html">Private to Public</a></td>
+<td>Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These pages are accessible via the sidebar and are linked in <a href="#tbl-pages">Table&nbsp;1</a> above. Each page has a table of contents on the right hand side linking the sections available within them. It is also possible to report any issues or errors with the page using the link provided in the table of contents.</p>
+<p>All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./common/references.html">references</a> page for convince.</p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<section id="sec-who-for" class="level2">
+<h2 class="anchored" data-anchor-id="sec-who-for">Who is this Guidance For?</h2>
+<p>This guidance was originally assembled to support open-source code development within the ONS Data Science Campus. However, it could ultimately be used by anyone who has an interest or need in developing open-source code or would like to transition a codebase from a private/closed domain into the open.</p>
+</section>
+<section id="sec-intentions" class="level2">
+<h2 class="anchored" data-anchor-id="sec-intentions">What are the Guidance Intentions?</h2>
+<p>The main goals of this guidance are to encourage a development strategy that is:</p>
+<div class="border grid-margin-below">
+<div class="orderd-list-div-margins">
+<ol type="1">
+<li><strong>Open source by default</strong>. This implies that from the beginning all code/software developed would be available for anyone to view and use.</li>
+<li>Encourages and supports, where possible, closed/private codebases to <strong>transition into the public domain</strong>.</li>
+<li>Recognises there maybe scenarios where valid arguments prevent publishing a codebase in the open, but <strong>developing privately is the exception</strong> rather than the rule.</li>
+</ol>
+</div>
+</div>
+<p>This guidance aims to achieve these goals by:</p>
+<div class="border grid-margin-below">
+<div class="orderd-list-div-margins">
+<ol type="1">
+<li>Providing a <strong>set of considerations</strong> when developing an open-source codebase or moving a codebase from a private into a public repository.</li>
+<li>Not being a prescriptive “one size fits all” process, but <strong>adaptable guidance</strong> that can be modified as required based on the size, complexity and purpose of the work.</li>
+<li><strong>Adding quality</strong> to public codebases and <strong>help mitigate potential risks</strong> when working in or moving into the public domain.</li>
+<li><strong>Improving transparency</strong> of decision making, as to why codebases are open/closed.</li>
+<li><strong>Closing a current resource gap</strong>, where at the time of writing no internal guidance exists.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-why-open" class="level2">
+<h2 class="anchored" data-anchor-id="sec-why-open">Why Develop in the Open?</h2>
+<p>The Office for National Statistics (ONS) quality assurance of code <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[2]</a></span>, the Government Analysis Function <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[3]</a></span>, and the UK Government’s Technology Code of Practice <span class="citation" data-cites="CDDOTechCode"><a href="#ref-CDDOTechCode" role="doc-biblioref">[4]</a></span> all call for code to be open-source. This is, at least in part, due to the wide range of benefits that developing in the open brings. In particular, these benefits help support an outputs’ compliance with the UKSA Code of practice for Statistics <span class="citation" data-cites="UKSACode"><a href="#ref-UKSACode" role="doc-biblioref">[5]</a></span> - where public value, high quality, and trustworthiness are the main pillars.</p>
+<p>There are many sources which explain these benefits in detail <span class="citation" data-cites="DuckBook GASOpenSource CDDOTechCode GDSBlog GDSVideo CDDOGuidance NHSdigital MoJBlog"><a href="#ref-DuckBook" role="doc-biblioref">[2]</a>–<a href="#ref-CDDOTechCode" role="doc-biblioref">[4]</a>, <a href="#ref-GDSBlog" role="doc-biblioref">[6]</a>–<a href="#ref-MoJBlog" role="doc-biblioref">[10]</a></span>, and they all argue strongly as to why this guidance advocates for open source development. The themed boxes below summarise the benefits of open-source software and coding in the open:</p>
+<div class="grid grid-margin-below">
+<div class="g-col-6 border">
+<section id="increases-quality" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="increases-quality"><strong>Increases Quality</strong></h4>
+<p>There is a heightened inclination to apply coding standards and practices when knowing the work will be viewed and used by a larger audience.</p>
+</section>
+</div>
+<div class="g-col-6 border">
+<section id="increases-collaboration" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="increases-collaboration"><strong>Increases Collaboration</strong></h4>
+<p>Simplifies the process of sharing work, which in turn improves knowledge sharing and provides an opportunity for additional development support.</p>
+</section>
+</div>
+</div>
+<div class="grid grid-margin-below">
+<div class="g-col-6 border">
+<section id="increases-transparency" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="increases-transparency"><strong>Increases Transparency</strong></h4>
+<p>Potential users and interested parties can see, understand, and reproduce work. This helps build trust in the work being undertaken and shared.</p>
+</section>
+</div>
+<div class="g-col-6 border">
+<section id="supports-whole-community" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="supports-whole-community"><strong>Supports Whole Community</strong></h4>
+<p>Others can benefit from work already developed by facilitating code re-use. Likewise, the work can benefit from the experiences of others too.</p>
+</section>
+</div>
+</div>
+<div class="grid-margin-below">
+<div class="g-col-6 border">
+<section id="public-investment" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="public-investment"><strong>Public Investment</strong></h4>
+<p>“Public services are built with public money”, which argues the public has a right to access unless there is a good reason <a href="@sec-why-closed">not to publish the codebase</a>.</p>
+</section>
+</div>
+</div>
+</section>
+<section id="sec-why-closed" class="level2">
+<h2 class="anchored" data-anchor-id="sec-why-closed">Why Develop Privately?</h2>
+<p>Open-source development does bring with it some additional considerations and risks <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[3]</a></span>. As a result, there are scenarios in which opening all or parts of a codebase may not be possible <span class="citation" data-cites="GASOpenSource CDDOClosed"><a href="#ref-GASOpenSource" role="doc-biblioref">[3]</a>, <a href="#ref-CDDOClosed" role="doc-biblioref">[11]</a></span>. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:</p>
+<div class="grid grid-margin-below">
+<div class="g-col-6 border">
+<section id="sensitivity" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="sensitivity"><strong>Sensitivity</strong></h4>
+<p>The codebase may relate to or share sensitive information e.g., a policy that has not yet been announced, or data that has not yet been released.</p>
+</section>
+</div>
+<div class="g-col-6 border">
+<section id="statistical-disclosure" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="statistical-disclosure"><strong>Statistical Disclosure</strong></h4>
+<p>The codebase may, inadvertently or otherwise, share identifiable information about individuals or organisations.</p>
+</section>
+</div>
+</div>
+<div class="grid grid-margin-below">
+<div class="g-col-6 border">
+<section id="keys-and-credentials" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="keys-and-credentials"><strong>Keys and Credentials</strong></h4>
+<p>The codebase may contain keys and/or credentials that need to be secured e.g., keys/credentials to utilise an API.</p>
+</section>
+</div>
+<div class="g-col-6 border">
+<section id="skills-and-expertise" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="skills-and-expertise"><strong>Skills and Expertise</strong></h4>
+<p>The skill-set, experience and/or confidence to work openly and manage the associated risks may not be present across all team members.</p>
+</section>
+</div>
+</div>
+<div class="grid-margin-below">
+<div class="g-col-6 border">
+<section id="licence-agreements" class="level4 jumbotron">
+<h4 class="anchored" data-anchor-id="licence-agreements"><strong>Licence Agreements</strong></h4>
+<p>The codebase may use proprietary (closed-source) software or could be considered proprietary itself. In these cases, opening the codebase could breach licence terms and/or user agreement. It could also lead end users being dependent on the use of (potentially expensive) proprietary software, ultimately meaning the released codebase is not accessible to everyone.</p>
+</section>
+</div>
+</div>
+</section>
+<section id="sec-open-v-closed" class="level2">
+<h2 class="anchored" data-anchor-id="sec-open-v-closed">Coding Openly (<em>the premise</em>) or Privately (<em>the exception</em>)?</h2>
+<p>Open-sourcing a codebase is a case-by-case balance between it’s purpose, public value, risk management and technical constraints <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[3]</a></span>. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.</p>
+<p>The premise therefore should be one where the codebase is open by default - that is, all code/software developed would be available for anyone to view and use from the beginning. This stance brings the the benefits of open-source development upfront and minimises any additional workload that would come from transitioning the codebase from private to public at a later date.</p>
+<p>If it is not possible to be open by default, consider other strategies for making the codebase open. These approaches could bring additional design complexity and/or workload when compared with being open by default, but ultimately the codebase would still benefit from the same open-source advantages. This could be:</p>
+<div class="border grid-margin-below">
+<div class="orderd-list-div-margins">
+<ul>
+<li>Designing or re-designing the codebase to use <strong>open-source dependencies</strong>.</li>
+<li><strong>Separating out or removing</strong> sections that should not be made public.</li>
+<li>Consistently using <strong>good coding practices</strong> <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[2]</a></span>, to simplify the process of opening the codebase in the future should it be possible.</li>
+<li><strong>Transitioning</strong> a private codebase to public at a later date (see <a href="./private_to_public/guidance.html">specific guidance</a> on this topic).</li>
+<li>Maintain <strong>private and public versions</strong> of a codebase - development could then continue in a private domain and then be released publicly as needed.</li>
+</ul>
+</div>
+</div>
+<p>Finally, if it is not possible for the codebase to be made public, an evidence-based justification should be made as to why this is the case. It is envisaged that this case would be the exception rather than the rule.</p>
+</section>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-OpenSourceInitiative" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
+</div>
+<div id="ref-DuckBook" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/</a></div>
+</div>
+<div id="ref-GASOpenSource" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
+</div>
+<div id="ref-CDDOTechCode" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“The technology code of practice.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
+</div>
+<div id="ref-UKSACode" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">UK Statistics Authority, <span>“Code of practice for statistics.”</span> <a href="https://code.statisticsauthority.gov.uk/">https://code.statisticsauthority.gov.uk/</a></div>
+</div>
+<div id="ref-GDSBlog" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Government Digital Services, <span>“The benefits of coding in the open.”</span> <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/</a></div>
+</div>
+<div id="ref-GDSVideo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">Government Digital Services, <span>“Why we code in the open (YouTube video).”</span> <a href="https://www.youtube.com/watch?v=aqFFCvjXr1s">https://www.youtube.com/watch?v=aqFFCvjXr1s</a></div>
+</div>
+<div id="ref-CDDOGuidance" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“Be open and use open source.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
+</div>
+<div id="ref-NHSdigital" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
+</div>
+<div id="ref-MoJBlog" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Ministry of Justice, <span>“Why we code in the open.”</span> <a href="https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/">https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/</a></div>
+</div>
+<div id="ref-CDDOClosed" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“When code shoulde be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./common/general_considerations.html" class="pagination-link">
+        <span class="nav-page-text">General Considerations</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center"><img src="./assets/images/ogl.png" class="img-fluid" alt="Logo image"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are aknowledged in the <a href="./common/references.html">references</a> page. Updated on 2023-04-11.</div>
+  </div>
+</footer>
+
+
+
+</body></html>
