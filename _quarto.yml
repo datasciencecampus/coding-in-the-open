@@ -5,7 +5,8 @@ project:
     port: 1111
 
 website:
-  repo-url: "/"
+  site-url: https://datasciencecampus.github.io/coding-in-the-open/
+  repo-url: https://github.com/datasciencecampus/coding-in-the-open
   repo-actions: issue
   title: Coding in the Open
   favicon: /assets/favicon.ico
