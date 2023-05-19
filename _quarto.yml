@@ -4,6 +4,9 @@ project:
   preview: 
     port: 1111
 
+execute:
+  freeze: auto  # re-render only when source changes
+
 website:
   site-url: https://datasciencecampus.github.io/coding-in-the-open/
   repo-url: https://github.com/datasciencecampus/coding-in-the-open
