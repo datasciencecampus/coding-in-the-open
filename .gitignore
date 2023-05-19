@@ -1,3 +1,6 @@
+###quarto lint###
+.quarto/
+
 ### Project structure ###
 data/*
 outputs/*
