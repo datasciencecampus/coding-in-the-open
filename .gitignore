@@ -1,5 +1,7 @@
 ###quarto lint###
-.quarto/
+/.quarto/
+/_site/
+/_book/
 
 ### Project structure ###
 data/*
