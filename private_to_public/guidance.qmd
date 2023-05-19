@@ -60,25 +60,25 @@ The hardest bit is building up the courage to start. The challenge for any code 
 3. Would your users find it helpful if you published links to your code in your publications?
 4. How much work is required to get it to a fit state? [(see our fit for publishing checklist)](#fit-for-publishing-checklist)
 
-Your repo doesn't have to be a glowing example of best practice to be made public. For example, if you are working on something experiemental and you're not sure whether you want to invest extra time in adding on all the bells and whistles. Let's be honest, we rarely have time for perfect. Striving for fully documented code and test coverage, shouldn't be be a blocker for sharing your good work. 
+Your repo doesn't have to be a glowing example of best practice to be made public. For example, if you are working on something experimental and you're not sure whether you want to invest extra time in adding on all the bells and whistles. Let's be honest, we rarely have time for perfect. Striving for fully documented code and test coverage, shouldn't be be a blocker for sharing your good work. 
 
 **That's not to say you shouldn't bother with unit tests or documentation at all. Sorry :( .**
 
 There is a good reason these are considered best practice. Well documented code make it easier for you and your collaborators to understand what parts of your code are doing, making it easier for people to contribute as developers. 
 
-Unit tests make it easier for you as a code owner to implement changes and accept contributions from other people. Why? Because if you have good test coverage, you can quickly see if someone elses cool new feature breaks the rest of your pre-existing code. Without these, there is a much bigger overhead to accepting contributions, because you will want to run tests yourself manually to check this or risk errors popping up when you really don't want them. 
+Unit tests make it easier for you as a code owner to implement changes and accept contributions from other people. Why? Because if you have good test coverage, you can quickly see if someone else's cool new feature breaks the rest of your pre-existing code. Without these, there is a much bigger overhead to accepting contributions, because you will want to run tests yourself manually to check this or risk errors popping up when you really don't want them. 
 
 ### Step 2 - Develop a risk assessment
 
-So you've decided to go ahead with publishing your code, thats great!
+So you've decided to go ahead with publishing your code, that's great!
 
-It's probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likilhood or impact of those things. 
+It's probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
 
 If you've never written a risk assessment before, not to worry it's super easy. I've provided a quick template below. 
 
-| Risk | Consequences | Impact | Likelihood | Exposure | Risk | Mitigations | Impact | Liklihood | Exposure| Risk | 
+| Risk | Consequences | Impact | Likelihood | Exposure | Risk | Mitigations | Impact | Likelihood | Exposure| Risk | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Description of risk | What could go wrong | Impact score | Likelihood Score | Likelihood x Impact | Risk assessement (high/medium/low) | A list of things you could do to reduce the risk | Revised impact score | Revised likelihood score | Revised exposure | Revised risk  | 
+| Description of risk | What could go wrong | Impact score | Likelihood Score | Likelihood x Impact | Risk assessment (high/medium/low) | A list of things you could do to reduce the risk | Revised impact score | Revised likelihood score | Revised exposure | Revised risk  | 
 
 Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores
 
@@ -88,8 +88,8 @@ Important things to consider in your risk assessment:
 
 - How will you ensure no passwords, data or other sensitive information is shared by making your repo public?
 - How will you safeguard against people accidentally pushing this information in the future after the repo is made public? 
-- How will you manage users expectations of quality and on-going maintainance?
-- How will you use licencing to protect any propietary rights and set limitations on liability from others using your code?
+- How will you manage users expectations of quality and on-going maintenance?
+- How will you use licencing to protect any proprietary rights and set limitations on liability from others using your code?
 
 ### Step 3 - Preparation
 
@@ -101,9 +101,9 @@ There is no rush. So take your time, ask questions, and make sure you get it rig
 
 It's probably a good idea to get someone else to check your work at this stage. We would recommend that someone not connected with the repository to take a critical look at it. Specifically looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. 
 
-It's also worth asking a senior colleague or manager to review your risk assessment. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, becuase risk assessments are subjective and there may be things you haven't thought of. 
+It's also worth asking a senior colleague or manager to review your risk assessment. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of. 
 
-### Step 5 - Publish
+### Step 5 - Sign-off
 
 Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you've done to mitigate any risks to the person who will be signing off your publication. 
 
@@ -114,5 +114,5 @@ They can then use this fit for publishing checklist to satisfy themselves that i
 - [ ] Is the repo fit for purpose OR are you intentionally looking for help?
 - [ ] Are there clearly documented instructions on how to install, run and contribute to the repository?
 - [ ] Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history)?
-- [ ] Are you satisfied that the residual risk is within your organisations tollerance?
+- [ ] Are you satisfied that the residual risk is within your organisations tolerance?
 
