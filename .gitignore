@@ -2,6 +2,7 @@
 /.quarto/
 /_site/
 /_book/
+*.html
 
 ### Project structure ###
 data/*
