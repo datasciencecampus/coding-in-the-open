@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "common/references.html",
+    "href": "common/references.html",
+    "title": "References",
+    "section": "",
+    "text": "All sources used during the compilation of this guidance are referenced below.\n\n\n[1] Open Source Initiative, “The open source definition.” https://opensource.org/osd/\n\n\n[2] Office for National Statistics, “Quality assurance of code for analysis and research.” https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/\n\n\n[3] NHS Digital, “How to publish your code in the open.” https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/\n\n\n[4] Government Digital Services, “The benefits of coding in the open.” https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/\n\n\n[5] Government Digital Services, “Why we code in the open (YouTube video).” https://www.youtube.com/watch?v=aqFFCvjXr1s\n\n\n[6] Central Digial and Data Office, “Be open and use open source.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[7] Central Digial and Data Office, “The technology code of practice.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[8] Ministry of Justice, “Why we code in the open.” https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/\n\n\n[9] UK Statistics Authority, “Code of practice for statistics.” https://code.statisticsauthority.gov.uk/\n\n\n[10] Central Digial and Data Office, “When code shoulde be open or closed.” https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed\n\n\n[11] Analytical Standards and Pipelines team at the Office for National Statistics (ONS), “Open sourcing analytical code.” https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/"
+  },
+  {
+    "objectID": "common/general_considerations.html",
+    "href": "common/general_considerations.html",
+    "title": "General Considerations",
+    "section": "",
+    "text": "Note\n\n\n\nPlaceholder page\n\n\nPoints to consider (not necessarily in this order):\n\nPublishing with/without History\nRepository tagging/labelling\nKey and Credential Management\nPublishing with intention for further development and/or on-going maintenance:\n\ncontribution guidance (issues/PR templates)\nsemantic versioning\nchange log\n\nFollowing coding good practices:\n\nrecommend ONS code quality assurance as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore,\n\nDocumentation (readmes, and more?)\nLicenses\nUse open source tools/software/data\nDummy data\nNotebooks or not to notebooks… (what about gists? maybe part of documentation)\nSkill-sets/training"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Coding in the Open",
+    "section": "",
+    "text": "The following pages aim to provide guidance on ‘coding in the open’ - that is developing open-source codebases or transiting codebases from private to public domains. The term open-source captures work that is made freely available for others to use and modify [1].\nThis guidance is split into 3 main pages:\nThese pages are accessible via the sidebar and are linked in Table 1 above. Each page has a table of contents on the right hand side linking the sections available within them. It is also possible to report any issues or errors with the page using the link provided in the table of contents.\nAll sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated references page for convince."
+  },
+  {
+    "objectID": "index.html#sec-who-for",
+    "href": "index.html#sec-who-for",
+    "title": "Coding in the Open",
+    "section": "Who is this Guidance For?",
+    "text": "Who is this Guidance For?\nThis guidance was originally assembled to support open-source code development within the ONS Data Science Campus. However, it could ultimately be used by anyone who has an interest or need in developing open-source code or would like to transition a codebase from a private/closed domain into the open."
+  },
+  {
+    "objectID": "index.html#sec-intentions",
+    "href": "index.html#sec-intentions",
+    "title": "Coding in the Open",
+    "section": "What are the Guidance Intentions?",
+    "text": "What are the Guidance Intentions?\nThe main goals of this guidance are to encourage a development strategy that is:\n\n\n\nOpen source by default. This implies that from the beginning all code/software developed would be available for anyone to view and use.\nEncourages and supports, where possible, closed/private codebases to transition into the public domain.\nRecognises there maybe scenarios where valid arguments prevent publishing a codebase in the open, but developing privately is the exception rather than the rule.\n\n\n\nThis guidance aims to achieve these goals by:\n\n\n\nProviding a set of considerations when developing an open-source codebase or moving a codebase from a private into a public repository.\nNot being a prescriptive “one size fits all” process, but adaptable guidance that can be modified as required based on the size, complexity and purpose of the work.\nAdding quality to public codebases and help mitigate potential risks when working in or moving into the public domain.\nImproving transparency of decision making, as to why codebases are open/closed.\nClosing a current resource gap, where at the time of writing no internal guidance exists."
+  },
+  {
+    "objectID": "index.html#sec-why-open",
+    "href": "index.html#sec-why-open",
+    "title": "Coding in the Open",
+    "section": "Why Develop in the Open?",
+    "text": "Why Develop in the Open?\nThe Office for National Statistics (ONS) quality assurance of code [2], the Government Analysis Function [3], and the UK Government’s Technology Code of Practice [4] all call for code to be open-source. This is, at least in part, due to the wide range of benefits that developing in the open brings. In particular, these benefits help support an outputs’ compliance with the UKSA Code of practice for Statistics [5] - where public value, high quality, and trustworthiness are the main pillars.\nThere are many sources which explain these benefits in detail [2]–[4], [6]–[10], and they all argue strongly as to why this guidance advocates for open source development. The themed boxes below summarise the benefits of open-source software and coding in the open:\n\n\n\nIncreases Quality\nThere is a heightened inclination to apply coding standards and practices when knowing the work will be viewed and used by a larger audience.\n\n\n\n\nIncreases Collaboration\nSimplifies the process of sharing work, which in turn improves knowledge sharing and provides an opportunity for additional development support.\n\n\n\n\n\n\nIncreases Transparency\nPotential users and interested parties can see, understand, and reproduce work. This helps build trust in the work being undertaken and shared.\n\n\n\n\nSupports Whole Community\nOthers can benefit from work already developed by facilitating code re-use. Likewise, the work can benefit from the experiences of others too.\n\n\n\n\n\n\nPublic Investment\n“Public services are built with public money”, which argues the public has a right to access unless there is a good reason not to publish the codebase."
+  },
+  {
+    "objectID": "index.html#sec-why-closed",
+    "href": "index.html#sec-why-closed",
+    "title": "Coding in the Open",
+    "section": "Why Develop Privately?",
+    "text": "Why Develop Privately?\nOpen-source development does bring with it some additional considerations and risks [3]. As a result, there are scenarios in which opening all or parts of a codebase may not be possible [3], [11]. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:\n\n\n\nSensitivity\nThe codebase may relate to or share sensitive information e.g., a policy that has not yet been announced, or data that has not yet been released.\n\n\n\n\nStatistical Disclosure\nThe codebase may, inadvertently or otherwise, share identifiable information about individuals or organisations.\n\n\n\n\n\n\nKeys and Credentials\nThe codebase may contain keys and/or credentials that need to be secured e.g., keys/credentials to utilise an API.\n\n\n\n\nSkills and Expertise\nThe skill-set, experience and/or confidence to work openly and manage the associated risks may not be present across all team members.\n\n\n\n\n\n\nLicence Agreements\nThe codebase may use proprietary (closed-source) software or could be considered proprietary itself. In these cases, opening the codebase could breach licence terms and/or user agreement. It could also lead end users being dependent on the use of (potentially expensive) proprietary software, ultimately meaning the released codebase is not accessible to everyone."
+  },
+  {
+    "objectID": "index.html#sec-open-v-closed",
+    "href": "index.html#sec-open-v-closed",
+    "title": "Coding in the Open",
+    "section": "Coding Openly (the premise) or Privately (the exception)?",
+    "text": "Coding Openly (the premise) or Privately (the exception)?\nOpen-sourcing a codebase is a case-by-case balance between it’s purpose, public value, risk management and technical constraints [3]. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.\nThe premise therefore should be one where the codebase is open by default - that is, all code/software developed would be available for anyone to view and use from the beginning. This stance brings the the benefits of open-source development upfront and minimises any additional workload that would come from transitioning the codebase from private to public at a later date.\nIf it is not possible to be open by default, consider other strategies for making the codebase open. These approaches could bring additional design complexity and/or workload when compared with being open by default, but ultimately the codebase would still benefit from the same open-source advantages. This could be:\n\n\n\nDesigning or re-designing the codebase to use open-source dependencies.\nSeparating out or removing sections that should not be made public.\nConsistently using good coding practices [2], to simplify the process of opening the codebase in the future should it be possible.\nTransitioning a private codebase to public at a later date (see specific guidance on this topic).\nMaintain private and public versions of a codebase - development could then continue in a private domain and then be released publicly as needed.\n\n\n\nFinally, if it is not possible for the codebase to be made public, an evidence-based justification should be made as to why this is the case. It is envisaged that this case would be the exception rather than the rule."
+  },
+  {
+    "objectID": "private_to_public/guidance.html",
+    "href": "private_to_public/guidance.html",
+    "title": "Private to Public",
+    "section": "",
+    "text": "Note\n\n\n\nPlaceholder page"
+  },
+  {
+    "objectID": "private_to_public/guidance.html#a-process",
+    "href": "private_to_public/guidance.html#a-process",
+    "title": "Private to Public",
+    "section": "A Process",
+    "text": "A Process\n\nOverview\n\n\n\n\n%%{init: {'flowchart' : {'curve' : 'linear'}}}%%\n\nflowchart TB\n    Start(\"Process Start\") --&gt; ProcessStart[\"Private codebase&lt;br&gt;identified for&lt;br&gt;transition from&lt;br&gt;private to public\"]\n    subgraph id1 [\"1. Identify Repository\"]\n            ProcessStart --&gt; AgreePrinciple{\"Agreement&lt;br&gt;in principle&lt;br&gt;to transition?\"}\n            AgreePrinciple --&gt; |No| NoPub[\"Evidence-based case&lt;br&gt;not to publish\"]\n    end\n    subgraph id2 [2. Review Guidance]\n            AgreePrinciple --&gt; |Yes| AgreeScope[Using the private to&lt;br&gt;public  guidance&lt;br&gt;template, agree scope&lt;br&gt;of the review required]\n            AgreeScope --&gt; CompleteGuidance[Complete&lt;br&gt;guidance template&lt;br&gt;and note actions]\n            CompleteGuidance --&gt; OutActions{Any outstanding/&lt;br&gt;open actions?}\n            OutActions --&gt; |No| Review[Review completed&lt;br&gt;guidance template]\n            OutActions --&gt; |Yes| Revise[Revise/update&lt;br&gt;codebase as needed]\n            Revise --&gt; CompleteGuidance\n            Review --&gt; Confirmation{Confirmation to&lt;br&gt; transition repo?}\n            Confirmation --&gt; |No| Revise\n    end\n    subgraph id3 [\"#nbsp;\"]\n        Confirmation --&gt; |Yes| Outcome1{Review Outcome:&lt;br&gt;Transition repo with&lt;br&gt;history?}\n        Outcome1 --&gt; |Yes| Move1[Move existing&lt;br&gt; codebase from private&lt;br&gt; to public directly]\n        Outcome1 --&gt; |No| Move2[Copy codebase&lt;br&gt;into public domain,&lt;br&gt; without the history]\n        Move1 --&gt; Outcome2{Review Outcome:&lt;br&gt;Maintaining repo and/or&lt;br&gt; taking feedback?}\n        Move2 --&gt; Outcome2\n    end\n    subgraph id4 [4. Feedback and Iterations]\n        Outcome2 --&gt; |Yes| Feedback[Use Issue&lt;br&gt;and Pull Requests]\n        Feedback --&gt; Incorporate[Incorporate&lt;br&gt;feedback into&lt;br&gt;next iteration]\n        Incorporate --&gt; AgreeScope\n    end\n    NoPub --&gt; End[Process complete]\n    Outcome2 --&gt; |No| End\n\n\n\n\n\n\n\nChecklist"
+  }
+]
