@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "common/references.html",
+    "href": "common/references.html",
+    "title": "References",
+    "section": "",
+    "text": "All sources used during the compilation of this guidance are referenced below.\n\n\n[1] Open Source Initiative, “The open source definition.” https://opensource.org/osd/\n\n\n[2] Office for National Statistics, “Quality assurance of code for analysis and research.” https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/\n\n\n[3] NHS Digital, “How to publish your code in the open.” https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/\n\n\n[4] Government Digital Services, “The benefits of coding in the open.” https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/\n\n\n[5] Government Digital Services, “Why we code in the open (YouTube video).” https://www.youtube.com/watch?v=aqFFCvjXr1s\n\n\n[6] Central Digial and Data Office, “Be open and use open source.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[7] Central Digial and Data Office, “The technology code of practice.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[8] Ministry of Justice, “Why we code in the open.” https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/\n\n\n[9] UK Statistics Authority, “Code of practice for statistics.” https://code.statisticsauthority.gov.uk/\n\n\n[10] Central Digial and Data Office, “When code shoulde be open or closed.” https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed\n\n\n[11] Analytical Standards and Pipelines team at the Office for National Statistics (ONS), “Open sourcing analytical code.” https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/"
+  },
+  {
+    "objectID": "common/general_considerations.html",
+    "href": "common/general_considerations.html",
+    "title": "General Considerations",
+    "section": "",
+    "text": "Note\n\n\n\nPlaceholder page\n\n\nPoints to consider (not necessarily in this order):\n\nPublishing with/without History\nRepository tagging/labelling\nKey and Credential Management\nPublishing with intention for further development and/or on-going maintenance:\n\ncontribution guidance (issues/PR templates)\nsemantic versioning\nchange log\n\nFollowing coding good practices:\n\nrecommend ONS code quality assurance as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore,\n\nDocumentation (readmes, and more?)\nLicenses\nUse open source tools/software/data\nDummy data\nNotebooks or not to notebooks… (what about gists? maybe part of documentation)\nSkill-sets/training"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Coding in the Open",
@@ -40,20 +54,6 @@
     "title": "Coding in the Open",
     "section": "Coding Openly (the premise) or Privately (the exception)?",
     "text": "Coding Openly (the premise) or Privately (the exception)?\nOpen-sourcing a codebase is a case-by-case balance between it’s purpose, public value, risk management and technical constraints [3]. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.\nThe premise therefore should be one where the codebase is open by default - that is, all code/software developed would be available for anyone to view and use from the beginning. This stance brings the the benefits of open-source development upfront and minimises any additional workload that would come from transitioning the codebase from private to public at a later date.\nIf it is not possible to be open by default, consider other strategies for making the codebase open. These approaches could bring additional design complexity and/or workload when compared with being open by default, but ultimately the codebase would still benefit from the same open-source advantages. This could be:\n\n\n\nDesigning or re-designing the codebase to use open-source dependencies.\nSeparating out or removing sections that should not be made public.\nConsistently using good coding practices [2], to simplify the process of opening the codebase in the future should it be possible.\nTransitioning a private codebase to public at a later date (see specific guidance on this topic).\nMaintain private and public versions of a codebase - development could then continue in a private domain and then be released publicly as needed.\n\n\n\nFinally, if it is not possible for the codebase to be made public, an evidence-based justification should be made as to why this is the case. It is envisaged that this case would be the exception rather than the rule."
-  },
-  {
-    "objectID": "common/general_considerations.html",
-    "href": "common/general_considerations.html",
-    "title": "General Considerations",
-    "section": "",
-    "text": "Note\n\n\n\nPlaceholder page\n\n\nPoints to consider (not necessarily in this order):\n\nPublishing with/without History\nRepository tagging/labelling\nKey and Credential Management\nPublishing with intention for further development and/or on-going maintenance:\n\ncontribution guidance (issues/PR templates)\nsemantic versioning\nchange log\n\nFollowing coding good practices:\n\nrecommend ONS code quality assurance as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore,\n\nDocumentation (readmes, and more?)\nLicenses\nUse open source tools/software/data\nDummy data\nNotebooks or not to notebooks… (what about gists? maybe part of documentation)\nSkill-sets/training"
-  },
-  {
-    "objectID": "common/references.html",
-    "href": "common/references.html",
-    "title": "References",
-    "section": "",
-    "text": "All sources used during the compilation of this guidance are referenced below.\n\n\n[1] Open Source Initiative, “The open source definition.” https://opensource.org/osd/\n\n\n[2] Office for National Statistics, “Quality assurance of code for analysis and research.” https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/\n\n\n[3] NHS Digital, “How to publish your code in the open.” https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/\n\n\n[4] Government Digital Services, “The benefits of coding in the open.” https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/\n\n\n[5] Government Digital Services, “Why we code in the open (YouTube video).” https://www.youtube.com/watch?v=aqFFCvjXr1s\n\n\n[6] Central Digial and Data Office, “Be open and use open source.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[7] Central Digial and Data Office, “The technology code of practice.” https://www.gov.uk/guidance/be-open-and-use-open-source\n\n\n[8] Ministry of Justice, “Why we code in the open.” https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/\n\n\n[9] UK Statistics Authority, “Code of practice for statistics.” https://code.statisticsauthority.gov.uk/\n\n\n[10] Central Digial and Data Office, “When code shoulde be open or closed.” https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed\n\n\n[11] Analytical Standards and Pipelines team at the Office for National Statistics (ONS), “Open sourcing analytical code.” https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/"
   },
   {
     "objectID": "private_to_public/guidance.html",
