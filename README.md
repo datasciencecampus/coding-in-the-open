@@ -57,12 +57,19 @@ Assets (such as images) can be added to the `assets/` directory. There is a subd
 
 ### Rendering the Documentation
 
-Once you are happy with the content and any modifications you have made, the documentation can be rendered. This can be done by calling:
+Once you are happy with the content and any modifications you have made, the documentation can be rendered. Please note that manual renderring is not a requirement of hosting this guidance on GitHub Pages. This can be done by calling:
 
 ```console
 quarto render
 ```
-from the command line at the root directory (or use the VS Code button at the top right hand corner of the .qmd file). This will build the documentation, storing it within the `docs` folder. This is done to simplify the process of sharing this documentation via GitHub pages at a later date.
+from the command line at the root directory (or use the VS Code button at the top right hand corner of the .qmd file). This will build the documentation, storing it within the `docs` folder. Feel free to render a local copy for styling etc, but please **do not commit html files to the repository**. 
+
+### Developer Guidance
+
+* If you'd like to [raise an issue](https://github.com/datasciencecampus/coding-in-the-open/issues), please check against the current list of issues first.
+* PRs are most welcome. [Link your PR to an existing issues where possible](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). 
+* Please do not commit HTML to the repo. [CI is setup to handle rendering & publishing](https://quarto.org/docs/publishing/github-pages.html).
+
 
 # Data Science Campus
 At the [Data Science Campus](https://datasciencecampus.ons.gov.uk/about-us/) we apply data science, and build skills, for public good across the UK and internationally. Get in touch with the Campus at [datasciencecampus@ons.gov.uk](datasciencecampus@ons.gov.uk).
