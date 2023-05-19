@@ -17,7 +17,7 @@ This guidance is split into 3 main pages:
 
 These pages are accessible via the sidebar and are linked in @tbl-pages above. Each page has a table of contents on the right hand side linking the sections available within them. It is also possible to report any issues or errors with the page using the link provided in the table of contents.
 
-All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/common/references.qmd) page for convenience.
+All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/common/references.qmd) page for convenience. To go straight to the **NHS Digital guidance** with the **fit for publishing checklist** @NHSdigital.
 
 # Overview
 
