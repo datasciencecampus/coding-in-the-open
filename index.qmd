@@ -69,7 +69,7 @@ There are many sources which explain these benefits in detail [@DuckBook; @GASOp
 
 ::: {.jumbotron}
 
-#### **Increases Quality**
+### **Increases Quality**
 There is a heightened inclination to apply coding standards and best practice when knowing the work will be viewed and used by a larger audience.
 
 :::
@@ -80,7 +80,7 @@ There is a heightened inclination to apply coding standards and best practice wh
 
 ::: {.jumbotron}
 
-#### **Increases Collaboration**
+### **Increases Collaboration**
 Simplifies the process of sharing work, which in turn improves knowledge-sharing and provides an opportunity for additional development support. Our work will benefit from collaboration with other government departments, academic institutions & the wider open-source community.
 
 :::
@@ -95,7 +95,7 @@ Simplifies the process of sharing work, which in turn improves knowledge-sharing
 
 ::: {.jumbotron}
 
-#### **Increases Transparency**
+### **Increases Transparency**
 Potential users and interested parties can see, understand, and reproduce work. This helps build trust in the work being undertaken and shared.
 
 :::
@@ -106,7 +106,7 @@ Potential users and interested parties can see, understand, and reproduce work. 
 
 ::: {.jumbotron}
 
-#### **Supports Whole Community**
+### **Supports Whole Community**
 Others can benefit from work already developed by facilitating code re-use. 
 
 :::
@@ -121,7 +121,7 @@ Others can benefit from work already developed by facilitating code re-use.
 
 ::: {.jumbotron}
 
-#### **Public Investment**
+### **Public Investment**
 “Public services are built with public money”, which provides good ground to make code publically available unless there is a good reason [not to publish the codebase](@sec-why-closed). In not releasing code where appropriate to do so, you may be unintentionally tolerating the risk of needing to turn around potenital freedom of information requests within the 20 working day time period. [@ICOguidance]
 
 :::
@@ -140,7 +140,7 @@ Open-source development does bring with it some additional considerations and ri
 
 ::: {.jumbotron}
 
-#### **Sensitivity**
+### **Sensitivity**
 The codebase may relate to or share sensitive information e.g., a policy that has not yet been announced, or data that has not yet been released.
 
 :::
@@ -151,7 +151,7 @@ The codebase may relate to or share sensitive information e.g., a policy that ha
 
 ::: {.jumbotron}
 
-#### **Statistical Disclosure**
+### **Statistical Disclosure**
 The codebase may, inadvertently or otherwise, share identifiable information about individuals or organisations.
 
 :::
@@ -166,7 +166,7 @@ The codebase may, inadvertently or otherwise, share identifiable information abo
 
 ::: {.jumbotron}
 
-#### **Keys and Credentials**
+### **Keys and Credentials**
 The codebase may contain keys and/or credentials that need to be secured e.g., keys/credentials to utilise an API.
 
 :::
@@ -177,7 +177,7 @@ The codebase may contain keys and/or credentials that need to be secured e.g., k
 
 ::: {.jumbotron}
 
-#### **Skills and Expertise**
+### **Skills and Expertise**
 The skill-set, experience and/or confidence to work openly and manage the associated risks may not be present across all team members.
 
 :::
@@ -192,7 +192,7 @@ The skill-set, experience and/or confidence to work openly and manage the associ
 
 ::: {.jumbotron}
 
-#### **Licence Agreements**
+### **Licence Agreements**
 The codebase may use proprietary (closed-source) software or could be considered proprietary itself. In these cases, opening the codebase could breach licence terms and/or user agreement. It could also lead to end users being dependent on the use of (potentially expensive) proprietary software, ultimately meaning the released codebase is not accessible to everyone.
 
 :::
