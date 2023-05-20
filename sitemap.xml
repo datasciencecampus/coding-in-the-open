@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-05-20T05:15:43.494Z</lastmod>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
+    <lastmod>2023-05-20T06:15:03.828Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
-    <lastmod>2023-05-20T05:15:43.864Z</lastmod>
+    <lastmod>2023-05-20T06:15:05.972Z</lastmod>
   </url>
   <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
-    <lastmod>2023-05-20T05:15:44.211Z</lastmod>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
+    <lastmod>2023-05-20T06:15:06.780Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/guidance.html</loc>
-    <lastmod>2023-05-20T05:15:44.572Z</lastmod>
+    <lastmod>2023-05-20T06:15:07.196Z</lastmod>
   </url>
 </urlset>
