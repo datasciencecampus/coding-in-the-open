@@ -14,14 +14,15 @@ website:
   title: Coding in the Open
   favicon: /assets/favicon.ico
   page-navigation: true
+  margin-header: |
+    <a href="https://datasciencecampus.ons.gov.uk/">
+      <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo">
+    </a>
   twitter-card: 
     site: https://twitter.com/DataSciCampus
   sidebar:
     style: floating
     title: Coding in the Open
-    logo: https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg
-    logo-href: https://datasciencecampus.ons.gov.uk/
-    logo-alt: Data Science Campus logo
     contents:
       - index.qmd
       - section: Guidance
@@ -43,7 +44,7 @@ website:
         href: https://datasciencecampus.ons.gov.uk/
   page-footer: 
     center: |
-      ![Logo image](/assets/images/ogl.png) All content is available under the [Open Government Licence V3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.
+      ![Open Government License logo](/assets/images/ogl.png) All content is available under the [Open Government Licence V3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.
       <br>Built using [quarto](https://quarto.org/). Are sources are aknowledged in the [references](/common/references.qmd) page. Updated on {{< var update-date >}}.
 
 format:
