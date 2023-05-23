@@ -32,7 +32,7 @@ This guidance was originally assembled to support open-source code development w
 
 ## What are the Guidance Intentions? {#sec-intentions}
 
-The main goals of this guidance are to encourage a development strategy that is:
+The goals of this guidance are to support development strategies for projects that can be:
 
 ::: {.border .grid-margin-below}
 
