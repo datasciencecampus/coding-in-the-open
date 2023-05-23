@@ -2,18 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-05-22T12:23:47.049Z</lastmod>
+    <lastmod>2023-05-23T13:01:59.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-development/open-at-start.html</loc>
+    <lastmod>2023-05-23T13:01:48.189Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
-    <lastmod>2023-05-22T12:19:27.055Z</lastmod>
+    <lastmod>2023-05-23T13:01:48.596Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
-    <lastmod>2023-05-22T12:20:02.549Z</lastmod>
+    <lastmod>2023-05-23T13:01:48.968Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private/private-development.html</loc>
+    <lastmod>2023-05-23T13:01:49.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/risk-table.html</loc>
+    <lastmod>2023-05-23T13:01:49.660Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/guidance.html</loc>
-    <lastmod>2023-05-22T12:19:43.213Z</lastmod>
+    <lastmod>2023-05-23T13:01:50.130Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/process-chart.html</loc>
+    <lastmod>2023-05-23T13:01:50.485Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/www-ebi/resolving-problems.html</loc>
+    <lastmod>2023-05-23T13:01:50.834Z</lastmod>
   </url>
 </urlset>
