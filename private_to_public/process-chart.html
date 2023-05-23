@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding in the Open - General Considerations</title>
+<title>Coding in the Open - Private to Public Publication Process Overview</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,8 +30,6 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../open-development/open-at-start.html" rel="next">
-<link href="../index.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -82,16 +61,19 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - General Considerations">
-<meta name="twitter:description" content="">
+<link rel="stylesheet" href="mermaid.css">
+<meta name="twitter:title" content="Coding in the Open - Private to Public Publication Process Overview">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -100,7 +82,9 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../common/general_considerations.html">Guidance</a></li><li class="breadcrumb-item"><a href="../common/general_considerations.html">General Considerations</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Coding in the Open
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +135,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../common/general_considerations.html" class="sidebar-item-text sidebar-link active">
+  <a href="../common/general_considerations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Considerations</span></a>
   </div>
 </li>
@@ -206,15 +190,13 @@ Important
 </div></div></nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">General Considerations</h1>
+<h1 class="title">Private to Public Publication Process Overview</h1>
 </div>
 
 
@@ -229,49 +211,55 @@ Important
 
 </header>
 
-<p>Points to consider (not necessarily in this order):</p>
-<ul>
-<li>Do you intend to publish with/without the commit history? Potentially a much larger job to undertake with a full commit history. If sharing the full commit history is justified, it may be more appropriate to consider an “open from the start” approach where active development is done in the open. Otherwise, a full readthrough of every commit diff checking for risks and vulnerabilities in the code is required.</li>
-<li>Repository tagging/labelling</li>
-<li>Key and Credential Management</li>
-<li>Publishing with intention for further development and/or on-going maintenance:
-<ul>
-<li>contribution guidance (issues/PR templates)</li>
-<li>semantic versioning</li>
-<li>change log</li>
-</ul></li>
-<li>Following coding good practices:
-<ul>
-<li>recommend ONS code quality assurance <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[1]</a></span> as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore.</li>
-</ul></li>
-<li>Repo structure. Consider appropriate structure. Select from campus templates or govcookiecutter <span class="citation" data-cites="GovCookieCutter"><a href="#ref-GovCookieCutter" role="doc-biblioref">[2]</a></span> or similar.</li>
-<li>Documentation (readmes, and more?)</li>
-<li>Licenses. General guidance is to use MiT for code and OGL for docs and data (as appropriate).</li>
-<li>Use open source tools/software/data</li>
-<li>Dummy data. If you cannot release the data required to run your code, can you release summy data to help users execute scripts? This data may be released as test fixtures.</li>
-<li>Notebooks or not to notebooks… (what about gists? maybe part of documentation)</li>
-<li>Skill-sets/training - are your team operating with an acceptable understanding of what the risks associated with your work are? Steps to help the development team share in best practice should be considered, such as:
-<ul>
-<li>Ensuring the Data Science Campus (DSC) GitHub SyOps has been completed for all members.</li>
-<li>The DSC GitHub training <span class="citation" data-cites="DSCGitHubTraining"><a href="#ref-DSCGitHubTraining" role="doc-biblioref">[3]</a></span> has been completed and refreshed as needed.</li>
-<li>pair programming to support junior developers.</li>
-</ul></li>
-</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">%%{
+  init: {
+    'flowchart' : {'curve' : 'linear'},
+  }
+}%%
 
-
-
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-DuckBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/</a></div>
+flowchart TB
+    Start("Process Start") --&gt; ProcessStart["Private codebase&lt;br&gt;identified for&lt;br&gt;transition from&lt;br&gt;private to public"]
+    subgraph id1 ["1. Identify Repository"]
+            ProcessStart --&gt; AgreePrinciple{"Agreement&lt;br&gt;in principle&lt;br&gt;to transition?"}
+            AgreePrinciple --&gt; |No| NoPub["Evidence-based case&lt;br&gt;not to publish"]
+    end
+    subgraph id2 [2. Review Guidance]
+            AgreePrinciple --&gt; |Yes| AgreeScope[Using the private to&lt;br&gt;public  guidance&lt;br&gt;template, agree scope&lt;br&gt;of the review required]
+            AgreeScope --&gt; CompleteGuidance[Complete&lt;br&gt;guidance template&lt;br&gt;and note actions]
+            CompleteGuidance --&gt; OutActions{Any outstanding/&lt;br&gt;open actions?}
+            OutActions --&gt; |No| Review[Review completed&lt;br&gt;guidance template]
+            OutActions --&gt; |Yes| Revise[Revise/update&lt;br&gt;codebase as needed]
+            Revise --&gt; CompleteGuidance
+            Review --&gt; Confirmation{Confirmation to&lt;br&gt; transition repo?}
+            Confirmation --&gt; |No| Revise
+    end
+    subgraph id3 ["#nbsp;"]
+        Confirmation --&gt; |Yes| Outcome1{Review Outcome:&lt;br&gt;Transition repo with&lt;br&gt;history?}
+        Outcome1 --&gt; |Yes| Move1[Move existing&lt;br&gt; codebase from private&lt;br&gt; to public directly]
+        Outcome1 --&gt; |No| Move2[Copy codebase&lt;br&gt;into public domain,&lt;br&gt; without the history]
+        Move1 --&gt; Outcome2{Review Outcome:&lt;br&gt;Maintaining repo and/or&lt;br&gt; taking feedback?}
+        Move2 --&gt; Outcome2
+    end
+    subgraph id4 [4. Feedback and Iterations]
+        Outcome2 --&gt; |Yes| Feedback[Use Issue&lt;br&gt;and Pull Requests]
+        Feedback --&gt; Incorporate[Incorporate&lt;br&gt;feedback into&lt;br&gt;next iteration]
+        Incorporate --&gt; AgreeScope
+    end
+    NoPub --&gt; End[Process complete]
+    Outcome2 --&gt; |No| End
+</pre>
 </div>
-<div id="ref-GovCookieCutter" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Office for National Statistics Best Practice &amp; Impact, <span>“Govcookiecutter on GitHub.”</span> <a href="https://github.com/best-practice-and-impact/govcookiecutter">https://github.com/best-practice-and-impact/govcookiecutter</a></div>
 </div>
-<div id="ref-DSCGitHubTraining" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Office for National Statistics Data Science Campus, <span>“Data science campus GitHub training.”</span> <a href="https://github.com/datasciencecampus/DSCA_GitHub_Training">https://github.com/datasciencecampus/DSCA_GitHub_Training</a></div>
 </div>
-</div></section></div></main> <!-- /main -->
+</div>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -620,18 +608,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Coding in the Open</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../open-development/open-at-start.html" class="pagination-link">
-        <span class="nav-page-text">Open at the start</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

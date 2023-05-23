@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding in the Open - Private to Public</title>
+<title>Coding in the Open - Open at the end</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +49,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../common/references.html" rel="next">
-<link href="../common/general_considerations.html" rel="prev">
+<link href="../private/private-development.html" rel="next">
+<link href="../open-development/open-at-start.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -63,15 +82,15 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - Private to Public">
+<meta name="twitter:title" content="Coding in the Open - Open at the end">
+<meta name="twitter:image" content="https://datasciencecampus.github.io/coding-in-the-open/assets/images/risk-exposure-diagram.png">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="741">
+<meta name="twitter:image-width" content="861">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -83,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../common/general_considerations.html">Guidance</a></li><li class="breadcrumb-item"><a href="../private_to_public/guidance.html">Private to Public</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../common/general_considerations.html">Guidance</a></li><li class="breadcrumb-item"><a href="../private_to_public/guidance.html">Open at the end</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -140,8 +159,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../open-development/open-at-start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../private_to_public/guidance.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Private to Public</span></a>
+ <span class="menu-text">Open at the end</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../private/private-development.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Never open</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../www-ebi/resolving-problems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What could go wrong?</span></a>
   </div>
 </li>
       </ul>
@@ -179,7 +216,12 @@ Important
   <li><a href="#a-process" id="toc-a-process" class="nav-link active" data-scroll-target="#a-process">A Process</a>
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#checklist" id="toc-checklist" class="nav-link" data-scroll-target="#checklist">Checklist</a></li>
+  <li><a href="#step-1---consideration" id="toc-step-1---consideration" class="nav-link" data-scroll-target="#step-1---consideration">Step 1 - Consideration</a></li>
+  <li><a href="#step-2---develop-a-risk-assessment" id="toc-step-2---develop-a-risk-assessment" class="nav-link" data-scroll-target="#step-2---develop-a-risk-assessment">Step 2 - Develop a risk assessment</a></li>
+  <li><a href="#step-3---preparation" id="toc-step-3---preparation" class="nav-link" data-scroll-target="#step-3---preparation">Step 3 - Preparation</a></li>
+  <li><a href="#step-4---review" id="toc-step-4---review" class="nav-link" data-scroll-target="#step-4---review">Step 4 - Review</a></li>
+  <li><a href="#step-5---sign-off" id="toc-step-5---sign-off" class="nav-link" data-scroll-target="#step-5---sign-off">Step 5 - Sign-off</a></li>
+  <li><a href="#fit-for-publishing-checklist" id="toc-fit-for-publishing-checklist" class="nav-link" data-scroll-target="#fit-for-publishing-checklist">Fit for publishing checklist</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -189,7 +231,7 @@ Important
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Private to Public</h1>
+<h1 class="title">Open at the end</h1>
 </div>
 
 
@@ -204,73 +246,85 @@ Important
 
 </header>
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Placeholder page</p>
-</div>
-</div>
 <section id="a-process" class="level2">
 <h2 class="anchored" data-anchor-id="a-process">A Process</h2>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
-
-flowchart TB
-    Start("Process Start") --&gt; ProcessStart["Private codebase&lt;br&gt;identified for&lt;br&gt;transition from&lt;br&gt;private to public"]
-    subgraph id1 ["1. Identify Repository"]
-            ProcessStart --&gt; AgreePrinciple{"Agreement&lt;br&gt;in principle&lt;br&gt;to transition?"}
-            AgreePrinciple --&gt; |No| NoPub["Evidence-based case&lt;br&gt;not to publish"]
-    end
-    subgraph id2 [2. Review Guidance]
-            AgreePrinciple --&gt; |Yes| AgreeScope[Using the private to&lt;br&gt;public  guidance&lt;br&gt;template, agree scope&lt;br&gt;of the review required]
-            AgreeScope --&gt; CompleteGuidance[Complete&lt;br&gt;guidance template&lt;br&gt;and note actions]
-            CompleteGuidance --&gt; OutActions{Any outstanding/&lt;br&gt;open actions?}
-            OutActions --&gt; |No| Review[Review completed&lt;br&gt;guidance template]
-            OutActions --&gt; |Yes| Revise[Revise/update&lt;br&gt;codebase as needed]
-            Revise --&gt; CompleteGuidance
-            Review --&gt; Confirmation{Confirmation to&lt;br&gt; transition repo?}
-            Confirmation --&gt; |No| Revise
-    end
-    subgraph id3 ["#nbsp;"]
-        Confirmation --&gt; |Yes| Outcome1{Review Outcome:&lt;br&gt;Transition repo with&lt;br&gt;history?}
-        Outcome1 --&gt; |Yes| Move1[Move existing&lt;br&gt; codebase from private&lt;br&gt; to public directly]
-        Outcome1 --&gt; |No| Move2[Copy codebase&lt;br&gt;into public domain,&lt;br&gt; without the history]
-        Move1 --&gt; Outcome2{Review Outcome:&lt;br&gt;Maintaining repo and/or&lt;br&gt; taking feedback?}
-        Move2 --&gt; Outcome2
-    end
-    subgraph id4 [4. Feedback and Iterations]
-        Outcome2 --&gt; |Yes| Feedback[Use Issue&lt;br&gt;and Pull Requests]
-        Feedback --&gt; Incorporate[Incorporate&lt;br&gt;feedback into&lt;br&gt;next iteration]
-        Incorporate --&gt; AgreeScope
-    end
-    NoPub --&gt; End[Process complete]
-    Outcome2 --&gt; |No| End
-</pre>
-</div>
-</div>
-</div>
-</div>
+<p>Transitioning from a private to a public repository is slightly more complicated than coding in the open from the beginning. However that shouldn’t stop you from exploring the option, because there are a whole host of <a href="../index.html#why-develop-in-the-open-sec-why-open">benefits to open sourcing your code</a>.</p>
+<p>This guide will help you decide whether moving from private to public is right for your repository, and help you walk through the required steps to do it.</p>
+<p>A <a href="../private_to_public/process-chart.html">helpful process diagram</a> summarises the approach.</p>
 </section>
-<section id="checklist" class="level3">
-<h3 class="anchored" data-anchor-id="checklist">Checklist</h3>
+<section id="step-1---consideration" class="level3">
+<h3 class="anchored" data-anchor-id="step-1---consideration">Step 1 - Consideration</h3>
+<p>The hardest bit is building up the courage to start. The challenge for any code owner is to weigh up the pro’s and con’s of making their repository open. We’ve gone through this process a few times now, so we can take you through the questions we asked ourselves, to help us decide.</p>
+<ol type="1">
+<li>What is the worst thing that could happen if someone found a big mistake in your code?</li>
+<li>Is that worse than you never finding that mistake and getting something wrong forever?</li>
+<li>Would your users find it helpful if you published links to your code in your publications?</li>
+<li>How much work is required to get it to a fit state? <a href="#fit-for-publishing-checklist">(see our fit for publishing checklist)</a></li>
+</ol>
+<p>Your repo doesn’t have to be a glowing example of best practice to be made public. For example, if you are working on something experimental and you’re not sure whether you want to invest extra time in adding on all the bells and whistles. Let’s be honest, we rarely have time for perfect. Striving for fully documented code and test coverage, shouldn’t be be a blocker for sharing your good work.</p>
+<p><strong>That’s not to say you shouldn’t bother with unit tests or documentation at all. Sorry :( .</strong></p>
+<p>There is a good reason these are considered best practice. Well documented code makes it easier for you and your collaborators to understand what parts of your code are doing, lowering the burden for collaboration.</p>
+<p>Unit tests make it easier for you as a code owner to implement changes and accept contributions from other people. Why? Because if you have good test coverage, you can quickly see if someone else’s cool new feature breaks the rest of your pre-existing code. Without these, there is a larger overhead to accepting contributions, because you will want to run tests yourself manually to check this or risk errors popping up when you really don’t want them.</p>
+</section>
+<section id="step-2---develop-a-risk-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="step-2---develop-a-risk-assessment">Step 2 - Develop a risk assessment</h3>
+<p>So you’ve decided to go ahead with publishing your code, that’s great!</p>
+<p>It’s probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likelihood or impact of those things.</p>
+<p>If you’ve never written a risk assessment before, not to worry it’s super easy. I’ve provided a quick template below.</p>
+<p>An appropriate table format for <a href="../private_to_public/risk-table.html">a risk log can be found here</a>.</p>
+<p>Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/risk-exposure-diagram.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Risk Exposure Matrix</figcaption>
+</figure>
+</div>
+<p>Important things to consider in your risk assessment - follow the reference link to a helpful NHS checklist template <span class="citation" data-cites="NHSFit4Publishing"><a href="#ref-NHSFit4Publishing" role="doc-biblioref">[1]</a></span>:</p>
+<ul>
+<li>How will you ensure no passwords, data or other sensitive information is shared by making your repo public?</li>
+<li>How will you safeguard against people accidentally pushing this information in the future after the repo is made public?</li>
+<li>How will you manage users expectations of quality and on-going maintenance?</li>
+<li>How will you use licencing to protect any proprietary rights and set limitations on liability from others using your code?</li>
+</ul>
+</section>
+<section id="step-3---preparation" class="level3">
+<h3 class="anchored" data-anchor-id="step-3---preparation">Step 3 - Preparation</h3>
+<p>It’s time to implement your mitigations and get those risk scores down. Hopefully it’s just a few small changes or additions you need to make to your code, but equally you might decide at this point that you need some more time to make the changes required to mitigate the risks.</p>
+<p>There is no rush. So take your time, ask questions, and make sure you get it right.</p>
+</section>
+<section id="step-4---review" class="level3">
+<h3 class="anchored" data-anchor-id="step-4---review">Step 4 - Review</h3>
+<p><a href="../private_to_public/process-chart.html">We recommend that someone not connected with the repository reviews the work</a>. Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team’s review of the codebase or following its conclusion (see previous steps).</p>
+<p>Once the risks identified by the review have completed, the updated checklist <span class="citation" data-cites="NHSFit4Publishing"><a href="#ref-NHSFit4Publishing" role="doc-biblioref">[1]</a></span> should be provided to the project lead for review. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven’t thought of.</p>
+</section>
+<section id="step-5---sign-off" class="level3">
+<h3 class="anchored" data-anchor-id="step-5---sign-off">Step 5 - Sign-off</h3>
+<p>Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you’ve done to mitigate any risks to the project lead.</p>
+<p>The project lead will then be able to make a decision as to whether the code is fit for publishing or requires further work in order to meet the necessary standard for release.</p>
+</section>
+<section id="fit-for-publishing-checklist" class="level3">
+<h3 class="anchored" data-anchor-id="fit-for-publishing-checklist">Fit for publishing checklist</h3>
+<p>This checklist summarises additional considerations when working with the NHS checklist <span class="citation" data-cites="NHSFit4Publishing"><a href="#ref-NHSFit4Publishing" role="doc-biblioref">[1]</a></span>.</p>
+<ul class="task-list">
+<li><input type="checkbox">Are there clearly documented instructions on how to install, run and contribute to the repository?</li>
+<li><input type="checkbox">Check that the code runs within a fresh clone with a new environment.</li>
+<li><input type="checkbox">Check for broken links in the docs.</li>
+<li><input type="checkbox">Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history if in scope for publication)?</li>
+<li><input type="checkbox">Are you satisfied that the residual risk is within your organisations tolerance?</li>
+</ul>
+
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-NHSFit4Publishing" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">NHS Digital, <span>“NHS fit for publishing checklist word document.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -621,13 +675,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../common/general_considerations.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">General Considerations</span>
+      <a href="../open-development/open-at-start.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open at the start</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../common/references.html" class="pagination-link">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../private/private-development.html" class="pagination-link">
+        <span class="nav-page-text">Never open</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

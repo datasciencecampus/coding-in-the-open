@@ -156,8 +156,26 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./open-development/open-at-start.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the start</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./private_to_public/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Private to Public</span></a>
+ <span class="menu-text">Open at the end</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./private/private-development.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Never open</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./www-ebi/resolving-problems.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">What could go wrong?</span></a>
   </div>
 </li>
       </ul>
@@ -232,6 +250,7 @@ Important
 </header>
 
 <p>The following pages aim to provide guidance on ‘coding in the open’ - that is developing open-source codebases or transitioning codebases from private to public domains. The term open-source captures work that is made freely available for others to use and modify <span class="citation" data-cites="OpenSourceInitiative"><a href="#ref-OpenSourceInitiative" role="doc-biblioref">[1]</a></span>.</p>
+<p>This guide does not replace the need for good project governance. Nor does it replace any of the guidance presented in UK Government’s Aqua Book <span class="citation" data-cites="AquaBook"><a href="#ref-AquaBook" role="doc-biblioref">[2]</a></span>. The purpose of this guide is to supplement the information in the Aqua book with considerations related specifically to publishing analytical code on GitHub.</p>
 <p>This guidance is split into 3 main pages:</p>
 <div id="tbl-pages" class="anchored">
 <table class="table">
@@ -249,21 +268,33 @@ Important
 <tbody>
 <tr class="odd">
 <td><a href="./index.html">Overview</a><br>(this page)</td>
-<td>Provides a ‘coding in the open’ overview, covering; <a href="@sec-who-for">who this guidance is for</a>, <a href="@sec-intentions">what the intentions are</a>, <a href="@sec-why-open">why develop in the open</a>, <a href="@sec-why-closed">why private/closed development</a> maybe more appropriate in some instances, and proposes an <a href="@sec-open-v-closed">‘open first, closed by exception’</a> strategy for codebase development.</td>
+<td>Provides a ‘coding in the open’ overview, covering; <a href="#sec-who-for">who this guidance is for</a>, <a href="#sec-intentions">what the intentions are</a>, <a href="#sec-why-open">why develop in the open</a>, <a href="#sec-why-closed">why private/closed development</a> maybe more appropriate in some instances, and proposes an <a href="#sec-open-v-closed">‘open first, closed by exception’</a> strategy for codebase development.</td>
 </tr>
 <tr class="even">
 <td><a href="./common/general_considerations.html">General Considerations</a></td>
 <td>Provides a range of considerations for developing and working in the open.</td>
 </tr>
 <tr class="odd">
-<td><a href="./private_to_public/guidance.html">Private to Public</a></td>
+<td><a href="./open-development/open-at-start.html">Open at the start</a></td>
+<td>Placeholder page for guidance on considerations when developing in the open.</td>
+</tr>
+<tr class="even">
+<td><a href="./private_to_public/guidance.html">Open at the end</a></td>
 <td>Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance.</td>
+</tr>
+<tr class="odd">
+<td><a href="./private/private-development.html">Never open</a></td>
+<td>Reasons why code may not be published and how to document this.</td>
+</tr>
+<tr class="even">
+<td><a href="./www-ebi/resolving-problems.html">What could go wrong?</a></td>
+<td>Risks to consider when we open source code.</td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>These pages are accessible via the sidebar and are linked in <a href="#tbl-pages">Table&nbsp;1</a> above. Each page has a table of contents on the right hand side linking the sections available within them. It is also possible to report any issues or errors with the page using the link provided in the table of contents.</p>
-<p>All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./common/references.html">references</a> page for convenience. To go straight to the <strong>NHS Digital guidance</strong> with the <strong>fit for publishing checklist</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[2]</a></span>.</p>
+<p>All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./common/references.html">references</a> page for convenience. To go straight to the <strong>NHS Digital guidance</strong> with the <strong>fit for publishing checklist</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[3]</a></span>.</p>
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <section id="sec-who-for" class="level2">
@@ -272,7 +303,7 @@ Important
 </section>
 <section id="sec-intentions" class="level2">
 <h2 class="anchored" data-anchor-id="sec-intentions">What are the Guidance Intentions?</h2>
-<p>The main goals of this guidance are to encourage a development strategy that is:</p>
+<p>The goals of this guidance are to support development strategies for projects that can be:</p>
 <div class="border grid-margin-below">
 <div class="orderd-list-div-margins">
 <ol type="1">
@@ -297,8 +328,8 @@ Important
 </section>
 <section id="sec-why-open" class="level2">
 <h2 class="anchored" data-anchor-id="sec-why-open">Why Develop in the Open?</h2>
-<p>The Office for National Statistics (ONS) quality assurance of code <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[3]</a></span>, the Government Analysis Function <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[4]</a></span>, and the UK Government’s Technology Code of Practice <span class="citation" data-cites="CDDOTechCode"><a href="#ref-CDDOTechCode" role="doc-biblioref">[5]</a></span> all call for code to be open-source. This is, at least in part, due to the wide range of benefits that developing in the open brings. In particular, these benefits help support an outputs’ compliance with the UKSA Code of practice for Statistics <span class="citation" data-cites="UKSACode"><a href="#ref-UKSACode" role="doc-biblioref">[6]</a></span> - where public value, high quality, and trustworthiness are the main pillars.</p>
-<p>There are many sources which explain these benefits in detail <span class="citation" data-cites="DuckBook GASOpenSource CDDOTechCode GDSBlog GDSVideo CDDOGuidance NHSdigital MoJBlog"><a href="#ref-NHSdigital" role="doc-biblioref">[2]</a>–<a href="#ref-CDDOTechCode" role="doc-biblioref">[5]</a>, <a href="#ref-GDSBlog" role="doc-biblioref">[7]</a>–<a href="#ref-MoJBlog" role="doc-biblioref">[10]</a></span>, and they all argue strongly as to why this guidance advocates for open source development. The themed boxes below summarise the benefits of open-source software and coding in the open:</p>
+<p>The Office for National Statistics (ONS) quality assurance of code <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[4]</a></span>, the Government Analysis Function <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[5]</a></span>, and the UK Government’s Technology Code of Practice <span class="citation" data-cites="CDDOTechCode"><a href="#ref-CDDOTechCode" role="doc-biblioref">[6]</a></span> all call for code to be open-source. This is, at least in part, due to the wide range of benefits that developing in the open brings. In particular, these benefits help support an outputs’ compliance with the UKSA Code of practice for Statistics <span class="citation" data-cites="UKSACode"><a href="#ref-UKSACode" role="doc-biblioref">[7]</a></span> - where public value, high quality, and trustworthiness are the main pillars.</p>
+<p>There are many sources which explain these benefits in detail <span class="citation" data-cites="DuckBook GASOpenSource CDDOTechCode GDSBlog GDSVideo CDDOGuidance NHSdigital MoJBlog"><a href="#ref-NHSdigital" role="doc-biblioref">[3]</a>–<a href="#ref-CDDOTechCode" role="doc-biblioref">[6]</a>, <a href="#ref-GDSBlog" role="doc-biblioref">[8]</a>–<a href="#ref-MoJBlog" role="doc-biblioref">[11]</a></span>, and they all argue strongly as to why this guidance advocates for open source development. The themed boxes below summarise the benefits of open-source software and coding in the open:</p>
 <div class="grid grid-margin-below">
 <div class="g-col-6 border">
 <section id="increases-quality" class="level3 jumbotron">
@@ -331,14 +362,14 @@ Important
 <div class="g-col-6 border">
 <section id="public-investment" class="level3 jumbotron">
 <h3 class="anchored" data-anchor-id="public-investment"><strong>Public Investment</strong></h3>
-<p>“Public services are built with public money”, which provides good ground to make code publically available unless there is a good reason <a href="@sec-why-closed">not to publish the codebase</a>. In not releasing code where appropriate to do so, you may be unintentionally tolerating the risk of needing to turn around potenital freedom of information requests within the 20 working day time period. <span class="citation" data-cites="ICOguidance"><a href="#ref-ICOguidance" role="doc-biblioref">[11]</a></span></p>
+<p>“Public services are built with public money”, which provides good ground to make code publically available unless there is a good reason <a href="@sec-why-closed">not to publish the codebase</a>. In not releasing code where appropriate to do so, you may be unintentionally tolerating the risk of needing to turn around potenital freedom of information requests within the 20 working day time period. <span class="citation" data-cites="ICOguidance"><a href="#ref-ICOguidance" role="doc-biblioref">[12]</a></span></p>
 </section>
 </div>
 </div>
 </section>
 <section id="sec-why-closed" class="level2">
 <h2 class="anchored" data-anchor-id="sec-why-closed">Why Develop Privately?</h2>
-<p>Open-source development does bring with it some additional considerations and risks <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[4]</a></span>. As a result, there are scenarios in which opening all or parts of a codebase may not be possible <span class="citation" data-cites="GASOpenSource CDDOClosed"><a href="#ref-GASOpenSource" role="doc-biblioref">[4]</a>, <a href="#ref-CDDOClosed" role="doc-biblioref">[12]</a></span>. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:</p>
+<p>Open-source development does bring with it some additional considerations and risks <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[5]</a></span>. As a result, there are scenarios in which opening all or parts of a codebase may not be possible <span class="citation" data-cites="GASOpenSource CDDOClosed"><a href="#ref-GASOpenSource" role="doc-biblioref">[5]</a>, <a href="#ref-CDDOClosed" role="doc-biblioref">[13]</a></span>. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:</p>
 <div class="grid grid-margin-below">
 <div class="g-col-6 border">
 <section id="sensitivity" class="level3 jumbotron">
@@ -378,7 +409,7 @@ Important
 </section>
 <section id="sec-open-v-closed" class="level2">
 <h2 class="anchored" data-anchor-id="sec-open-v-closed">Coding Openly (the premise) or Privately (the exception)?</h2>
-<p>Open-sourcing a codebase is a case-by-case balance between its purpose, public value, risk management and technical constraints <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[4]</a></span>. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.</p>
+<p>Open-sourcing a codebase is a case-by-case balance between its purpose, public value, risk management and technical constraints <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[5]</a></span>. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.</p>
 <p>The premise therefore should be one where the codebase is open by default - that is, all code/software developed would be available for anyone to view and use from the beginning. This stance brings the benefits of open-source development upfront and minimises any additional workload that would come from transitioning the codebase from private to public at a later date.</p>
 <p>If it is not possible to be open by default, consider other strategies for making the codebase open. These approaches could bring additional design complexity and/or workload when compared with being open by default, but ultimately the codebase would still benefit from the same open-source advantages. This could be:</p>
 <div class="border grid-margin-below">
@@ -386,7 +417,7 @@ Important
 <ul>
 <li>Designing or re-designing the codebase to use <strong>open-source dependencies</strong>.</li>
 <li><strong>Separating out or removing</strong> sections that should not be made public.</li>
-<li>Consistently using <strong>good coding practices</strong> <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[3]</a></span>, to simplify the process of opening the codebase in the future should it be possible.</li>
+<li>Consistently using <strong>good coding practices</strong> <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[4]</a></span>, to simplify the process of opening the codebase in the future should it be possible.</li>
 <li><strong>Transitioning</strong> a private codebase to public at a later date (see <a href="./private_to_public/guidance.html">specific guidance</a> on this topic).</li>
 <li>Maintain <strong>private and public versions</strong> of a codebase - development could then continue in a private domain and then be released publicly as needed.</li>
 <li>Releasing code with synthetic or dummy data, such as that used when testing your codebase.</li>
@@ -402,38 +433,41 @@ Important
 <div id="ref-OpenSourceInitiative" class="csl-entry" role="listitem">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
 </div>
+<div id="ref-AquaBook" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">HM Treasury, <span>“The aqua book.”</span> <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government</a></div>
+</div>
 <div id="ref-NHSdigital" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
 </div>
 <div id="ref-DuckBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/</a></div>
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/</a></div>
 </div>
 <div id="ref-GASOpenSource" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
 </div>
 <div id="ref-CDDOTechCode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“The technology code of practice.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“The technology code of practice.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
 </div>
 <div id="ref-UKSACode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[6] </div><div class="csl-right-inline">UK Statistics Authority, <span>“Code of practice for statistics.”</span> <a href="https://code.statisticsauthority.gov.uk/">https://code.statisticsauthority.gov.uk/</a></div>
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">UK Statistics Authority, <span>“Code of practice for statistics.”</span> <a href="https://code.statisticsauthority.gov.uk/">https://code.statisticsauthority.gov.uk/</a></div>
 </div>
 <div id="ref-GDSBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[7] </div><div class="csl-right-inline">Government Digital Services, <span>“The benefits of coding in the open.”</span> <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/</a></div>
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Government Digital Services, <span>“The benefits of coding in the open.”</span> <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/</a></div>
 </div>
 <div id="ref-GDSVideo" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Government Digital Services, <span>“Why we code in the open (YouTube video).”</span> <a href="https://www.youtube.com/watch?v=aqFFCvjXr1s">https://www.youtube.com/watch?v=aqFFCvjXr1s</a></div>
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Government Digital Services, <span>“Why we code in the open (YouTube video).”</span> <a href="https://www.youtube.com/watch?v=aqFFCvjXr1s">https://www.youtube.com/watch?v=aqFFCvjXr1s</a></div>
 </div>
 <div id="ref-CDDOGuidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“Be open and use open source.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“Be open and use open source.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
 </div>
 <div id="ref-MoJBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Ministry of Justice, <span>“Why we code in the open.”</span> <a href="https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/">https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/</a></div>
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">Ministry of Justice, <span>“Why we code in the open.”</span> <a href="https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/">https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/</a></div>
 </div>
 <div id="ref-ICOguidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[11] </div><div class="csl-right-inline">I. C. Office, <span>“Information commissioners office guidance on freedom of information requests.”</span> <a href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/">https://ico.org.uk/for-organisations/guide-to-freedom-of-information/</a></div>
+<div class="csl-left-margin">[12] </div><div class="csl-right-inline">I. C. Office, <span>“Information commissioners office guidance on freedom of information requests.”</span> <a href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/">https://ico.org.uk/for-organisations/guide-to-freedom-of-information/</a></div>
 </div>
 <div id="ref-CDDOClosed" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“When code shoulde be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
+<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“When code shoulde be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
 </div>
 </div>
 
