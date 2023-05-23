@@ -137,7 +137,7 @@ Others can benefit from work already developed by facilitating code re-use.
 
 ## Why Develop Privately? {#sec-why-closed}
 
-Open-source development does bring with it some additional considerations and risks [@GASOpenSource]. As a result, there are scenarios in which opening all or parts of a codebase may not be possible [@GASOpenSource; @CDDOClosed]. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:
+Open-source development does bring with it some additional considerations and risks [@GASOpenSource]. As a result, there are scenarios in which opening all or parts of a codebase may not be possible [@CDDOClosed]. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:
 
 ::: {.grid .grid-margin-below}
 
