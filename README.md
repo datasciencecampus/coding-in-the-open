@@ -70,6 +70,12 @@ from the command line at the root directory (or use the VS Code button at the to
 * PRs are most welcome. [Link your PR to an existing issues where possible](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). 
 * Please do not commit HTML to the repo. [CI is setup to handle rendering & publishing](https://quarto.org/docs/publishing/github-pages.html).
 
+#### Notes on CI
+
+* This repo is using the actions produced by the quarto dev community.
+* Pubilcation happens from the gh-pages branch. This branch should not be manually updated.
+* PRs accepted to the main branch will use CI to bump gh-pages, automatically renderring HTML & publishing to Pages.
+* Ensure the repository settings under Settings > Pages > Build & deployment remain as: **Deploy from a branch** and pointing to the **root of the gh-pages branch**.
 
 # Data Science Campus
 At the [Data Science Campus](https://datasciencecampus.ons.gov.uk/about-us/) we apply data science, and build skills, for public good across the UK and internationally. Get in touch with the Campus at [datasciencecampus@ons.gov.uk](datasciencecampus@ons.gov.uk).
