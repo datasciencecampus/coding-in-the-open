@@ -30,6 +30,7 @@ website:
         - ./open-development/open-at-start.qmd
         - ./private_to_public/guidance.qmd
         - ./private/private-development.qmd
+        - ./www-ebi/resolving-problems.qmd
       - ./common/references.qmd
     footer: |
       :::{.callout-important}

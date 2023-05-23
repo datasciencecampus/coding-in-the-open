@@ -103,5 +103,40 @@
     "title": "Never open",
     "section": "",
     "text": "Note\n\n\n\nPlaceholder page"
+  },
+  {
+    "objectID": "www-ebi/resolving-problems.html",
+    "href": "www-ebi/resolving-problems.html",
+    "title": "What could go wrong?",
+    "section": "",
+    "text": "This page is for us to help raise awareness in issues that could be encountered while preparing to release for code. Let’s help each other to avoid common problems prior to publishing:"
+  },
+  {
+    "objectID": "www-ebi/resolving-problems.html#documentation",
+    "href": "www-ebi/resolving-problems.html#documentation",
+    "title": "What could go wrong?",
+    "section": "Documentation",
+    "text": "Documentation\nHave you:\n\nchecked that all the links work in your README?\n\nincluded some helpful code status description, ie maintained, ad hoc analysis etc?\n\nfully attributed the work of others? Including a LICENSE.note file where appropriate?\n\nspecified which operating system the code is compatible with?"
+  },
+  {
+    "objectID": "www-ebi/resolving-problems.html#source-code",
+    "href": "www-ebi/resolving-problems.html#source-code",
+    "title": "What could go wrong?",
+    "section": "Source Code",
+    "text": "Source Code\nHave you:\n\nchecked that the code runs in a fresh clone of the repo and in a new environment?\n\nbeen able to pip install -r requirements.txt without any trouble?"
+  },
+  {
+    "objectID": "www-ebi/resolving-problems.html#notebooks",
+    "href": "www-ebi/resolving-problems.html#notebooks",
+    "title": "What could go wrong?",
+    "section": "Notebooks",
+    "text": "Notebooks"
+  },
+  {
+    "objectID": "www-ebi/resolving-problems.html#tests",
+    "href": "www-ebi/resolving-problems.html#tests",
+    "title": "What could go wrong?",
+    "section": "Tests",
+    "text": "Tests"
   }
 ]
