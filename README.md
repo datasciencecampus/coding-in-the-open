@@ -3,6 +3,9 @@
 # Coding in the Open
 
 # Introduction
+
+This guidance is hosted on [GitHub Pages](https://datasciencecampus.github.io/coding-in-the-open/).
+
 ## About
 A compendium of open-source guidance which aims to share the benefits, risks and a summarised strategy for open-source coding.
 
