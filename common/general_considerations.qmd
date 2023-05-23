@@ -2,10 +2,6 @@
 title: "General Considerations"
 ---
 
-::: {.callout-note}
-Placeholder page
-:::
-
 Points to consider (not necessarily in this order):
 
 - Publishing with/without History
@@ -16,10 +12,14 @@ Points to consider (not necessarily in this order):
     - semantic versioning
     - change log
 - Following coding good practices:
-    - recommend ONS code quality assurance as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore,
+    - recommend ONS code quality assurance @DuckBook as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore.
+- Repo structure. Consider appropriate structure. Select from campus templates or govcookiecutter @GovCookieCutter or similar.
 - Documentation (readmes, and more?)
-- Licenses
+- Licenses. General guidance is to use MiT for code and OGL for docs and data (as appropriate).
 - Use open source tools/software/data
-- Dummy data
+- Dummy data. If you cannot release the data required to run your code, can you release summy data to help users execute scripts? This data may be released as test fixtures.
 - Notebooks or not to notebooks... (what about gists? maybe part of documentation)
-- Skill-sets/training
+- Skill-sets/training - are your team operating with an acceptable understanding of what the risks associated with your work are? Steps to help the development team share in best practice should be considered, such as:
+    - Ensuring the Data Science Campus (DSC) GitHub SyOps has been completed for all members.
+    - The DSC GitHub training @DSCGitHubTraining has been completed and refreshed as needed.
+    - pair programming to support junior developers.
