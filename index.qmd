@@ -13,7 +13,10 @@ This guidance is split into 3 main pages:
 | --- | --- |
 | [Overview](/index.qmd)<br>(this page) | Provides a 'coding in the open' overview, covering; [who this guidance is for](#sec-who-for), [what the intentions are](#sec-intentions), [why develop in the open](#sec-why-open), [why private/closed development](#sec-why-closed) maybe more appropriate in some instances, and proposes an ['open first, closed by exception'](#sec-open-v-closed) strategy for codebase development. |
 | [General Considerations](/common/general_considerations.qmd) | Provides a range of considerations for developing and working in the open. |
-| [Private to Public](/private_to_public/guidance.qmd) | Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance. |
+[Open at the start](/open-development/open-at-start.qmd) | Placeholder page for guidance on considerations when developing in the open. |
+[Open at the end](/private_to_public/guidance.qmd) | Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance. |
+[Never open](/private/private-development.qmd) | Reasons why code may not be published and how to document this. |
+[What could go wrong?](/www-ebi/resolving-problems.qmd) | Risks to consider when we open source code. |
 
 : Summary of guidance pages. {#tbl-pages tbl-colwidths="[18,82]"}
 
