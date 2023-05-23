@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-05-23T11:11:16.985Z</lastmod>
+    <lastmod>2023-05-23T11:47:26.008Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/guidance.html</loc>
-    <lastmod>2023-05-23T11:40:29.338Z</lastmod>
+    <lastmod>2023-05-23T11:46:54.012Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/assets/process-chart.html</loc>
@@ -23,5 +23,9 @@
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/process-chart.html</loc>
     <lastmod>2023-05-23T10:28:38.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/risk-table.html</loc>
+    <lastmod>2023-05-23T11:46:54.744Z</lastmod>
   </url>
 </urlset>

@@ -37,9 +37,7 @@ It's probably a good idea at this point to write down all of the potential thing
 
 If you've never written a risk assessment before, not to worry it's super easy. I've provided a quick template below. 
 
-| Risk | Consequences | Impact | Likelihood | Exposure | Risk | Mitigations | Impact | Likelihood | Exposure| Risk | 
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Description of risk | What could go wrong | Impact score | Likelihood Score | Likelihood x Impact | Risk assessment (high/medium/low) | A list of things you could do to reduce the risk | Revised impact score | Revised likelihood score | Revised exposure | Revised risk  | 
+An appropriate table format for [a risk log can be found here](/private_to_public/risk-table.qmd).
 
 Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores
 
