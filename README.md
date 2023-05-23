@@ -1,5 +1,7 @@
 <img src="https://github.com/datasciencecampus/awesome-campus/blob/master/ons_dsc_logo.png">
 
+<img src="https://github.com/datasciencecampus/coding-in-the-open/actions/workflows/quarto-publish.yml/badge.svg" alt="GH Pages Status" style="align:left;">
+
 # Coding in the Open
 
 # Introduction
