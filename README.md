@@ -1,8 +1,13 @@
 <img src="https://github.com/datasciencecampus/awesome-campus/blob/master/ons_dsc_logo.png">
 
+<img src="https://github.com/datasciencecampus/coding-in-the-open/actions/workflows/quarto-publish.yml/badge.svg" alt="GH Pages Status" style="align:left;">
+
 # Coding in the Open
 
 # Introduction
+
+This guidance is hosted on [GitHub Pages](https://datasciencecampus.github.io/coding-in-the-open/).
+
 ## About
 A compendium of open-source guidance which aims to share the benefits, risks and a summarised strategy for open-source coding.
 

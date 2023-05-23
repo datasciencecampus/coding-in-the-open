@@ -1,0 +1,7 @@
+---
+title: "Open at the start"
+---
+
+::: {.callout-note}
+Placeholder page
+:::
