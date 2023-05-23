@@ -25,9 +25,9 @@ Your repo doesn't have to be a glowing example of best practice to be made publi
 
 **That's not to say you shouldn't bother with unit tests or documentation at all. Sorry :( .**
 
-There is a good reason these are considered best practice. Well documented code make it easier for you and your collaborators to understand what parts of your code are doing, making it easier for people to contribute as developers. 
+There is a good reason these are considered best practice. Well documented code makes it easier for you and your collaborators to understand what parts of your code are doing, lowering the burden for collaboration. 
 
-Unit tests make it easier for you as a code owner to implement changes and accept contributions from other people. Why? Because if you have good test coverage, you can quickly see if someone else's cool new feature breaks the rest of your pre-existing code. Without these, there is a much bigger overhead to accepting contributions, because you will want to run tests yourself manually to check this or risk errors popping up when you really don't want them. 
+Unit tests make it easier for you as a code owner to implement changes and accept contributions from other people. Why? Because if you have good test coverage, you can quickly see if someone else's cool new feature breaks the rest of your pre-existing code. Without these, there is a larger overhead to accepting contributions, because you will want to run tests yourself manually to check this or risk errors popping up when you really don't want them. 
 
 ### Step 2 - Develop a risk assessment
 
@@ -45,7 +45,7 @@ Along with this risk exposure diagram to help you assess the impact, likelihood 
 
 ![Risk Exposure Matrix](/assets/images/risk-exposure-diagram.png)
 
-Important things to consider in your risk assessment: 
+Important things to consider in your risk assessment - follow the reference link to a helpful NHS checklist template @NHSFit4Publishing: 
 
 - How will you ensure no passwords, data or other sensitive information is shared by making your repo public?
 - How will you safeguard against people accidentally pushing this information in the future after the repo is made public? 
@@ -54,26 +54,28 @@ Important things to consider in your risk assessment:
 
 ### Step 3 - Preparation
 
-It's time to implement your mitigations and get those risk scores down. Hopefully it's just a few small changes or additions you need to make to your code, but equally you might decide at this point that you need some more time to make the changes required to get the risks down. 
+It's time to implement your mitigations and get those risk scores down. Hopefully it's just a few small changes or additions you need to make to your code, but equally you might decide at this point that you need some more time to make the changes required to mitigate the risks. 
 
 There is no rush. So take your time, ask questions, and make sure you get it right. 
 
 ### Step 4 - Review
 
-It's probably a good idea to get someone else to check your work at this stage. We would recommend that someone not connected with the repository to take a critical look at it. Specifically looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. 
+[We recommend that someone not connected with the repository reviews the work](/private_to_public/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
 
-It's also worth asking a senior colleague or manager to review your risk assessment. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of. 
+Once the risks identified by the review have completed, the updated checklist @NHSFit4Publishing should be provided to the project lead for review. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of.
 
 ### Step 5 - Sign-off
 
-Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you've done to mitigate any risks to the person who will be signing off your publication. 
+Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you've done to mitigate any risks to the project lead. 
 
-They can then use this fit for publishing checklist to satisfy themselves that it is good to go. 
+The project lead will then be able to make a decision as to whether the code is fit for publishing or requires further work in order to meet the necessary standard for release. 
 
 ### Fit for publishing checklist
 
-- [ ] Is the repo fit for purpose OR are you intentionally looking for help?
-- [ ] Are there clearly documented instructions on how to install, run and contribute to the repository?
-- [ ] Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history)?
-- [ ] Are you satisfied that the residual risk is within your organisations tolerance?
+This checklist summarises additional considerations when working with the NHS checklist @NHSFit4Publishing.
 
+- [ ] Are there clearly documented instructions on how to install, run and contribute to the repository?
+- [ ] Check that the code runs within a fresh clone with a new environment.
+- [ ] Check for broken links in the docs.
+- [ ] Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history if in scope for publication)?
+- [ ] Are you satisfied that the residual risk is within your organisations tolerance?
