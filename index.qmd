@@ -5,6 +5,8 @@ subtitle: "Some guidance for open sourcing at ONS Data Science Campus"
 
 The following pages aim to provide guidance on 'coding in the open' - that is developing open-source codebases or transitioning codebases from private to public domains. The term open-source captures work that is made freely available for others to use and modify @OpenSourceInitiative.
 
+This guide does not replace the need for good project governance. Nor does it replace any of the guidance presented in UK Government's Aqua Book @AquaBook. The purpose of this guide is to supplement the information in the Aqua book with considerations related specifically to publishing analytical code on GitHub.  
+
 This guidance is split into 3 main pages:
 
 | Page | Description | 
