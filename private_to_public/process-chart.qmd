@@ -45,3 +45,7 @@ flowchart TB
     NoPub --> End[Process complete]
     Outcome2 --> |No| End
 ```
+
+Please note that we would like to improve the above mermaid process chart so that it looks more like the below. Please feel free to raise a PR if you can:
+
+![MSFT Visio Process Chart](/assets/images/WIP_private_to_public_guidance_flowchart.png)
