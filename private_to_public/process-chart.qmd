@@ -7,4 +7,4 @@ format:
     css: mermaid.css
 ---
 
-![MSFT Visio Process Chart](/assets/images/WIP_private_to_public_guidance_flowchart.png)
+<img src="/assets/images/WIP_private_to_public_guidance_flowchart.png" alt="MSFT Visio Process Chart" height=800em width = 650em>
