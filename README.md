@@ -75,6 +75,14 @@ from the command line at the root directory (or use the VS Code button at the to
 * PRs are most welcome. [Link your PR to an existing issues where possible](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue). 
 * Please do not commit HTML to the repo. [CI is setup to handle rendering & publishing](https://quarto.org/docs/publishing/github-pages.html).
 
+#### Web Accessibility
+
+The guidance here has been carefully adjusted to ensure that Web Accessibility guidelines are met. Our guidance must be useful to everyone who has a need to use it. When contributing, please check for these common accessibility problems:
+
+* Don't use italic or strikethrough text.
+* Ensure all images have descriptive alt text.
+* Only use image tags, markdown syntax renderring cannot be relied upon to present alt text as required by WCAG guidance.
+
 #### Notes on CI
 
 * This repo is using the actions produced by the quarto dev community.
