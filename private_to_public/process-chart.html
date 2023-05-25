@@ -51,16 +51,16 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../assets/styles.css">
 <link rel="stylesheet" href="mermaid.css">
 <meta name="twitter:title" content="Coding in the Open - Private to Public Publication Process Overview">
+<meta name="twitter:image" content="https://datasciencecampus.github.io/coding-in-the-open/assets/images/WIP_private_to_public_guidance_flowchart.png">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="8192">
+<meta name="twitter:image-width" content="6894">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -193,50 +193,11 @@ Important
 
 </header>
 
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">%%{
-  init: {
-    'flowchart' : {'curve' : 'linear'},
-  }
-}%%
-
-flowchart TB
-    Start("Process Start") --&gt; ProcessStart["Private codebase&lt;br&gt;identified for&lt;br&gt;transition from&lt;br&gt;private to public"]
-    subgraph id1 ["1. Identify Repository"]
-            ProcessStart --&gt; AgreePrinciple{"Agreement&lt;br&gt;in principle&lt;br&gt;to transition?"}
-            AgreePrinciple --&gt; |No| NoPub["Evidence-based case&lt;br&gt;not to publish"]
-    end
-    subgraph id2 [2. Review Guidance]
-            AgreePrinciple --&gt; |Yes| AgreeScope[Using the private to&lt;br&gt;public  guidance&lt;br&gt;template, agree scope&lt;br&gt;of the review required]
-            AgreeScope --&gt; CompleteGuidance[Complete&lt;br&gt;guidance template&lt;br&gt;and note actions]
-            CompleteGuidance --&gt; OutActions{Any outstanding/&lt;br&gt;open actions?}
-            OutActions --&gt; |No| Review[Review completed&lt;br&gt;guidance template]
-            OutActions --&gt; |Yes| Revise[Revise/update&lt;br&gt;codebase as needed]
-            Revise --&gt; CompleteGuidance
-            Review --&gt; Confirmation{Confirmation to&lt;br&gt; transition repo?}
-            Confirmation --&gt; |No| Revise
-    end
-    subgraph id3 ["#nbsp;"]
-        Confirmation --&gt; |Yes| Outcome1{Review Outcome:&lt;br&gt;Transition repo with&lt;br&gt;history?}
-        Outcome1 --&gt; |Yes| Move1[Move existing&lt;br&gt; codebase from private&lt;br&gt; to public directly]
-        Outcome1 --&gt; |No| Move2[Copy codebase&lt;br&gt;into public domain,&lt;br&gt; without the history]
-        Move1 --&gt; Outcome2{Review Outcome:&lt;br&gt;Maintaining repo and/or&lt;br&gt; taking feedback?}
-        Move2 --&gt; Outcome2
-    end
-    subgraph id4 [4. Feedback and Iterations]
-        Outcome2 --&gt; |Yes| Feedback[Use Issue&lt;br&gt;and Pull Requests]
-        Feedback --&gt; Incorporate[Incorporate&lt;br&gt;feedback into&lt;br&gt;next iteration]
-        Incorporate --&gt; AgreeScope
-    end
-    NoPub --&gt; End[Process complete]
-    Outcome2 --&gt; |No| End
-</pre>
-</div>
-</div>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/WIP_private_to_public_guidance_flowchart.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">MSFT Visio Process Chart</figcaption>
+</figure>
 </div>
 
 
