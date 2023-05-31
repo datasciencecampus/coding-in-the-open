@@ -10,7 +10,7 @@ Transitioning from a private to a public repository is slightly more complicated
 
 This guide will help you decide whether moving from private to public is right for your repository, and help you walk through the required steps to do it. 
 
-A [helpful process diagram](/private_to_public//process-chart.qmd) summarises the approach.
+A [helpful process diagram](/open-at-the-end/process-chart.qmd) summarises the approach.
 
 ### Step 1 - Consideration
 
@@ -37,7 +37,7 @@ It's probably a good idea at this point to write down all of the potential thing
 
 If you've never written a risk assessment before, not to worry it's super easy. I've provided a quick template below. 
 
-An appropriate table format for [a risk log can be found here](/private_to_public/risk-table.qmd).
+An appropriate table format for [a risk log can be found here](/open-at-the-end//risk-table.qmd).
 
 Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores
 
@@ -58,7 +58,7 @@ There is no rush. So take your time, ask questions, and make sure you get it rig
 
 ### Step 4 - Review
 
-[We recommend that someone not connected with the repository reviews the work](/private_to_public/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
+[We recommend that someone not connected with the repository reviews the work](/open-at-the-end/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
 
 Once the risks identified by the review have completed, the updated checklist @NHSFit4Publishing should be provided to the project lead for review. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of.
 
