@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
-    <lastmod>2023-05-25T13:38:38.011Z</lastmod>
+    <lastmod>2023-06-01T13:12:43.565Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
-    <lastmod>2023-05-25T13:38:40.167Z</lastmod>
+    <lastmod>2023-06-01T13:12:46.093Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/www-ebi/resolving-problems.html</loc>
-    <lastmod>2023-05-25T13:38:40.575Z</lastmod>
+    <lastmod>2023-06-01T13:12:46.597Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/open-development/open-at-start.html</loc>
-    <lastmod>2023-05-25T13:38:40.947Z</lastmod>
+    <lastmod>2023-06-01T13:12:47.073Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-05-25T13:38:41.775Z</lastmod>
+    <lastmod>2023-06-01T13:12:48.053Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private/private-development.html</loc>
-    <lastmod>2023-05-25T13:38:42.151Z</lastmod>
+    <lastmod>2023-06-01T13:12:48.541Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/process-chart.html</loc>
-    <lastmod>2023-05-25T13:38:42.531Z</lastmod>
+    <lastmod>2023-06-01T13:12:49.029Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/risk-table.html</loc>
-    <lastmod>2023-05-25T13:38:42.967Z</lastmod>
+    <lastmod>2023-06-01T13:12:49.593Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/guidance.html</loc>
-    <lastmod>2023-05-25T13:38:43.544Z</lastmod>
+    <lastmod>2023-06-01T13:12:50.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/CONTRIBUTING.html</loc>
+    <lastmod>2023-06-01T13:12:50.881Z</lastmod>
   </url>
 </urlset>
