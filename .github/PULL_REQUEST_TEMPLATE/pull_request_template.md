@@ -7,32 +7,25 @@ assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+[ ] Include a contribution summary: A clear and concise description of the changes
+proposed.
+[ ] I have read the [CONTRIBUTING.md](../../CONTRIBUTING.md) guidance for raising pull
+requests  
+[ ] This pull-request meets the accessibility guidance provided in the contributing
+guidance.  
+[ ] Please detail any accessibility errors or alerts discovered on testing within the
+pull-request.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Referencing issues and pull requests**
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+You can bring up a list of suggested issues and pull requests within the repository by
+typing #. Type the issue or pull request number or title to filter the list, and then
+press either tab or enter to complete the highlighted result. Linking PRs to issues
+helps to keep an audit trail in the repository's history.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**Mentioning people**
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+You can mention a person or team on GitHub by typing @ plus their username or team name.
+This will trigger a notification and bring their attention to the conversation. People
+will also receive a notification if you edit a comment to mention their username or team
+name.
