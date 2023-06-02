@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
-    <lastmod>2023-06-01T13:12:43.565Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
-    <lastmod>2023-06-01T13:12:46.093Z</lastmod>
-  </url>
-  <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/www-ebi/resolving-problems.html</loc>
-    <lastmod>2023-06-01T13:12:46.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-development/open-at-start.html</loc>
-    <lastmod>2023-06-01T13:12:47.073Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-06-01T13:12:48.053Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/private/private-development.html</loc>
-    <lastmod>2023-06-01T13:12:48.541Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/process-chart.html</loc>
-    <lastmod>2023-06-01T13:12:49.029Z</lastmod>
-  </url>
-  <url>
-    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/risk-table.html</loc>
-    <lastmod>2023-06-01T13:12:49.593Z</lastmod>
+    <lastmod>2023-06-02T08:38:24.663Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/guidance.html</loc>
-    <lastmod>2023-06-01T13:12:50.353Z</lastmod>
+    <lastmod>2023-06-02T08:38:26.939Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/process-chart.html</loc>
+    <lastmod>2023-06-02T08:38:27.291Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private_to_public/risk-table.html</loc>
+    <lastmod>2023-06-02T08:38:27.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/private/private-development.html</loc>
+    <lastmod>2023-06-02T08:38:28.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
+    <lastmod>2023-06-02T08:38:28.815Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/CONTRIBUTING.html</loc>
-    <lastmod>2023-06-01T13:12:50.881Z</lastmod>
+    <lastmod>2023-06-02T08:38:29.215Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-development/open-at-start.html</loc>
+    <lastmod>2023-06-02T08:38:29.591Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/general_considerations.html</loc>
+    <lastmod>2023-06-02T08:38:30.035Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/common/references.html</loc>
+    <lastmod>2023-06-02T08:38:30.387Z</lastmod>
   </url>
 </urlset>
