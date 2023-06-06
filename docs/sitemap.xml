@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/index.html</loc>
-    <lastmod>2023-05-31T09:30:23.431Z</lastmod>
+    <lastmod>2023-05-31T09:58:01.066Z</lastmod>
   </url>
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/open-development/open-at-start.html</loc>
@@ -35,5 +35,37 @@
   <url>
     <loc>https://datasciencecampus.github.io/coding-in-the-open/www-ebi/resolving-problems.html</loc>
     <lastmod>2023-05-23T13:01:50.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-at-the-start/guidance.html</loc>
+    <lastmod>2023-05-31T09:58:13.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/general-considerations/guidance.html</loc>
+    <lastmod>2023-05-31T09:58:10.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/general-considerations/references.html</loc>
+    <lastmod>2023-05-31T09:58:22.162Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/never-open/guidance.html</loc>
+    <lastmod>2023-05-31T09:58:17.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-at-the-end/risk-table.html</loc>
+    <lastmod>2023-05-31T09:59:13.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-at-the-end/guidance.html</loc>
+    <lastmod>2023-05-31T09:58:15.928Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/open-at-the-end/process-chart.html</loc>
+    <lastmod>2023-05-31T09:58:58.676Z</lastmod>
+  </url>
+  <url>
+    <loc>https://datasciencecampus.github.io/coding-in-the-open/what-could-go-wrong/checklist.html</loc>
+    <lastmod>2023-05-31T09:58:19.860Z</lastmod>
   </url>
 </urlset>
