@@ -44,7 +44,7 @@ div.csl-indent {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./common/general_considerations.html" rel="next">
+<link href="./general-considerations/guidance.html" rel="next">
 <link href=".//assets/favicon.ico" rel="icon">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -129,31 +129,31 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./common/general_considerations.html" class="sidebar-item-text sidebar-link">
+  <a href="./general-considerations/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Considerations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./open-development/open-at-start.html" class="sidebar-item-text sidebar-link">
+  <a href="./open-at-the-start/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./private_to_public/guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="./open-at-the-end/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the end</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./private/private-development.html" class="sidebar-item-text sidebar-link">
+  <a href="./never-open/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Never open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./www-ebi/resolving-problems.html" class="sidebar-item-text sidebar-link">
+  <a href="./what-could-go-wrong/checklist.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">What could go wrong?</span></a>
   </div>
 </li>
@@ -161,7 +161,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./common/references.html" class="sidebar-item-text sidebar-link">
+  <a href="./general-considerations/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -252,30 +252,30 @@ Important
 <td>Provides a ‘coding in the open’ overview, covering; <a href="#sec-who-for">who this guidance is for</a>, <a href="#sec-intentions">what the intentions are</a>, <a href="#sec-why-open">why develop in the open</a>, <a href="#sec-why-closed">why private/closed development</a> maybe more appropriate in some instances, and proposes an <a href="#sec-open-v-closed">‘open first, closed by exception’</a> strategy for codebase development.</td>
 </tr>
 <tr class="even">
-<td><a href="./common/general_considerations.html">General Considerations</a></td>
+<td><a href="./general-considerations/guidance.html">General Considerations</a></td>
 <td>Provides a range of considerations for developing and working in the open.</td>
 </tr>
 <tr class="odd">
-<td><a href="./open-development/open-at-start.html">Open at the start</a></td>
+<td><a href="./open-at-the-start/guidance.html">Open at the start</a></td>
 <td>Placeholder page for guidance on considerations when developing in the open.</td>
 </tr>
 <tr class="even">
-<td><a href="./private_to_public/guidance.html">Open at the end</a></td>
+<td><a href="./open-at-the-end/guidance.html">Open at the end</a></td>
 <td>Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance.</td>
 </tr>
 <tr class="odd">
-<td><a href="./private/private-development.html">Never open</a></td>
+<td><a href="./never-open/guidance.html">Never open</a></td>
 <td>Reasons why code may not be published and how to document this.</td>
 </tr>
 <tr class="even">
-<td><a href="./www-ebi/resolving-problems.html">What could go wrong?</a></td>
+<td><a href="./what-could-go-wrong/checklist.html">What could go wrong?</a></td>
 <td>Risks to consider when we open source code.</td>
 </tr>
 </tbody>
 </table>
 </div>
 <p>These pages are accessible via the sidebar and are linked in <a href="#tbl-pages">Table&nbsp;1</a> above. Each page has a table of contents on the right hand side linking the sections available within them. It is also possible to report any issues or errors with the page using the link provided in the table of contents.</p>
-<p>All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./common/references.html">references</a> page for convenience. To go straight to the <strong>NHS Digital guidance</strong> with the <strong>fit for publishing checklist</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[3]</a></span>.</p>
+<p>All sources used when compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./general-considerations/references.html">references</a> page for convenience. To go straight to the <strong>NHS Digital guidance</strong> with the <strong>fit for publishing checklist</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[3]</a></span>.</p>
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <section id="sec-who-for" class="level2">
@@ -399,7 +399,7 @@ Important
 <li>Designing or re-designing the codebase to use <strong>open-source dependencies</strong>.</li>
 <li><strong>Separating out or removing</strong> sections that should not be made public.</li>
 <li>Consistently using <strong>good coding practices</strong> <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[4]</a></span>, to simplify the process of opening the codebase in the future should it be possible.</li>
-<li><strong>Transitioning</strong> a private codebase to public at a later date (see <a href="./private_to_public/guidance.html">specific guidance</a> on this topic).</li>
+<li><strong>Transitioning</strong> a private codebase to public at a later date (see <a href="./open-at-the-end/guidance.html">specific guidance</a> on this topic).</li>
 <li>Maintain <strong>private and public versions</strong> of a codebase - development could then continue in a private domain and then be released publicly as needed.</li>
 <li>Releasing code with synthetic or dummy data, such as that used when testing your codebase.</li>
 </ul>
@@ -808,7 +808,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./common/general_considerations.html" class="pagination-link">
+      <a href="./general-considerations/guidance.html" class="pagination-link">
         <span class="nav-page-text">General Considerations</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -819,7 +819,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="./assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are aknowledged in the <a href="./common/references.html">references</a> page. Updated on 2023-04-11.</div>
+    <div class="nav-footer-center"><img src="./assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="./general-considerations/references.html">references</a> page. Updated on 2023-04-11.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

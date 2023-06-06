@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding in the Open - References</title>
+<title>Coding in the Open - What could go wrong?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,31 +20,13 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../www-ebi/resolving-problems.html" rel="prev">
+<link href="../general-considerations/references.html" rel="next">
+<link href="../never-open/guidance.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -74,7 +56,7 @@ div.csl-indent {
 
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - References">
+<meta name="twitter:title" content="Coding in the Open - What could go wrong?">
 <meta name="twitter:description" content="">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
 <meta name="twitter:card" content="summary">
@@ -89,7 +71,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../common/references.html">References</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../general-considerations/guidance.html">Guidance</a></li><li class="breadcrumb-item"><a href="../what-could-go-wrong/checklist.html">What could go wrong?</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -129,31 +111,31 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../common/general_considerations.html" class="sidebar-item-text sidebar-link">
+  <a href="../general-considerations/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">General Considerations</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-development/open-at-start.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-start/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../private_to_public/guidance.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-end/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the end</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../private/private-development.html" class="sidebar-item-text sidebar-link">
+  <a href="../never-open/guidance.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Never open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../www-ebi/resolving-problems.html" class="sidebar-item-text sidebar-link">
+  <a href="../what-could-go-wrong/checklist.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">What could go wrong?</span></a>
   </div>
 </li>
@@ -161,7 +143,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../common/references.html" class="sidebar-item-text sidebar-link active">
+  <a href="../general-considerations/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -187,14 +169,23 @@ Important
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link active" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source Code</a></li>
+  <li><a href="#notebooks" id="toc-notebooks" class="nav-link" data-scroll-target="#notebooks">Notebooks</a></li>
+  <li><a href="#tests" id="toc-tests" class="nav-link" data-scroll-target="#tests">Tests</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title">What could go wrong?</h1>
 </div>
 
 
@@ -209,59 +200,37 @@ Important
 
 </header>
 
-<p>All sources used during the compilation of this guidance are referenced below.</p>
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-OpenSourceInitiative" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
-</div>
-<div id="ref-DuckBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html/</a></div>
-</div>
-<div id="ref-AquaBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">HM Treasury, <span>“The aqua book.”</span> <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government</a></div>
-</div>
-<div id="ref-NHSdigital" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[4] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
-</div>
-<div id="ref-NHSFit4Publishing" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">NHS Digital, <span>“NHS fit for publishing checklist word document.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx</a></div>
-</div>
-<div id="ref-GDSBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Government Digital Services, <span>“The benefits of coding in the open.”</span> <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/</a></div>
-</div>
-<div id="ref-GDSVideo" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[7] </div><div class="csl-right-inline">Government Digital Services, <span>“Why we code in the open (YouTube video).”</span> <a href="https://www.youtube.com/watch?v=aqFFCvjXr1s">https://www.youtube.com/watch?v=aqFFCvjXr1s</a></div>
-</div>
-<div id="ref-CDDOGuidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“Be open and use open source.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
-</div>
-<div id="ref-CDDOTechCode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“The technology code of practice.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
-</div>
-<div id="ref-MoJBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Ministry of Justice, <span>“Why we code in the open.”</span> <a href="https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/">https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/</a></div>
-</div>
-<div id="ref-UKSACode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[11] </div><div class="csl-right-inline">UK Statistics Authority, <span>“Code of practice for statistics.”</span> <a href="https://code.statisticsauthority.gov.uk/">https://code.statisticsauthority.gov.uk/</a></div>
-</div>
-<div id="ref-CDDOClosed" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Central Digial and Data Office, <span>“When code shoulde be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
-</div>
-<div id="ref-GASOpenSource" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
-</div>
-<div id="ref-ICOguidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[14] </div><div class="csl-right-inline">I. C. Office, <span>“Information commissioners office guidance on freedom of information requests.”</span> <a href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/">https://ico.org.uk/for-organisations/guide-to-freedom-of-information/</a></div>
-</div>
-<div id="ref-GovCookieCutter" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[15] </div><div class="csl-right-inline">Office for National Statistics Best Practice &amp; Impact, <span>“Govcookiecutter on GitHub.”</span> <a href="https://github.com/best-practice-and-impact/govcookiecutter">https://github.com/best-practice-and-impact/govcookiecutter</a></div>
-</div>
-<div id="ref-DSCGitHubTraining" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[16] </div><div class="csl-right-inline">Office for National Statistics Data Science Campus, <span>“Data science campus GitHub training.”</span> <a href="https://github.com/datasciencecampus/DSCA_GitHub_Training">https://github.com/datasciencecampus/DSCA_GitHub_Training</a></div>
-</div>
-</div>
+<p>This page is for us to help raise awareness in issues that could be encountered while preparing to release for code. Let’s help each other to avoid common problems prior to publishing:</p>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<p>Have you:</p>
+<ul class="task-list">
+<li><input type="checkbox">checked that all the links work in your README?<br>
+</li>
+<li><input type="checkbox">included some helpful code status description, ie maintained, ad hoc analysis etc?<br>
+</li>
+<li><input type="checkbox">fully attributed the work of others? Including a <a href="https://github.com/datasciencecampus/accessrmd/blob/main/LICENSE.note">LICENSE.note</a> file where appropriate?<br>
+</li>
+<li><input type="checkbox">specified which operating system the code is compatible with?</li>
+</ul>
+</section>
+<section id="source-code" class="level2">
+<h2 class="anchored" data-anchor-id="source-code">Source Code</h2>
+<p>Have you:</p>
+<ul class="task-list">
+<li><input type="checkbox">checked that the code runs in a fresh clone of the repo and in a new environment?<br>
+</li>
+<li><input type="checkbox">been able to <code>pip install -r requirements.txt</code> without any trouble?</li>
+</ul>
+</section>
+<section id="notebooks" class="level2">
+<h2 class="anchored" data-anchor-id="notebooks">Notebooks</h2>
+</section>
+<section id="tests" class="level2">
+<h2 class="anchored" data-anchor-id="tests">Tests</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -614,11 +583,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../www-ebi/resolving-problems.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What could go wrong?</span>
+      <a href="../never-open/guidance.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Never open</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../general-considerations/references.html" class="pagination-link">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -627,7 +599,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are aknowledged in the <a href="../common/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
