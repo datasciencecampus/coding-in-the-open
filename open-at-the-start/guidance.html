@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -168,7 +187,20 @@ Important
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#guidance-for-coding-in-the-open" id="toc-guidance-for-coding-in-the-open" class="nav-link active" data-scroll-target="#guidance-for-coding-in-the-open">Guidance for Coding in the Open</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#before-you-start" id="toc-before-you-start" class="nav-link" data-scroll-target="#before-you-start">Before You Start</a></li>
+  <li><a href="#repository-setup" id="toc-repository-setup" class="nav-link" data-scroll-target="#repository-setup">Repository Setup</a></li>
+  <li><a href="#external-collaboration" id="toc-external-collaboration" class="nav-link" data-scroll-target="#external-collaboration">External Collaboration</a></li>
+  <li><a href="#project-board" id="toc-project-board" class="nav-link" data-scroll-target="#project-board">Project Board</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -190,23 +222,104 @@ Important
 
 </header>
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Placeholder page</p>
-</div>
-</div>
+<section id="guidance-for-coding-in-the-open" class="level2">
+<h2 class="anchored" data-anchor-id="guidance-for-coding-in-the-open">Guidance for Coding in the Open</h2>
+<section id="overview" class="level3">
+<h3 class="anchored" data-anchor-id="overview">Overview</h3>
+<p>The preferable approach to open source development should be open from the start <span class="citation" data-cites="GASOpenSource"><a href="#ref-GASOpenSource" role="doc-biblioref">[1]</a></span>. Considering the ICO Guidance on Freedom of Information requests <span class="citation" data-cites="FOIGuidance"><a href="#ref-FOIGuidance" role="doc-biblioref">[2]</a></span> (FoI), developing analytical code in private is not without risk. Consider that you may need to turnaround an FoI within 20 working days, such a request could introduce significant demand upon a team in anonymising and quality assuring a project. Wherever possible, taking steps to be able to work within the scrutiny of the open source community is preferable.</p>
+<p>A key consideration in releasing code <a href="../open-at-the-end/guidance.html">at the end</a> is whether or not to release with the entire commit history. Releasing at intervals with an entire commit history vastly increases the number of lines of code to review before release. Taking the time to adequately assess the risks associated with a project and to develop accordingly is a decision that should not default to private in all cases.</p>
+<p>This guidance is intended to help developers at the Data Science Campus when setting up a public repository on our Campus Team GitHub. It will discuss some suggested practice in setting up a project board, though this guidance should not document the current state of the GitHub user interface, as this changes frequently.</p>
+</section>
+<section id="before-you-start" class="level3">
+<h3 class="anchored" data-anchor-id="before-you-start">Before You Start</h3>
+<p>Work with the Campus delivery team to ensure appropriate project governance is set up. This should include (but not limited to):</p>
+<ul>
+<li>Completing an ethical self-assessment <span class="citation" data-cites="selfAssess"><a href="#ref-selfAssess" role="doc-biblioref">[3]</a></span>.</li>
+<li>Gain agreement in writing with project lead to code in the open.</li>
+<li>Consider the needs of the development team.
+<ul>
+<li>Does everyone understand the risks with the project and how to mitigate them?</li>
+<li>Could some dedicated pair-programming help to standardise the development approach?</li>
+<li>Could revisiting the Campus GitHub training <span class="citation" data-cites="DSCGitHubTraining"><a href="#ref-DSCGitHubTraining" role="doc-biblioref">[4]</a></span> &amp; SyOps help?</li>
+<li>Consider a Risks log, setting out the sensitive aspects of a project, ensure the dev team have access to this document and that it is maintained.</li>
+<li>This can also help to ensure everyone is up and running with key mitigations such as <code>pre-commit</code> <span class="citation" data-cites="preCommit"><a href="#ref-preCommit" role="doc-biblioref">[5]</a></span> and that style conventions are adhered to.</li>
+</ul></li>
+</ul>
+</section>
+<section id="repository-setup" class="level3">
+<h3 class="anchored" data-anchor-id="repository-setup">Repository Setup</h3>
+<ul>
+<li>Choose a repository template that suits the complexity of the project. There are multiple to choose from, but the Campus’ minimal repository template <span class="citation" data-cites="templateMinimal"><a href="#ref-templateMinimal" role="doc-biblioref">[6]</a></span> may be useful. For more involved projects, you may wish to consider GovCookieCutter</li>
+</ul>
+<ol class="example" type="1">
+<li></li>
+</ol>
+<ul>
+<li>Configure branch protection <span class="citation" data-cites="branchProtect"><a href="#ref-branchProtect" role="doc-biblioref">[7]</a></span> under your repository settings.</li>
+<li>Ensure a license file is included. MiT is adequate for most purposes.</li>
+<li>Documentation or other Intellectual Property beyond code is distributed under OGL 3.0 <span class="citation" data-cites="ogl3"><a href="#ref-ogl3" role="doc-biblioref">[8]</a></span></li>
+<li>It’s a good idea to provide issue or pull request (PR) templates and a contributing guide to help nudge collaborators (internal or external) towards the habits you expect.</li>
+<li>Include a code of conduct to help safeguard from poor online behaviour.</li>
+<li>Include contribution guidance so that team members and external collaborators understand the working conventions of your repository.</li>
+</ul>
+</section>
+<section id="external-collaboration" class="level3">
+<h3 class="anchored" data-anchor-id="external-collaboration">External Collaboration</h3>
+<ul>
+<li>In an open repo, any GitHub member could fork the codebase and raise a PR.</li>
+<li>Colleagues should consider that they are representing the ONS <span class="citation" data-cites="cs-standard"><a href="#ref-cs-standard" role="doc-biblioref">[9]</a></span> in all their interactions on our corporate GitHub teams account. Refer to the GitHub SyOps for more information.</li>
+<li>In cases of collaboration with external agencies, consider whether access to the public repository is enough, or whether access to a private project board needs approval with Campus Delivery Team.</li>
+</ul>
+</section>
+<section id="project-board" class="level3">
+<h3 class="anchored" data-anchor-id="project-board">Project Board</h3>
+<p>Considering the sensitivity of the work undertaken, a decision may be made on whether a public or private project board (kanban) <span class="citation" data-cites="gh-projects-beta"><a href="#ref-gh-projects-beta" role="doc-biblioref">[10]</a></span> is needed. A <strong>public</strong> code repository <strong>can</strong> be linked to a <strong>private project board</strong>. To facilitate this way of working, please consider:</p>
+<ul>
+<li>Issues on the public repo are visible to all GitHub users. Adding them to a private project does not change the visibility of the project board or its content.</li>
+<li>Private project boards allow the creation of draft tickets (sometimes referred to as notes). <strong>Converting a note to an issue on a public repo will change its visibility.</strong></li>
+<li>For more information on the visibility of a project, please see the GitHub documentation <span class="citation" data-cites="gh-projects-viz"><a href="#ref-gh-projects-viz" role="doc-biblioref">[11]</a></span> .</li>
+</ul>
 
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-GASOpenSource" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
+</div>
+<div id="ref-FOIGuidance" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Information Commissioners Office, <span>“How to access information from a public authority.”</span> <a href="https://ico.org.uk/for-the-public/official-information/">https://ico.org.uk/for-the-public/official-information/</a></div>
+</div>
+<div id="ref-selfAssess" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">UK Statistics Authority Data Ethics Advisory Committee, <span>“Ethics self-assessment tool.”</span> <a href="https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/">https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/</a></div>
+</div>
+<div id="ref-DSCGitHubTraining" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Office for National Statistics Data Science Campus, <span>“Data science campus GitHub training.”</span> <a href="https://github.com/datasciencecampus/DSCA_GitHub_Training">https://github.com/datasciencecampus/DSCA_GitHub_Training</a></div>
+</div>
+<div id="ref-preCommit" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. Sottile et al, <span>“Pre-commit.”</span> <a href="https://pre-commit.com/">https://pre-commit.com/</a></div>
+</div>
+<div id="ref-templateMinimal" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Tim Green, <span>“Minimal template.”</span> <a href="https://github.com/datasciencecampus/project-repo-template">https://github.com/datasciencecampus/project-repo-template</a></div>
+</div>
+<div id="ref-branchProtect" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">GitHub, <span>“GitHub branch protection.”</span> <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches</a></div>
+</div>
+<div id="ref-ogl3" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">The National Archives, <span>“Open government license 3.0.”</span> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</a></div>
+</div>
+<div id="ref-cs-standard" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Civil Service, <span>“Civil service standard.”</span> <a href="https://www.gov.uk/government/publications/civil-service-code">https://www.gov.uk/government/publications/civil-service-code</a></div>
+</div>
+<div id="ref-gh-projects-beta" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[10] </div><div class="csl-right-inline">GitHub, <span>“GitHub projects beta.”</span> <a href="https://docs.github.com/en/enterprise-server@3.8/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">https://docs.github.com/en/enterprise-server@3.8/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects</a></div>
+</div>
+<div id="ref-gh-projects-viz" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[11] </div><div class="csl-right-inline">GitHub, <span>“Managing the visibility of a project.”</span> <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-visibility-of-your-projects">https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-visibility-of-your-projects</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -573,7 +686,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
