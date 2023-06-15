@@ -47,8 +47,7 @@ This should include (but not limited to):
 
 - Choose a repository template that suits the complexity of the project. There are
 multiple to choose from, but the Campus' minimal repository template @templateMinimal
-may be useful. For more involved projects, you may wish to consider GovCookieCutter
-@GovCookieCutter. 
+may be useful. For more involved projects, you may wish to consider GovCookieCutter @GovCookieCutter . 
 - Configure branch protection @branchProtect under your repository settings.
 - Ensure a license file is included. MiT is adequate for most purposes.
 - Documentation or other Intellectual Property beyond code is distributed under OGL 3.0 @ogl3 
