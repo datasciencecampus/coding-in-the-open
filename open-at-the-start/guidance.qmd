@@ -31,7 +31,7 @@ state of the GitHub user interface, as this changes frequently.
 Work with the Campus delivery team to ensure appropriate project governance is set up.
 This should include (but not limited to):
 
-- Completing an ethical self-assessment @selfAssess
+- Completing an ethical self-assessment @selfAssess.
 - Gain agreement in writing with project lead to code in the open.
 - Consider the needs of the development team.
     - Does everyone understand the risks with the project and how to mitigate them?
@@ -47,21 +47,23 @@ This should include (but not limited to):
 
 - Choose a repository template that suits the complexity of the project. There are
 multiple to choose from, but the Campus' minimal repository template @templateMinimal
-may be useful. For more involved projects, you may wish to consder GovCookieCutter
-@GovCookieCutter . 
+may be useful. For more involved projects, you may wish to consider GovCookieCutter
+@GovCookieCutter. 
 - Configure branch protection @branchProtect under your repository settings.
 - Ensure a license file is included. MiT is adequate for most purposes.
 - Documentation or other Intellectual Property beyond code is distributed under OGL 3.0 @ogl3 
 - It's a good idea to provide issue or pull request (PR) templates and a contributing
 guide to help nudge collaborators (internal or external) towards the habits you expect.
 - Include a code of conduct to help safeguard from poor online behaviour.
+- Include contribution guidance so that team members and external collaborators
+understand the working conventions of your repository. 
 
 
 ### External Collaboration
 
 - In an open repo, any GitHub member could fork the codebase and raise a PR. 
 - Colleagues should consider that they are representing the ONS @cs-standard in all their
-interactions on our corporate GitHub teams account. Refer to the GitHub Syops for more
+interactions on our corporate GitHub teams account. Refer to the GitHub SyOps for more
 information.
 - In cases of collaboration with external agencies, consider whether access to the
 public repository is enough, or whether access to a private project board needs
