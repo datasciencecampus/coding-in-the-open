@@ -1,31 +1,31 @@
----
-name: Contributions
-about: Adding to the process guidance
-title: ''
-labels: ''
-assignees: ''
+## Description/Contribution Summary
+<!--- Please include a summary of the change and which issue is fixed. --->
 
----
+Fixes #(issue_number)
 
-[ ] Include a contribution summary: A clear and concise description of the changes
-proposed.
-[ ] I have read the [CONTRIBUTING.md](../../CONTRIBUTING.md) guidance for raising pull
-requests  
-[ ] This pull-request meets the accessibility guidance provided in the contributing
-guidance.  
-[ ] Please detail any accessibility errors or alerts discovered on testing within the
-pull-request.
+## Motivation and Context
+<!--- Please provide a short motivation and context for raising this PR --->
 
-**Referencing issues and pull requests**
+## Type of change
+<!--- Please select from the options below --->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-You can bring up a list of suggested issues and pull requests within the repository by
-typing #. Type the issue or pull request number or title to filter the list, and then
-press either tab or enter to complete the highlighted result. Linking PRs to issues
-helps to keep an audit trail in the repository's history.
+## Accessibility
+<!--- Please detail any accessibility errors or alerts discovered on testing within the pull-request. --->
 
-**Mentioning people**
+## Advice for reviewer
+<!--- Please add any helpful advice for the reviewer that may provide additional context, for example 'changes in file X are for reasons Y and Z' --->
 
-You can mention a person or team on GitHub by typing @ plus their username or team name.
-This will trigger a notification and bring their attention to the conversation. People
-will also receive a notification if you edit a comment to mention their username or team
-name.
+## Checklist:
+
+- [ ] I have read the [CONTRIBUTING.md](../../CONTRIBUTING.md) guidance for raising pull requests  
+- [ ] I have followed the intended structure of this project
+- [ ] I have performed a self-review
+- [ ] I have used comments, particularly in hard-to-understand areas
+- [ ] This pull-request meets the accessibility guidance provided in the contributing guidance.
+- [ ] My changes generate no new warnings
+
+## Additional comments
+<!--- Add any additional comments here --->
