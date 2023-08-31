@@ -15,7 +15,7 @@ This guidance is split into three main pages:
 | [General Considerations](/general-considerations/guidance.qmd) | Provides a range of considerations for developing and working in the open. |
 [Open at the start](/open-at-the-start/guidance.qmd) | Placeholder page for guidance on considerations when developing in the open. |
 [Open at the end](/open-at-the-end/guidance.qmd) | Provides guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance. |
-[Never open](/never-open/guidance.qmd) | Reasons why code may not be published and how to document this. |
+[Never open](/never-open/index.qmd) | Reasons why code may not be published and how to document this. |
 [What could go wrong?](/what-could-go-wrong/checklist.qmd) | Risks to consider when we open source code. |
 
 : Summary of guidance pages. {#tbl-pages tbl-colwidths="[18,82]"}

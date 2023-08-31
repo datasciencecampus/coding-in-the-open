@@ -1,0 +1,10 @@
+---
+title: "Never Open: How to do it Right"
+date: last-modified
+description: "A Guide to Closed Source Development."
+categories:        
+    - How-to Guide
+toc: true
+---
+
+## Introduction

@@ -1,7 +1,0 @@
----
-title: "Never open"
----
-
-::: {.callout-note}
-Placeholder page
-:::

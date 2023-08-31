@@ -29,7 +29,7 @@ website:
         - ./general-considerations/guidance.qmd
         - ./open-at-the-start/guidance.qmd
         - ./open-at-the-end/guidance.qmd
-        - ./never-open/guidance.qmd
+        - ./never-open/index.qmd
         - ./what-could-go-wrong/checklist.qmd
       - ./general-considerations/references.qmd
     footer: |

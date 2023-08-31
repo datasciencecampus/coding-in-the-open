@@ -1,0 +1,10 @@
+---
+title: "Never Open: An Explanation"
+date: last-modified
+description: "A Discussion of Closed Source Development."
+categories:        
+    - Explanation
+toc: true
+---
+
+## Introduction

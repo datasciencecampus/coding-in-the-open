@@ -1,0 +1,18 @@
+---
+title: Never Open
+listing:
+    type: grid
+    contents:
+        - ../never-open/[!.]*.qmd
+        - ../never-open/*.md
+    sort:
+        - "date desc"
+        - "title desc"
+    sort-ui: [title, date]
+    filter-ui: true
+    categories: true
+    date-format: medium
+    image-placeholder: https://c1.wallpaperflare.com/preview/125/532/1002/vault-business-bank-vault-bank.jpg # creative commons license
+    page-size: 9
+    fields: [image, date, title, author, reading-time, description, categories]
+---
