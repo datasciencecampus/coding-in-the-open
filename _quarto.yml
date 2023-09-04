@@ -47,7 +47,7 @@ website:
   page-footer: 
     center: |
       ![Open Government License logo](/assets/images/ogl.png) All content is available under the [Open Government Licence V3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.
-      <br>Built using [quarto](https://quarto.org/). Are sources are acknowledged in the [references](/general-considerations/references.qmd) page. Updated on {{< var update-date >}}.
+      <br>Built using [quarto](https://quarto.org/). All sources are acknowledged in the [references](/general-considerations/references.qmd) page. Updated on {{< var update-date >}}.
 
 format:
   html:
