@@ -10,7 +10,7 @@ toc: true
 ## Introduction
 
 This guide presents a series of reference steps to help developers in assessing
-a codebase for closed source development suitability. It also steps through
+a codebase for closed source development suitability. It also walks through
 best-practice considerations for closed-source development.
 
 This guide does not explain the purpose of the actions set out below. In line
