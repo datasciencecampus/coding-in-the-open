@@ -1,10 +1,94 @@
 ---
 title: "Never Open: An Explanation"
+author: "Rich Leyshon"
 date: last-modified
 description: "A Discussion of Closed Source Development"
 categories:        
     - Explanation
 toc: true
+anshor-sections: true
 ---
 
-## Introduction
+## Context: An increasing reliance on closed-source
+
+Since it inception, the Data Science Campus has been committed to supporting
+the open-source community and has published code, tools and websites through
+GitHub in the pursuit of its mission statement.
+
+:::{.callout-tip}
+### Data Science Campus Mission Statement
+Data Science for the Public Good.
+:::
+
+In late 2021, the attention of analysts across the UK public sector had
+been drawn to various GitHub repositories that were being used to maintain a
+record of all open source development in the public sector, such as the
+[Unofficial UK Government Mirror](https://github.com/uk-gov-mirror). The net
+result of such activity has affected the public-sector attitude towards
+open-source by default.
+
+As of the time of writing (7th September 2023), just 103 of 596 (17.2%)
+repositories belonging to the Data Science Campus are public. Over 4/5ths of
+the Campus' repositories today are private. Are we serving the public good if
+we don't share the nuts and bolts of what we do?
+
+Browsing these private repositories, I would admit to not having enough
+context to make decisions about their visibility, but at a quick glance I
+suggest the majority of these repositories sound benign and could be opened at
+very little cost to the taxpayer.
+
+In order to assess whether our code should be published or not, it is important
+to assert the types of reasons that qualify a project for closed-source
+development and what potential drivers are inappropriate. 
+
+## Closed source: Why is it an option?
+
+
+## Poor reasons for private repos
+
+* **Potential Driver**: 'What good would releasing the work do? Much of it is
+of little relevance to others or are failed experiments.'
+**Response**: A valid point is made as not everything we initiate will be
+carried forward into production. But why keep experiments secret? Are we
+insecure in sharing failed experiments? Would it be a bad thing for others to
+succeed based off a failed experiment of ours? Wouldn't such a hypothetical
+situation would present a valuable learning opportunity to the public sector
+and open source community. Making a public archive of such a repository would
+be a better scenario, clearly demarking to any potential users that the code is
+not maintained.
+
+* **Potential Driver**: 'I'm worried about exposing my work, it may not be
+polished code and I'm not certain that I've done everything right'.
+**Response**: This type of statement hints at a broader sensitivity to open
+development, which could be partially influenced by an organisational culture
+of publication after development. Generally the project lead should revisit
+the GitHub training@DSCGitHubTraining and advice in this site with their team
+and prepare to publish their work.
+We aim to publish code that works, is secure and is maintainable. It may not
+always be consistent, efficient or clever. Some polishing of code should happen
+at the peer review stage and ensuring that merging to the main branch is
+mediated by peer review helps to mitigate risk of degrading code standards. It
+is important to state that not all projects have been able to resource regular
+and timely code review. This is a risk that should be clearly stated in the
+project governance and escalated through the project lead.
+Work in progress within feature branches is typically treated with a different
+standard until it has been prepared for a Pull Request. Mitigating risk of
+dangerous activity within any branch is largely achieved through our corporate
+adoption of pre-commit. Please consult the
+[Data Science Campus GitHub Training](https://github.com/datasciencecampus/DSCA_GitHub_Training/blob/main/course/2_security_and_tools.md#git-hooks) for more details on how to use pre-commit.
+Work in progress can be clearly communicated within the readme by a
+statement and / or a repository shield. [Shields.io](https://shields.io/) is a
+service that can be used to generate links to customisable badges for use
+within sites.
+Lastly, open sourcing your code helps improve its quality. Bringing the work
+under the scrutiny of the open source community helps to increase the
+transparency in all that we do as a government department and builds trust with
+the public. A general unease with releasing code potentially introduces risk,
+see [The misconceptions about closed source](). 
+
+
+
+
+## The misconceptions about closed source
+
+## 
