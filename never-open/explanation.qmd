@@ -1,8 +1,9 @@
 ---
-title: "Never Open: An Explanation"
+title: "Never Open: A Discussion"
 author: "Rich Leyshon"
 date: last-modified
-description: "A Discussion of Closed Source Development"
+description: "Discussing closed-source development, it's appropriate use,
+misconceptions and risks."
 categories:        
     - Explanation
 toc: true
@@ -15,7 +16,7 @@ Since it inception, the Data Science Campus has been committed to supporting
 the open-source community and has published code, tools and websites through
 GitHub in the pursuit of its mission statement.
 
-:::{.callout-tip}
+:::{.callout-note}
 ### Data Science Campus Mission Statement
 Data Science for the Public Good.
 :::
@@ -28,14 +29,18 @@ result of such activity has affected the public-sector attitude towards
 open-source by default.
 
 As of the time of writing (7th September 2023), just 103 of 596 (17.2%)
-repositories belonging to the Data Science Campus are public. Over 4/5ths of
-the Campus' repositories today are private. Are we serving the public good if
-we don't share the nuts and bolts of what we do?
+repositories belonging to the Data Science Campus are public. Are we serving
+the public good if we don't share the nuts and bolts of what we do?
 
 Browsing these private repositories, I would admit to not having enough
 context to make decisions about their visibility, but at a quick glance I
 suggest the majority of these repositories sound benign and could be opened at
 very little cost to the taxpayer.
+
+:::{.callout-note}
+"Unnecessary secrecy in government leads to arrogance in governance and
+defective decision-making." Your right to know@YourRight
+:::
 
 In order to assess whether our code should be published or not, it is important
 to assert the types of reasons that qualify a project for closed-source
@@ -44,10 +49,10 @@ development and what potential drivers are inappropriate.
 ## Closed source: Why is it an option?
 
 
-## Poor reasons for private repos
+## Reticence to Publish
 
 * **Potential Driver**: 'What good would releasing the work do? Much of it is
-of little relevance to others or are failed experiments.'
+of little relevance to others or are failed experiments.'  
 **Response**: A valid point is made as not everything we initiate will be
 carried forward into production. But why keep experiments secret? Are we
 insecure in sharing failed experiments? Would it be a bad thing for others to
@@ -58,12 +63,10 @@ be a better scenario, clearly demarking to any potential users that the code is
 not maintained.
 
 * **Potential Driver**: 'I'm worried about exposing my work, it may not be
-polished code and I'm not certain that I've done everything right'.
+polished code.'  
 **Response**: This type of statement hints at a broader sensitivity to open
 development, which could be partially influenced by an organisational culture
-of publication after development. Generally the project lead should revisit
-the GitHub training@DSCGitHubTraining and advice in this site with their team
-and prepare to publish their work.
+of publication after development. 
 We aim to publish code that works, is secure and is maintainable. It may not
 always be consistent, efficient or clever. Some polishing of code should happen
 at the peer review stage and ensuring that merging to the main branch is
@@ -80,15 +83,70 @@ Work in progress can be clearly communicated within the readme by a
 statement and / or a repository shield. [Shields.io](https://shields.io/) is a
 service that can be used to generate links to customisable badges for use
 within sites.
-Lastly, open sourcing your code helps improve its quality. Bringing the work
-under the scrutiny of the open source community helps to increase the
-transparency in all that we do as a government department and builds trust with
-the public. A general unease with releasing code potentially introduces risk,
-see [The misconceptions about closed source](). 
 
+* **Potential Driver**: "I'm not certain that I've done everything right, I'd
+rather publish after the project has finished."  
+**Response**: Generally the project lead should revisit the GitHub
+training@DSCGitHubTraining and advice in this site with their team and prepare
+to publish their work. Open sourcing your code helps improve its quality.
+Bringing the work under the scrutiny of the open source community helps to
+increase the transparency in our work and builds trust with the public. A
+general unease with releasing code potentially introduces risk, see
+[The misconceptions about closed source](##the-misconceptions-about-closed-source).
 
-
+* **Potential Driver**: "My project is urgent. I don't have time or resource
+for the peer review required to do this correctly."  
+**Response**: Not having time for peer review is not strictly an argument
+against open sourcing code. The recommended approach is to require approval of
+Pull Requests but we do not always operate in ideal conditions. Exploring
+strategies for peer review adequately covers the necessary peer review for your
+urgent project. This could take the form of a thorough code review at key
+milestones.
+It is not recommended to develop in isolation. If this situation arises it
+would be pertinent to log this as a as a risk and escalate through the project
+lead. Even if the developer is expert, the risk in maintaining this code if
+only one person within the organisation understands it is too high to
+recommend.
 
 ## The misconceptions about closed source
 
-## 
+Closed source is a lower-risk approach to development that often discounts many
+of the benefits that can be introduced by collaboration with the open source
+community. The potential for the discovery of sensitive data or information is 
+reduced, this goes without saying. But closed-source development is not risk
+free and projects that engage with sensitive information or data should not
+always be completely closed source. Let's unpick that statement in two parts:
+
+### Closed-source development is not risk free
+
+Some of the main risks that closed source development may introduce are as
+follows:
+
+* **Introducing poor practice.** Relaxing the controls around quality assurance
+of code may result in bugs or errors being discovered later, or not at all.
+Ensure that the development team understands the good practise principles set
+out in the ONS duck book@DuckBook. Ensure that peer review of code is practised
+regularly, ideally at the point of PR to main branch.
+
+* **Freedom of Information Requests (FoI).** As a public authority, ONS is
+subject to Freedom of Information requests, established under UK law in the
+Freedom of Information Act 2000@FOIAct. This act has set out to improve transparency
+and trust in bodies acting on the behalf of the public's interest. The act
+establishes a mechanism for members of the public to request information from
+government bodies who are required to respond typically within a 20 working day
+period. Government bodies who store literature relevant to the request will
+need to assess any risk in disclosing that information within a specified
+deadline. 
+If an FoI request asks to see your project code or this code is assessed to be
+fundamental in adequately responding to the request, then ONS FoI team will
+need to scrutinise the recorded reasons for not publishing the code. There is a
+chance that these reasons may need to be explained and therefore adequate
+records documenting reasons for not publishing code are important for
+continuity planning.
+In this event, there is a possibility that the FoI team ask that the codebase
+or a portion of it to be published. This urgent demand would require
+significant resource applied to quality assurance of the codebase and any
+version history to be released. Any delay to responding to the request could
+result in an unlawful breach of the Freedom of Information Act 2000@FOIAct. 
+
+### Not all sensitive projects should completely close source
