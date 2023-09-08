@@ -43,26 +43,31 @@ If a 'never open' approach has been determined, follow this guidance to
 mitigate risk associated with potential freedom of information
 requests.@ICOguidance
 
-1. Develop as if the repository were open. Ensure that poor practice is not
+1.Record the reasons for not publishing the code within the project governance
+documentation. Ensure that this documentation is reasoned and explicit - enough
+for someone to be able to represent this decision accurately in your absence.
+Ensure that the project governance is stored somewhere colleagues can access
+and that your project delivery colleagues are aware of this location.
+2. Develop as if the repository were open. Ensure that poor practice is not
 introduced to the code base. Consult the guidance provided in the
 [open-at-the-start](/open-at-the-start/guidance.qmd) section.
-2. Agree a set of mitigation behaviours with the development team in writing.
+3. Agree a set of mitigation behaviours with the development team in writing.
 Keep a record in order to bring new developers up to speed efficiently.
-3. Ensure that the analytical code is completely decoupled from the data.
+4. Ensure that the analytical code is completely decoupled from the data.
 Check that no data (apart from dummy or test fixtures) are committed to the
 repository **at any point in the version history**. 
-4. Check that filepaths do not expose valuable intel about sensitive
+5. Check that filepaths do not expose valuable intel about sensitive
 infrastructure. Filepaths to Google Cloud Platform buckets for example, should
 be stored in a file covered by the `.gitignore` and not committed to version
 history. Similarly, SharePoint links should not be committed to repositories.
-5. Ensure that the precommit hooks are installed and used for all developers.
+6. Ensure that the precommit hooks are installed and used for all developers.
 Particularly `detect-secrets`@DetectSecrets and `nbstripout`@NBStripout.
-6. Check the repository for the presence of known secrets or keys with
+7. Check the repository for the presence of known secrets or keys with
 `git grep`. From the command line, navigate to the repository and use the
 command `git grep <INSERT_THE_CREDENTIAL>` to ensure it is not referenced in
 any of the repository file contents. For more on searching git repositories,
 consult the Git Tools - Searching documentation@GitSearch.
-7. Ensure that conversations about the context of the work occur within
+8. Ensure that conversations about the context of the work occur within
 dedicated, private GitHub projects (sometimes referred to ask kanbans). Check
 that repository issues do not expose sensitive intelligence that may expose
 unpublished policy.
