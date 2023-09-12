@@ -2,8 +2,7 @@
 title: "Never Open: A Discussion"
 author: "Rich Leyshon"
 date: last-modified
-description: "Discussing closed-source development, it's appropriate use,
-misconceptions and risks."
+description: "Discussing closed-source development, it's appropriate use, misconceptions and risks."
 categories:        
     - Explanation
 toc: true
