@@ -1,0 +1,18 @@
+---
+title: Open at the End
+listing:
+    type: grid
+    contents:
+        - ../open-at-the-end/[!.]*.qmd
+        - ../open-at-the-end/*.md
+    sort:
+        - "date desc"
+        - "title desc"
+    sort-ui: [title, date]
+    filter-ui: true
+    categories: true
+    date-format: medium
+    image-placeholder: https://www.picpedia.org/post-it-note/images/publish.jpg # creative commons license
+    page-size: 9
+    fields: [image, date, title, author, reading-time, description, categories]
+---

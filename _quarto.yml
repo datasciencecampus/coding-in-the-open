@@ -26,11 +26,11 @@ website:
       - index.qmd
       - section: Guidance
         contents:
-        - ./general-considerations/guidance.qmd
-        - ./open-at-the-start/guidance.qmd
-        - ./open-at-the-end/guidance.qmd
+        - ./general-considerations/index.qmd
+        - ./open-at-the-start/index.qmd
+        - ./open-at-the-end/index.qmd
         - ./never-open/index.qmd
-        - ./what-could-go-wrong/checklist.qmd
+        - ./what-could-go-wrong/index.qmd
       - ./general-considerations/references.qmd
     footer: |
       :::{.callout-important}
