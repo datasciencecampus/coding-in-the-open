@@ -1,0 +1,18 @@
+---
+title: What Could Go Wrong?
+listing:
+    type: grid
+    contents:
+        - ../what-could-go-wrong/[!.]*.qmd
+        - ../what-could-go-wrong/*.md
+    sort:
+        - "date desc"
+        - "title desc"
+    sort-ui: [title, date]
+    filter-ui: true
+    categories: true
+    date-format: medium
+    image-placeholder: https://live.staticflickr.com/7634/17138800802_d004933111_k.jpg # creative commons license
+    page-size: 9
+    fields: [image, date, title, author, reading-time, description, categories]
+---
