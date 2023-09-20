@@ -1,0 +1,10 @@
+---
+title: "References"
+nocite: |
+  @*
+---
+
+All sources used during the compilation of this guidance are referenced below.
+
+::: {#refs} 
+:::

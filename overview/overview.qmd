@@ -1,0 +1,220 @@
+---
+title: "Overview"
+---
+
+## Who is this Guidance For? {#sec-who-for}
+
+This guidance was developed to support open-source code development within the ONS Data Science Campus. 
+
+| User | How to use this guide | 
+| --- | --- |
+| Data Scientist (all levels)| Guidance on how to contribute to open source codebases, with a view to them being or becoming open-source.
+Technical Leads| 1. How to incoporate plans for making your codebase open to the public, either at outset (open at the start) or at a point in time (open at the end). 2. Guidance to support other members on the team|
+Project Leads or Lead Data Scientists| Protocols for making codebases open-source |
+
+
+: How to use this guide. {#tbl-pages tbl-colwidths="[22,82]"}
+
+It could also be used by anyone who has an interest in developing open-source code or would like to transition a codebase from a private/closed domain into the open.
+
+## What are the Guidance Intentions? {#sec-intentions}
+
+The goals of this guidance are to support development strategies for projects that can be:
+
+::: {.border .grid-margin-below}
+
+::: {.orderd-list-div-margins}
+
+1. **Open at the start**. This implies that from the beginning all code/software developed would be available for anyone to view and use. 
+2. **Open at the end**. Encourages and supports, where possible, closed/private codebases to **transition into the public domain**.
+3. **Never open**. Recognises there maybe scenarios where valid arguments prevent publishing a codebase in the open, but **developing privately is the exception** rather than the rule.
+
+:::
+
+:::
+
+This guidance aims to achieve these goals by:
+
+::: {.border .grid-margin-below}
+
+::: {.orderd-list-div-margins}
+
+1. Providing a **set of considerations** when developing an open-source codebase or moving a codebase from a private into a public repository. 
+2. Not being a prescriptive "one size fits all" process, but **adaptable guidance** that can be modified as required based on the size, complexity and purpose of the work.
+3. **Adding quality** to public codebases and to **help mitigate potential risks** when working in or moving into the public domain.
+4. **Improving transparency** of decision making, as to why codebases are open/closed.
+5. **Closing a current resource gap**, where at the time of writing no internal guidance exists.
+
+:::
+
+:::
+
+## Why Develop in the Open? {#sec-why-open}
+
+The Office for National Statistics (ONS) quality assurance of code @DuckBook, the Government Analysis Function @GASOpenSource, and the UK Government's Technology Code of Practice @CDDOTechCode all call for code to be open-source. This is, at least in part, due to the wide range of benefits that developing in the open brings. In particular, these benefits help support an outputs' compliance with the UKSA Code of practice for Statistics @UKSACode - where public value, high quality, and trustworthiness are the main pillars.
+
+There are many sources which explain these benefits in detail [@DuckBook; @GASOpenSource; @CDDOTechCode; @GDSBlog; @GDSVideo; @CDDOGuidance; @NHSdigital; @MoJBlog], and they all argue strongly as to why this guidance advocates for open source development. The themed boxes below summarise the benefits of open-source software and coding in the open:
+
+::: {.grid .grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Increases Quality**
+There is a heightened inclination to apply coding standards and best practice when knowing the work will be viewed and used by a larger audience.
+
+:::
+
+:::
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Increases Collaboration**
+Simplifies the process of sharing work, which in turn improves knowledge-sharing and provides an opportunity for additional development support. Our work will benefit from collaboration with other government departments, academic institutions & the wider open-source community.
+
+:::
+
+:::
+
+:::
+
+::: {.grid .grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Increases Transparency**
+Potential users and interested parties can see, understand, and reproduce work. This helps build trust in the work being undertaken and shared.
+
+:::
+
+:::
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Supports Whole Community**
+Others can benefit from work already developed by facilitating code re-use. 
+
+:::
+
+:::
+
+:::
+
+::: {.grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Public Investment**
+“Public services are built with public money”, which provides good ground to make code publically available unless there is a good reason [not to publish the codebase](@sec-why-closed). In not releasing code where appropriate to do so, you may be unintentionally tolerating the risk of needing to turn around potenital freedom of information requests within the 20 working day time period. [@ICOguidance]
+
+:::
+
+:::
+
+::: 
+
+## Why Develop Privately? {#sec-why-closed}
+
+Open-source development does bring with it some additional considerations and risks [@GASOpenSource]. As a result, there are scenarios in which opening all or parts of a codebase may not be possible [@CDDOClosed]. The themed boxes below summarise reasons why all or part of a codebase may not be publicly available:
+
+::: {.grid .grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Sensitivity**
+The codebase may relate to or share sensitive information e.g., a policy that has not yet been announced, or data that has not yet been released.
+
+:::
+
+:::
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Statistical Disclosure**
+The codebase may, inadvertently or otherwise, share identifiable information about individuals or organisations.
+
+:::
+
+:::
+
+:::
+
+::: {.grid .grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Keys and Credentials**
+The codebase may contain keys and/or credentials that need to be secured e.g., keys/credentials to utilise an API.
+
+:::
+
+:::
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Skills and Expertise**
+The skill-set, experience and/or confidence to work openly and manage the associated risks may not be present across all team members.
+
+:::
+
+:::
+
+:::
+
+::: {.grid-margin-below}
+
+::: {.g-col-6 .border}
+
+::: {.jumbotron}
+
+### **Licence Agreements**
+The codebase may use proprietary (closed-source) software or could be considered proprietary itself. In these cases, opening the codebase could breach licence terms and/or user agreement. It could also lead to end users being dependent on the use of (potentially expensive) proprietary software, ultimately meaning the released codebase is not accessible to everyone.
+
+:::
+
+:::
+
+::: 
+
+## Coding Openly (the premise) or Privately (the exception)? {#sec-open-v-closed}
+
+Open-sourcing a codebase is a case-by-case balance between its purpose, public value, risk management and technical constraints @GASOpenSource. As outlined in the sections above, code should be made open to maximise the benefits for the codebase itself and the wider community unless an explicit justification exists to prevent it being open.
+
+The premise therefore should be one where the codebase is open by default - that is, all code/software developed would be available for anyone to view and use from the beginning. This stance brings the benefits of open-source development upfront and minimises any additional workload that would come from transitioning the codebase from private to public at a later date.
+
+If it is not possible to be open by default, consider other strategies for making the codebase open. These approaches could bring additional design complexity and/or workload when compared with being open by default, but ultimately the codebase would still benefit from the same open-source advantages. This could be:
+
+::: {.border .grid-margin-below}
+
+::: {.orderd-list-div-margins}
+
+- Designing or re-designing the codebase to use **open-source dependencies**.
+- **Separating out or removing** sections that should not be made public.
+- Consistently using **good coding practices** @DuckBook, to simplify the process of opening the codebase in the future should it be possible.
+- **Transitioning** a private codebase to public at a later date (see [specific guidance](/open-at-the-end/guidance.qmd) on this topic).
+- Maintain **private and public versions** of a codebase - development could then continue in a private domain and then be released publicly as needed.
+- Releasing code with synthetic or dummy data, such as that used when testing your codebase.
+
+:::
+
+:::
+
+Finally, if it is not possible for the codebase to be made public, an evidence-based justification should be made as to why this is the case. It is envisaged that this case would be the exception rather than the rule.
+

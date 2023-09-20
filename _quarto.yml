@@ -26,12 +26,12 @@ website:
       - index.qmd
       - section: Guidance
         contents:
-        - ./general-considerations/index.qmd
+        - ./overview/index.qmd
         - ./open-at-the-start/index.qmd
         - ./open-at-the-end/index.qmd
         - ./never-open/index.qmd
-        - ./what-could-go-wrong/index.qmd
-      - ./general-considerations/references.qmd
+        - ./further-information/index.qmd
+      - ./overview/references.qmd
     footer: |
       :::{.callout-important}
       These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.
