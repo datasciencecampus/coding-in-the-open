@@ -22,7 +22,7 @@ This guide supports, not replaces, the need for good project governance.
 [Open at the start](/open-at-the-start/guidance.qmd) | Guidance on considerations when developing in the open. |
 [Open at the end](/open-at-the-end/guidance.qmd) | Guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance. |
 [Never open](/never-open/index.qmd) | Reasons why code may not be published and how to document this. |
-[Further information](/further-information/checklist.qmd) | Including general considerations and potential risks. |
+[Further information](/further-information/peer-review.qmd) | Including general considerations and potential risks. |
 
 : Summary of guidance pages. {#tbl-pages tbl-colwidths="[22,82]"}
 

@@ -1,6 +1,6 @@
 ---
 title: "Peer Review."
-description: "Guidance for reviewing work for release and troubleshooting problems."
+description: "Guidance for reviewing code for release and troubleshooting problems."
 
 ---
 
