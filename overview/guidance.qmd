@@ -1,5 +1,6 @@
 ---
 title: "General Considerations"
+description: "A checklist of things to consider when starting an open-source project."
 ---
 
 Points to consider (not necessarily in this order):

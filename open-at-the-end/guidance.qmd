@@ -1,5 +1,6 @@
 ---
 title: "Open at the end"
+description: "Do you intend to release your code? This guidance aims to help you understand the requirements for publication."
 ---
 
 ## A Process

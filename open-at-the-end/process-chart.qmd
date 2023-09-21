@@ -1,6 +1,8 @@
 ---
 title: "Private to Public Publication Process Overview"
 suppress-bibliography: true
+description: "A process chart for code publication, establishing roles and a procedure for review."
+categories: process
 format:
   html:
     toc: false
