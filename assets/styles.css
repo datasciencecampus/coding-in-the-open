@@ -13,3 +13,21 @@
     margin-top: 15px;
     margin-right: 10px;
 }
+
+table#user-table tr {
+    border-bottom: 1px solid #d8dcdc;
+}
+table#user-table tr:first-child {
+    border-top: 1px solid #9ba5ae;
+    border-bottom: 1px solid #9ba5ae;
+}
+table#user-table tr:last-child {
+    border-bottom: 1px solid #9ba5ae;
+}
+table#user-table td:first-child{
+    width: 22%;
+}
+table#user-table td:last-child {
+    width: 78%;
+}
+
