@@ -3,7 +3,8 @@ title: "Coding in the Open"
 subtitle: "Guidance for open sourcing at ONS Data Science Campus"
 ---
 
-The following pages provide guidance on 'coding in the open' - developing open-source codebases or transitioning codebases from private to public domains. 
+The following pages provide guidance on 'coding in the open' - developing open-source codebases or transitioning codebases from private to public domains. This guidance is based upon
+**NHS Digital guidance** @NHSdigital. [Click here to download NHS Digital's fit for publishing checklist](https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx).
 
 The term open-source captures work that is made freely available for others to use and modify @OpenSourceInitiative.
 
@@ -13,9 +14,7 @@ This guide does not replace any of the guidance in the UK Government's Aqua Book
 
 This guide supports, not replaces, the need for good project governance.
 
-# How to use this guide
-
-This guidance is split into three main scenarios, alongside an overview page summarising the guidance.
+## Guidance Overview
 
 | Page | Description | 
 | --- | --- |
@@ -27,12 +26,11 @@ This guidance is split into three main scenarios, alongside an overview page sum
 
 : Summary of guidance pages. {#tbl-pages tbl-colwidths="[22,82]"}
 
-These pages are accessible via the sidebar and are linked in @tbl-pages above. 
+These pages are accessible in the sidebar. 
 
-All sources used to compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/overview/references.qmd) page for convenience. To go straight to the **NHS Digital guidance** with the **fit for publishing checklist** @NHSdigital.
+All sources are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/overview/references.qmd) page for convenience. 
 
-
-# References
+## References
 
 :::{#refs}
 :::
