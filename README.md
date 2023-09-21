@@ -31,7 +31,7 @@ At it's core, editing this set of documentation means writing in markdown within
 | --- | --- |
 | `index.qmd` | The main documentation landing page. |
 | `general-considerations/guidance.qmd` | A page in which general considerations for working in an open-source environment are shared. |
-| `general-considerations/references.qmd` | A page that shares all sources used to build this documentation. |
+| `overview/references.qmd` | A page that shares all sources used to build this documentation. |
 | `private_to_public/guidance.qmd` | A page dedicated summarising a strategy for transitioning private repositories into the public domain. |
 
 Whilst editing the documentation, from root directory you can call:

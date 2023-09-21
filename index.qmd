@@ -23,13 +23,13 @@ This guidance is split into three main scenarios, alongside an overview page sum
 [Open at the start](/open-at-the-start/guidance.qmd) | Guidance on considerations when developing in the open. |
 [Open at the end](/open-at-the-end/guidance.qmd) | Guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance. |
 [Never open](/never-open/index.qmd) | Reasons why code may not be published and how to document this. |
-[Further information](/what-could-go-wrong/checklist.qmd) | Including general considerations and potential risks. |
+[Further information](/further-information/checklist.qmd) | Including general considerations and potential risks. |
 
 : Summary of guidance pages. {#tbl-pages tbl-colwidths="[22,82]"}
 
 These pages are accessible via the sidebar and are linked in @tbl-pages above. 
 
-All sources used to compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/general-considerations/references.qmd) page for convenience. To go straight to the **NHS Digital guidance** with the **fit for publishing checklist** @NHSdigital.
+All sources used to compiling this guidance are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated [references](/overview/references.qmd) page for convenience. To go straight to the **NHS Digital guidance** with the **fit for publishing checklist** @NHSdigital.
 
 
 # References
