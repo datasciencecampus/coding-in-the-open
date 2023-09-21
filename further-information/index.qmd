@@ -4,7 +4,7 @@ listing:
     type: grid
     contents:
         - ../further-information/[!.]*.qmd
-        - ../wfurther-information/*.md
+        - ../further-information/*.md
     sort:
         - "date desc"
         - "title desc"
