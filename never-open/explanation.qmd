@@ -15,15 +15,14 @@ self-contained: true
 This article discusses the case for closed-source development, when it is
 appropriate to follow this strategy and when it is not. Potential risks
 around the default practice of not publishing code are discussed and a question
-and answer section with colleagues from ONS FoI team features answer to some
-queries from colleagues.
+and guidance on planning for potential freedom of information requests.
 
 For a step by step guide to implementing closed-source development safely,
 please see [Never Open: How to do it Right](/never-open/how-to.qmd).
 
 ## Context: An increasing reliance on closed-source
 
-Since its start, the Data Science Campus has committed to supporting the
+Since its inception, the Data Science Campus has committed to supporting the
 open-source community and has published code, tools and websites through GitHub
 in the pursuit of its mission statement.
 
@@ -36,12 +35,14 @@ In late 2021, the attention of analysts across the UK public sector had been
 drawn to various GitHub repositories that were being used to maintain a record
 of all open source development in the public sector, such as the
 [Unofficial UK Government Mirror](https://github.com/uk-gov-mirror). The net
-result of such activity has affected the public-sector attitude towards
+result of such activity and greater awareness within government organisations
+of code hosting solutions has affected the public-sector attitude towards
 open-source by default.
 
 As of the time of writing (7th September 2023), 103 of 596 (17.2%) repositories
-belonging to the Data Science Campus are public. Are we serving the public good
-if we don't share the nuts and bolts of what we do?
+belonging to the Data Science Campus are public, despite a general
+acknowledgement that public would be preferable, permissible and would improve
+transparency and in many projects.
 
 :::{.callout-note}
 "Unnecessary secrecy in government leads to arrogance in governance and
@@ -49,7 +50,7 @@ defective decision-making." @YourRight
 :::
 
 To assess whether our code should be published or not, it is important to
-assert the types of reasons that qualify a project for closed-source
+explicitly identify the reasons that qualify a project for closed-source
 development and what potential drivers are inappropriate.
 
 ## Closed source: Why is it an option?
@@ -63,7 +64,12 @@ grounds for not publishing code are:
 * unreleased policy"
 
 Best practice on how to handle keys and credentials is covered within the
-Campus GitHub Training @DSCGitHubTraining and ONS Duck Book @DuckBook.
+Campus GitHub Training @DSCGitHubTraining and ONS Duck Book @DuckBook. These
+should never appear within the version history of any repository - private or
+public. Discovery of such a problem indicates poor practice. Removal of the
+credentials and any references to them anywhere within the commit history
+should be prioritised. Leaving them in the commit history greatly increases the
+potential discovery of sensitive data.
 
 Fraud detection work tends not to feature as part of our work and is the domain
 of national audit bodies. 
@@ -243,10 +249,9 @@ meet the need for quality assurance in your project. This could take the form
 of a thorough code review at key milestones.
 
 It is not recommended to develop in isolation. If this situation arises it
-would be pertinent to log this as a as a risk and escalate through the project
-lead. Even if the developer is expert, the risk in maintaining this code if
-only one person within the organisation understands it is too high to
-recommend.
+would be pertinent to log this as a risk and escalate through the project lead.
+Even if the developer is expert, the risk in maintaining this code if only one
+person within the organisation understands it is too high to recommend.
 :::
 
 ## Conclusion
@@ -255,8 +260,8 @@ In this article, the use case of closed-source has been introduced.
 Misconceptions about closed source development and risk avoidance have been
 asserted. Key risks about code quality and the potential for FoI requests have
 been discussed at length and ONS FoI team have answered questions in regards to
-the risk and scope of potential FoI requests. This article has hoped to help
-the reader gain an appreciation of the situation where closed-source is more
+the risk and scope of potential FoI requests. This article intends to help the
+reader gain an appreciation of the situation where closed-source is more
 appropriate than others. If you have any queries or suggestions about this
 article, please click on the "Report an issue" button in the toolbar to the
 right of this page.
