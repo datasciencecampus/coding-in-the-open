@@ -1,5 +1,6 @@
 ---
 title: "Open at the start"
+description: "Are you intending to develop in the open? A guide to starting out with an open source project."
 ---
 
 ## Guidance for Coding in the Open

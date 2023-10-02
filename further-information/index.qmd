@@ -1,10 +1,10 @@
 ---
-title: What Could Go Wrong?
+title: Further Information
 listing:
     type: grid
     contents:
-        - ../what-could-go-wrong/[!.]*.qmd
-        - ../what-could-go-wrong/*.md
+        - ../further-information/[!.]*.qmd
+        - ../further-information/*.md
     sort:
         - "date desc"
         - "title desc"

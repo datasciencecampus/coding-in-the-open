@@ -1,12 +1,18 @@
 ---
 title: "General Considerations"
+description: "A checklist of things to consider when starting an open-source project."
 ---
 
 Points to consider (not necessarily in this order):
 
-- Do you intend to publish with/without the commit history? Potentially a much larger job to undertake with a full commit history. If sharing the full commit history is justified, it may be more appropriate to consider an "open from the start" approach where active development is done in the open. Otherwise, a full readthrough of every commit diff checking for risks and vulnerabilities in the code is required.
+- Do you intend to publish with/without the commit history? 
+    - If sharing the full commit history is justified consider an "open from the start" approach where active development is done in the open. 
+    - Otherwise, a full readthrough of every commit, checking for organisational risks and vulnerabilities, is required.
+
 - Repository tagging/labelling
+
 - Key and Credential Management
+
 - Publishing with intention for further development and/or on-going maintenance:
     - contribution guidance (issues/PR templates)
     - semantic versioning
