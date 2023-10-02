@@ -1,0 +1,47 @@
+---
+title: "Peer Review."
+description: "Guidance for reviewing code for release and troubleshooting problems."
+
+---
+
+This page sets out general guidance for standards of review. It intends to help
+raise awareness in issues that could be encountered while preparing to release
+code. Remember to refer to NHS Digital's guidance @NHSdigital.
+
+Let's help each other to avoid common problems prior to publishing:
+
+## Documentation
+
+Have you:  
+
+- [ ] checked that all the links work in your README?  
+- [ ] included some helpful code status description, ie maintained, ad hoc analysis etc?  
+- [ ] fully attributed the work of others? Including a [LICENSE.note](https://github.com/datasciencecampus/accessrmd/blob/main/LICENSE.note) file where appropriate?  
+- [ ] specified which operating system the code is compatible with?  
+
+## Source Code
+
+Reviewing code for release is a bit like the review of a Pull Request. 
+
+Have you:  
+
+- [ ] read through the code?
+- [ ] ran the code line by line?
+- [ ] checked that the code runs in a fresh clone of the repo and in a new environment?  
+- [ ] been able to `pip install -r requirements.txt` without any trouble?  
+
+## Notebooks
+
+Have you:
+
+- [ ] checked that notebooks are wiped by `nbstripout` pre-commit hook?
+- [ ] inspected notebook outputs HTML for secret credentials if `nbstripout` is
+not being used?
+
+## Tests
+
+Have you: 
+
+- [ ] checked that pytest passes?
+- [ ] checked `precommit run —all-files` indicates developers have consistent pre-commit setup?
+- [ ] checked the coverage report for missed behaviours?

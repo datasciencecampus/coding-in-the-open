@@ -1,19 +1,37 @@
 ---
 title: "Overview"
+description: "Understanding the aims and audience for this guidance."
+css: /assets/styles.css
 ---
 
 ## Who is this Guidance For? {#sec-who-for}
 
 This guidance was developed to support open-source code development within the ONS Data Science Campus. 
 
-| User | How to use this guide | 
-| --- | --- |
-| Data Scientist (all levels)| Guidance on how to contribute to open source codebases, with a view to them being or becoming open-source.
-Technical Leads| 1. How to incoporate plans for making your codebase open to the public, either at outset (open at the start) or at a point in time (open at the end). 2. Guidance to support other members on the team|
-Project Leads or Lead Data Scientists| Protocols for making codebases open-source |
-
-
-: How to use this guide. {#tbl-pages tbl-colwidths="[22,82]"}
+<table id="user-table">
+    <caption>Table 1. How to use this guide.</caption>
+    <tr>
+        <th >User</th>
+        <th>How to use this guide</th>
+    </tr>
+    <tr>
+        <td>Data Scientists (all levels)</td>
+        <td>Guidance on how to contribute to open source codebases, with a view to them being or becoming open-source.</td>
+    </tr>
+    <tr>
+        <td>Technical Leads</td>
+        <td>
+            <ol>
+                <li>How to incoporate plans for making your codebase open to the public, either at outset (open at the start) or at a point in time (open at the end).</li>
+                <li>Guidance to support other members on the team</li>
+            <ol>
+        </td>
+    </tr>
+    <tr>
+        <td>Project Leads or Lead Data Scientists</td>
+        <td>Protocols for making codebases open-source</td>
+    </tr>
+</table>
 
 It could also be used by anyone who has an interest in developing open-source code or would like to transition a codebase from a private/closed domain into the open.
 
