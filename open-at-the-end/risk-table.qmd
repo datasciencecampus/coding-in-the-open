@@ -1,6 +1,8 @@
 ---
 title: "Risk Assessment Table Example Format"
+description: "A suggested table format for recording project risks."
 suppress-bibliography: true
+categories: project governance
 format:
   html:
     toc: false

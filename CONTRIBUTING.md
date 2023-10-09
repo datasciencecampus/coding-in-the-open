@@ -12,7 +12,7 @@ in dedicated subpages. Please review your contibution against the purposes of ea
 * general-considerations/guidance.qmd : Things that apply to any approach to code
 publication (open at start, end or never open). Things to think about prior to making
 this decision.
-* general-considerations/references.qmd : Please do not add references here. Instead,
+* overview/references.qmd : Please do not add references here. Instead,
 add references to bibliography/references.bib and reference using the `@` notation.
 * open-at-the-start/guidance.qmd : Considerations for projects that will develop in
 the open.
