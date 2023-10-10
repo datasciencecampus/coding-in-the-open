@@ -11,10 +11,10 @@ self-contained: true
 
 ## Introduction
 
-This article discusses the case for closed-source development, when it is
+This article discusses the case for closed-source development -- when it is
 appropriate to follow this strategy and when it is not. Potential risks
 around the default practice of not publishing code are discussed and a question
-and guidance on planning for potential freedom of information requests.
+and guidance on planning for potential freedom of information requests are given.
 
 For a step by step guide to implementing closed-source development safely,
 please see [Never Open: How to do it Right](/never-open/how-to.qmd).
@@ -57,10 +57,10 @@ development and what potential drivers are inappropriate.
 The CDDO guidance on when not to publish code @CDDOClosed states that the
 grounds for not publishing code are:
 
->"
+>
 * keys and credentials  
 * algorithms used to detect fraud  
-* unreleased policy"
+* unreleased policy
 
 Best practice on how to handle keys and credentials is covered within the
 Campus GitHub Training @DSCGitHubTraining and ONS Duck Book @DuckBook. These
@@ -77,9 +77,12 @@ The main grounds to consider in the Data Science Campus is where the work
 would make clear the details of the unreleased policy.
 
 :::{.callout-note}
-However, you must develop the code as if it’s already open and continue to
+The CDDO guidance @CDDOClosed in relation to unreleased policy goes on 
+to say:
+
+> However, you must develop the code as if it’s already open and continue to
 follow good development and security practices. You must open the code as soon
-as possible after the policy is announced. @CDDOClosed
+as possible after the policy is announced. 
 :::
 
 Note that this restriction may apply to the code, or any other content
@@ -120,14 +123,14 @@ in any project. Not all our work merits an extensive test suite, pre-commit and
 CI/CD workflows. But that sort of work must also pass the test for open source
 - the kind of work that we can afford to get wrong. Unpublished work that does
 not make use of these quality assurance tools avoid the advantages that open
-source scrutiny and automated behavioural checks offer. If a codebase does not
-warrant effort to test logic is correct and behaviours are stable and expected,
-then can it warrant closed-source development?
+source scrutiny and automated behavioural checks offer. One can question, 
+if a codebase does not warrant the effort to test logic is correct and 
+behaviours are stable and expected, then can it warrant closed-source development?
 
 #### Freedom of Information Requests (FoI).
 
 All public authorities should be aware that the information they hold is subject to 
-Freedom of Information law (FOIA) @FOIAct. The purpose of FOIA is to improve transparency
+Freedom of Information Act (FOIA) @FOIAct. The purpose of FOIA is to improve transparency
 and trust in public bodies acting on behalf of the public’s interest by enabling any 
 member of the public to submit a request for information held in a recorded form. 
 Therefore, project code could fall in scope of an FOI request.
@@ -148,8 +151,8 @@ codebase and any version history to be released. This possibility should therefo
 considered and planned for when making a decision not to publish.
 It would also be prudent to document reasons for deciding not to publish, which can 
 then be used when considering whether exemptions may apply. This is important for
-continuity planning and ensuring compliance with the FOIA 20 working-day statutory 
-deadline.
+continuity planning and ensuring compliance with the FOIA's statutory 
+deadline of 20 working-days.
 
 ### 2. Not all sensitive projects should completely close source
 
@@ -169,6 +172,9 @@ would be worth bearing this in mind.
 
 ## Reticence to Publish
 
+The following outlines some of the common reasons analysts may be hesitant to 
+publish code, and some responses to each:
+
 :::{.callout-caution}
 ### Potential Driver:
 'What good would releasing the work do? Much of it is of little relevance to
@@ -180,8 +186,8 @@ others or are failed experiments.'
 A valid point is made as not everything we start will be carried forward into
 production. But why keep experiments secret? Are we insecure in sharing failed
 experiments? Would it be a bad thing for others to succeed based on a failed
-experiment of ours? Wouldn't such a hypothetical situation would present a
-valuable learning opportunity to the public sector and open source community.
+experiment of ours? Wouldn't such a hypothetical situation present a
+valuable learning opportunity to the public sector and open source community?
 Making a public archive of such a repository would be a better scenario,
 indicating to any potential users that the code is not maintained.
 :::
@@ -196,8 +202,8 @@ indicating to any potential users that the code is not maintained.
 This type of statement hints at a broader sensitivity to open development,
 which could be partially influenced by an organisational culture of publication
 after development. We aim to publish code that works, is secure and is
-maintainable. It may not always be consistent, efficient or clever. Some
-polishing of code should happen at the peer review stage and ensuring that
+maintainable. It need not necessarily be consistent, efficient or clever. Some
+polishing of code should happen at the peer review stage, and ensuring that
 merging to the main branch is mediated by peer review helps to mitigate risk of
 degrading code standards. It is important to state that not all projects have
 been able to resource regular and timely code review. This is a risk that
@@ -249,8 +255,8 @@ of a thorough code review at key milestones.
 
 It is not recommended to develop in isolation. If this situation arises it
 would be pertinent to log this as a risk and escalate through the project lead.
-Even if the developer is expert, the risk in maintaining this code if only one
-person within the organisation understands it is too high to recommend.
+Even if the developer is an expert, the risk in maintaining this code if only 
+one person within the organisation understands it is too high to recommend.
 :::
 
 ## Conclusion
