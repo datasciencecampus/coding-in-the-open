@@ -115,17 +115,18 @@ follows:
 #### Introducing poor practice
 
 Relaxing the controls around quality assurance of code may result in bugs or
-errors going undiscovered. Ensure that the development team understands the
-good practice principles set out in the ONS duck book @DuckBook. Ensure that
-peer review of code is practised regularly, ideally at the point of PR to the
-main branch. Checks and balances should be proportionate to the risk involved
-in any project. Not all our work merits an extensive test suite, pre-commit and
-CI/CD workflows. But that sort of work must also pass the test for open source
-- the kind of work that we can afford to get wrong. Unpublished work that does
-not make use of these quality assurance tools avoid the advantages that open
-source scrutiny and automated behavioural checks offer. One can question, 
-if a codebase does not warrant the effort to test logic is correct and 
-behaviours are stable and expected, then can it warrant closed-source development?
+errors going undiscovered. In order to mitigate this risk, discuss guidance for
+programming practice set out in the ONS duck book @DuckBook with the
+development team at the start of a project. Plan to provide assistance and time
+for peer review of code, ideally at the point of Pull Request. Checks and
+balances should be proportionate to the risk involved in any project. Not all
+our work merits an extensive test suite, pre-commit and CI/CD workflows. But 
+that sort of work must also pass the test for open source - the kind of work
+that we can afford to get wrong. Unpublished work that does not make use of
+these quality assurance tools avoid the advantages that open source scrutiny
+and automated behavioural checks offer. One can question, if a codebase does
+not warrant the effort to test logic is correct and behaviours are stable and
+expected, then can it warrant closed-source development?
 
 #### Freedom of Information Requests (FoI).
 
@@ -264,9 +265,7 @@ one person within the organisation understands it is too high to recommend.
 In this article, the use case of closed-source has been introduced.
 Misconceptions about closed source development and risk avoidance have been
 asserted. Key risks about code quality and the potential for FoI requests have
-been discussed at length and ONS FoI team have answered questions in regards to
-the risk and scope of potential FoI requests. This article intends to help the
-reader gain an appreciation of the situation where closed-source is more
-appropriate than others. If you have any queries or suggestions about this
-article, please click on the "Report an issue" button in the toolbar to the
-right of this page.
+been discussed at length. This article intended to help the reader gain an
+appreciation of the situation where closed-source is more appropriate than
+others. If you have any queries or suggestions about this article, please click
+on the "Report an issue" button in the toolbar to the right of this page.
