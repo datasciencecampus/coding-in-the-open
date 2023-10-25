@@ -14,7 +14,7 @@ a codebase for closed source development suitability. It also walks through
 best-practice considerations for closed-source development.
 
 This guide does not explain the purpose of the actions set out below. In line
-with the Diátaxis system, this can be found in
+with the [Diátaxis system](https://diataxis.fr/), this can be found in
 [A Discussion of Closed Source Development](/never-open/explanation.qmd).
 
 ## Project Governance
@@ -22,10 +22,10 @@ with the Diátaxis system, this can be found in
 1. If you are uncertain if the code can be published due to the nature of the
 work, consider the following sources of advice:
     * Does the code meet any of the Central Digital & Data Office's
-    descriptions of appropriate projects for closed-source code?@CDDOClosed
+    descriptions of appropriate projects for closed-source code @CDDOClosed?
     Namely, does the code publish counter fraud algorithms? Or does the code
     make unpublished policy apparent?
-    * Have the outcomes of the ethical review@selfAssess indicated closed
+    * Have the outcomes of the ethical review @selfAssess indicated closed
     source measures as a required mitigation?
     * Has the expectation and reasons for closed-source been clearly
     established with Campus leadership? 
@@ -41,9 +41,14 @@ consult the guide's sections on
 
 If a 'never open' approach has been determined, follow this guidance to
 mitigate risk associated with potential freedom of information
-requests.@ICOguidance
+requests @ICOguidance.
 
-1. Develop as if the repository were open. Ensure that poor practice is not
+1. Record the reasons for not publishing the code within the project governance
+documentation. Ensure that this documentation is reasoned and explicit - enough
+for someone to be able to represent this decision accurately in your absence.
+Ensure that the project governance is stored somewhere colleagues can access
+and that your project delivery colleagues are aware of this location.
+2. Develop as if the repository were open. Ensure that poor practice is not
 introduced to the code base. Consult the guidance provided in the
 [open-at-the-start](/open-at-the-start/guidance.qmd) section.  
 2. Agree a set of mitigation behaviours with the development team in writing.
@@ -61,9 +66,9 @@ Particularly `detect-secrets`@DetectSecrets and `nbstripout`@NBStripout.
 `git grep`. From the command line, navigate to the repository and use the
 command `git grep <INSERT_THE_CREDENTIAL>` to ensure it is not referenced in
 any of the repository file contents. For more on searching git repositories,
-consult the Git Tools - Searching documentation@GitSearch.  
+consult the Git Tools - Searching documentation @GitSearch.  
 7. Ensure that conversations about the context of the work occur within
-dedicated, private GitHub projects (sometimes referred to ask kanbans). Check
+dedicated, private GitHub projects (sometimes referred to as kanbans). Check
 that repository issues do not expose sensitive intelligence that may expose
 unpublished policy.
 
