@@ -68,13 +68,3 @@ Once the risks identified by the review have completed, the updated checklist @N
 Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you've done to mitigate any risks to the project lead. 
 
 The project lead will then be able to make a decision as to whether the code is fit for publishing or requires further work in order to meet the necessary standard for release. 
-
-### Fit for publishing checklist
-
-This checklist summarises additional considerations when working with the NHS checklist @NHSFit4Publishing.
-
-- [ ] Are there clearly documented instructions on how to install, run and contribute to the repository?
-- [ ] Check that the code runs within a fresh clone with a new environment.
-- [ ] Check for broken links in the docs.
-- [ ] Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history if in scope for publication)?
-- [ ] Are you satisfied that the residual risk is within your organisations tolerance?

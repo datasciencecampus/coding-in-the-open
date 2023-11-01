@@ -14,6 +14,7 @@ There is a project, it could be already underway or in the initial planning
 stage. A codebase may already exist, or it could be about to. You have read the
 guidance and need a checklist to help you assess which of the 3 development
 strategies are appropriate:
+
 * Open at the start
 * Open at the end
 * Never open
@@ -55,13 +56,13 @@ Assess the project against the CDDO grounds for not releasing code:
 3. Does the code make apparent unreleased policy?
 
 ::: panel-tabset
-### Planning
+#### Planning
 
 In the case of point 1, practices documented in ONS Duck Book @DuckBook should
 be used to avoid the exposure of sensitive credentials or personally
 identifiable information.
 
-### Underway
+#### Underway
 
 If credentials or personally identificable information are committed to the
 version history, the simplest path to publication is to ensure these credentials
@@ -74,12 +75,23 @@ team, recording the decision and reasons in the project governance.
 In determining whether the project is likely to expose unreleased policy,
 involve internal and external stakeholders in this decision. 
 
+### Project Risks
+
+- PII
+- Key and Credential Management
+- Dummy data. If you cannot release the data required to run your code, can you release summy data to help users execute scripts? This data may be released as test fixtures.
+- Notebooks or not to notebooks... (what about gists? maybe part of documentation)\- Skill-sets/training - are your team operating with an acceptable understanding of what the risks associated with your work are? Steps to help the development team share in best practice should be considered, such as:
+    - Ensuring the Data Science Campus (DSC) GitHub SyOps has been completed for all members.
+    - The DSC GitHub training @DSCGitHubTraining has been completed and refreshed as needed.
+    - pair programming to support junior developers.
+
+
 ### Version History
 
 Do you intend to publish the full commit history? 
 
 ::: panel-tabset
-### Planning
+#### Planning
 
 * Consider an "open from the start" approach where active development is done
 in the open. Review with the development team that they are comfortable with
@@ -87,7 +99,7 @@ the approach and know how to mitigate risk when developing in the open.
 * If not open at the start, be aware that publishing the codebase at intervals
 may introduce delay to peer review. Build this into your project delivery plan. 
 
-### Underway
+#### Underway
 
 * A full review of every commit, checking for risks and vulnerabilities, is
 required. This may be burdensome and is discouraged without a clear benefit.
@@ -127,15 +139,30 @@ License @ogl3 for docs and data.
 
 ### Code Quality
 
-- Following coding good practices:
-    - recommend ONS code quality assurance @DuckBook as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore.
+When reviewing code, it is recommended that you consult pre-existing sources of
+peer review guidance. The ONS duck book provides low, moderate and high quality
+peer review checklists @DuckBookChecklists. The NHS fit for publishing
+checklist @NHSFit4Publishing is also a useful tool for peer review.
 
-### Risks
+At the time of writing, the following sources were compared with review
+considerations collated from Campus colleagues. The following checks were not
+explicitly covered in the Duckbook or NHS checklists and are presented
+here for completeness. 
 
-- PII
-- Key and Credential Management
-- Dummy data. If you cannot release the data required to run your code, can you release summy data to help users execute scripts? This data may be released as test fixtures.
-- Notebooks or not to notebooks... (what about gists? maybe part of documentation)\- Skill-sets/training - are your team operating with an acceptable understanding of what the risks associated with your work are? Steps to help the development team share in best practice should be considered, such as:
-    - Ensuring the Data Science Campus (DSC) GitHub SyOps has been completed for all members.
-    - The DSC GitHub training @DSCGitHubTraining has been completed and refreshed as needed.
-    - pair programming to support junior developers.
+::: {.callout-tip collapse="true"}
+#### Complementary checks
+
+**Warning**: Not a complete checklist. Please consult the sources above to
+ensure code is of an appropriate quality prior to publication.
+
+- [ ] Check for broken links in the documentation.
+- [ ] Actively try to break the code by considering edge cases. Are the
+important exceptions raised correctly?
+- [ ] Is the API intuitive and consistent? Do modules follow the same naming
+conventions etc?
+- [ ] Create a new environment and build rebuild the package. A useful way to
+detect breaking changes in dependencies.
+- [ ] On pull request, note any merge conflicts between the feature and target
+branch.
+
+:::
