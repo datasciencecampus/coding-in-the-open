@@ -34,22 +34,10 @@ Unit tests make it easier for you as a code owner to implement changes and accep
 
 So you've decided to go ahead with publishing your code, that's great!
 
-It's probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
+It's probably a good idea at this point to write down all of the potentialthings that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
 
-If you've never written a risk assessment before, not to worry it's super easy. I've provided a quick template below. 
-
-An appropriate table format for [a risk log can be found here](/open-at-the-end//risk-table.qmd).
-
-Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores
-
-![Risk Exposure Matrix](/assets/images/risk-exposure-diagram.png)
-
-Important things to consider in your risk assessment - follow the reference link to a helpful NHS checklist template @NHSFit4Publishing: 
-
-- How will you ensure no passwords, data or other sensitive information is shared by making your repo public?
-- How will you safeguard against people accidentally pushing this information in the future after the repo is made public? 
-- How will you manage users expectations of quality and on-going maintenance?
-- How will you use licencing to protect any proprietary rights and set limitations on liability from others using your code?
+If you've never written one before, not to worry, here is a
+[brief guide to completing a risk assessment](/./open-at-the-end/risk-assessment-guide.qmd). 
 
 ### Step 3 - Preparation
 
