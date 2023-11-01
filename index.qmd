@@ -1,6 +1,6 @@
 ---
-title: "Coding in the Open"
-subtitle: "Guidance for open sourcing at ONS Data Science Campus"
+title: "Coding in the Open v1.0.0"
+subtitle: "Guidance for open sourcing at ONS Data Science Campus."
 ---
 
 The following pages provide guidance on 'coding in the open' - developing open-source codebases or transitioning codebases from private to public domains. This guidance is based upon
