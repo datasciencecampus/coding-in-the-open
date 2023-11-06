@@ -34,7 +34,7 @@ Unit tests make it easier for you as a code owner to implement changes and accep
 
 So you've decided to go ahead with publishing your code, that's great!
 
-It's probably a good idea at this point to write down all of the potentialthings that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
+It's probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
 
 If you've never written one before, not to worry, here is a
 [brief guide to completing a risk assessment](/./open-at-the-end/risk-assessment-guide.qmd). 
