@@ -2,7 +2,8 @@ name: Render and Publish
 on:
   push:
     branches:
-      - main  
+      - main
+      - 74-broken-css-styling # debugging css problem
 
 jobs:
   build-deploy:

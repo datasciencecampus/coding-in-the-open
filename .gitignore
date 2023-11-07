@@ -334,3 +334,4 @@ $RECYCLE.BIN/
 /.vscode/
 !assets/images/*
 !docs/assets/images/*
+!docs/site_libs/*
