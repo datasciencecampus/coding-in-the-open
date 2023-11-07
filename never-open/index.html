@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding in the Open - References</title>
+<title>Coding in the Open - Never Open</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,32 +20,16 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../what-could-go-wrong/checklist.html" rel="prev">
+<link href="../further-information/index.html" rel="next">
+<link href="../open-at-the-end/index.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -71,13 +55,44 @@ div.csl-indent {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - References">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Coding in the Open - Never Open">
+<meta name="twitter:image" content="https://c1.wallpaperflare.com/preview/125/532/1002/vault-business-bank-vault-bank.jpg">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -89,7 +104,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../general-considerations/references.html">References</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../overview/index.html">Guidance</a></li><li class="breadcrumb-item"><a href="../never-open/index.html">Never Open</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -115,7 +130,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Coding in the Open</span></a>
+ <span class="menu-text">Coding in the Open v1.0.0</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -129,72 +144,58 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">General Considerations</span></a>
+  <a href="../overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-start/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the start</span></a>
+  <a href="../open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the Start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-end/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the end</span></a>
+  <a href="../open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the End</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../never-open/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Never open</span></a>
+  <a href="../never-open/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Never Open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../what-could-go-wrong/checklist.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What could go wrong?</span></a>
+  <a href="../further-information/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Further Information</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/references.html" class="sidebar-item-text sidebar-link active">
+  <a href="../overview/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
-<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.</p>
-</div>
-</div>
-</div></div></nav>
+</nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Explanation">Explanation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="How-to Guide">How-to Guide <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title">Never Open</h1>
 </div>
 
 
@@ -209,88 +210,105 @@ Important
 
 </header>
 
-<p>All sources used during the compilation of this guidance are referenced below.</p>
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-OpenSourceInitiative" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
-</div>
-<div id="ref-DuckBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html</a></div>
-</div>
-<div id="ref-AquaBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">HM Treasury, <span>“The aqua book.”</span> <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government</a></div>
-</div>
-<div id="ref-NHSdigital" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[4] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
-</div>
-<div id="ref-NHSFit4Publishing" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[5] </div><div class="csl-right-inline">NHS Digital, <span>“NHS fit for publishing checklist word document.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx</a></div>
-</div>
-<div id="ref-GDSBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Government Digital Services, <span>“The benefits of coding in the open.”</span> <a href="https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/">https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/</a></div>
-</div>
-<div id="ref-GDSVideo" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[7] </div><div class="csl-right-inline">Government Digital Services, <span>“Why we code in the open (YouTube video).”</span> <a href="https://www.youtube.com/watch?v=aqFFCvjXr1s">https://www.youtube.com/watch?v=aqFFCvjXr1s</a></div>
-</div>
-<div id="ref-CDDOGuidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[8] </div><div class="csl-right-inline">Central Digital and Data Office, <span>“Be open and use open source.”</span> <a href="https://www.gov.uk/guidance/be-open-and-use-open-source">https://www.gov.uk/guidance/be-open-and-use-open-source</a></div>
-</div>
-<div id="ref-CDDOTechCode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[9] </div><div class="csl-right-inline">Central Digital and Data Office, <span>“The technology code of practice.”</span> <a href="https://www.gov.uk/guidance/the-technology-code-of-practice">https://www.gov.uk/guidance/the-technology-code-of-practice</a></div>
-</div>
-<div id="ref-MoJBlog" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[10] </div><div class="csl-right-inline">Ministry of Justice, <span>“Why we code in the open.”</span> <a href="https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/">https://mojdigital.blog.gov.uk/2017/02/21/why-we-code-in-the-open/</a></div>
-</div>
-<div id="ref-UKSACode" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[11] </div><div class="csl-right-inline">UK Statistics Authority, <span>“Code of practice for statistics.”</span> <a href="https://code.statisticsauthority.gov.uk/">https://code.statisticsauthority.gov.uk/</a></div>
-</div>
-<div id="ref-CDDOClosed" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[12] </div><div class="csl-right-inline">Central Digital and Data Office, <span>“When code should be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
-</div>
-<div id="ref-GASOpenSource" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[13] </div><div class="csl-right-inline">Analytical Standards and Pipelines team at the Office for National Statistics (ONS), <span>“Open sourcing analytical code.”</span> <a href="https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/">https://analysisfunction.civilservice.gov.uk/policy-store/open-sourcing-analytical-code/</a></div>
-</div>
-<div id="ref-ICOguidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[14] </div><div class="csl-right-inline">I. C. Office, <span>“Information commissioners office guidance on freedom of information requests.”</span> <a href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/">https://ico.org.uk/for-organisations/guide-to-freedom-of-information/</a></div>
-</div>
-<div id="ref-GovCookieCutter" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[15] </div><div class="csl-right-inline">Office for National Statistics Best Practice &amp; Impact, <span>“Govcookiecutter on GitHub.”</span> <a href="https://github.com/best-practice-and-impact/govcookiecutter">https://github.com/best-practice-and-impact/govcookiecutter</a></div>
-</div>
-<div id="ref-DSCGitHubTraining" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[16] </div><div class="csl-right-inline">Office for National Statistics Data Science Campus, <span>“Data science campus GitHub training.”</span> <a href="https://github.com/datasciencecampus/DSCA_GitHub_Training">https://github.com/datasciencecampus/DSCA_GitHub_Training</a></div>
-</div>
-<div id="ref-FOIGuidance" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[17] </div><div class="csl-right-inline">Information Commissioners Office, <span>“How to access information from a public authority.”</span> <a href="https://ico.org.uk/for-the-public/official-information/">https://ico.org.uk/for-the-public/official-information/</a></div>
-</div>
-<div id="ref-selfAssess" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[18] </div><div class="csl-right-inline">UK Statistics Authority Data Ethics Advisory Committee, <span>“Ethics self-assessment tool.”</span> <a href="https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/">https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/</a></div>
-</div>
-<div id="ref-preCommit" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[19] </div><div class="csl-right-inline">A. Sottile et al, <span>“Pre-commit.”</span> <a href="https://pre-commit.com/">https://pre-commit.com/</a></div>
-</div>
-<div id="ref-templateMinimal" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[20] </div><div class="csl-right-inline">Tim Green, <span>“Minimal template.”</span> <a href="https://github.com/datasciencecampus/project-repo-template">https://github.com/datasciencecampus/project-repo-template</a></div>
-</div>
-<div id="ref-branchProtect" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[21] </div><div class="csl-right-inline">GitHub, <span>“GitHub branch protection.”</span> <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches</a></div>
-</div>
-<div id="ref-ogl3" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[22] </div><div class="csl-right-inline">The National Archives, <span>“Open government license 3.0.”</span> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</a></div>
-</div>
-<div id="ref-cs-standard" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[23] </div><div class="csl-right-inline">Civil Service, <span>“Civil service standard.”</span> <a href="https://www.gov.uk/government/publications/civil-service-code">https://www.gov.uk/government/publications/civil-service-code</a></div>
-</div>
-<div id="ref-gh-projects-beta" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[24] </div><div class="csl-right-inline">GitHub, <span>“GitHub projects beta.”</span> <a href="https://docs.github.com/en/enterprise-server@3.8/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">https://docs.github.com/en/enterprise-server@3.8/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects</a></div>
-</div>
-<div id="ref-gh-projects-viz" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[25] </div><div class="csl-right-inline">GitHub, <span>“Managing the visibility of a project.”</span> <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-visibility-of-your-projects">https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-your-project/managing-visibility-of-your-projects</a></div>
-</div>
-</div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="How-to Guide" data-listing-date-sort="1699345879000" data-listing-file-modified-sort="1699345879607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+<a href="../never-open/how-to.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://c1.wallpaperflare.com/preview/125/532/1002/vault-business-bank-vault-bank.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Never Open: How to do it Right
+</h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('How-to Guide'); return false;">
+How-to Guide
+</div>
+</div>
+<div class="card-text listing-description">
+A Guide to Closed Source Development
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Nov 7, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Explanation" data-listing-date-sort="1699345879000" data-listing-file-modified-sort="1699345879607" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="../never-open/explanation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://c1.wallpaperflare.com/preview/125/532/1002/vault-business-bank-vault-bank.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Never Open: A Discussion
+</h5>
+<div class="listing-reading-time card-text text-muted">
+10 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Explanation'); return false;">
+Explanation
+</div>
+</div>
+<div class="card-text listing-description">
+Discussing closed-source development, it’s appropriate use, misconceptions and risks.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+Nov 7, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -641,11 +659,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../what-could-go-wrong/checklist.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">What could go wrong?</span>
+      <a href="../open-at-the-end/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open at the End</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../further-information/index.html" class="pagination-link">
+        <span class="nav-page-text">Further Information</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -654,7 +675,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="../overview/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

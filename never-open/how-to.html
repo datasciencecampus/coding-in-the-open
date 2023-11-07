@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-11-07">
+<meta name="description" content="A Guide to Closed Source Development">
 
-<title>Coding in the Open - Coding in the Open v1.0.0</title>
+<title>Coding in the Open - Never Open: How to do it Right</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,22 +44,21 @@ div.csl-indent {
 }</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./overview/index.html" rel="next">
-<link href=".//assets/favicon.ico" rel="icon">
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="..//assets/favicon.ico" rel="icon">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -73,9 +74,9 @@ div.csl-indent {
 }</script>
 
 
-<link rel="stylesheet" href="./assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - Coding in the Open v1.0.0">
-<meta name="twitter:description" content="Guidance for open sourcing at ONS Data Science Campus.">
+<link rel="stylesheet" href="../assets/styles.css">
+<meta name="twitter:title" content="Coding in the Open - Never Open: How to do it Right">
+<meta name="twitter:description" content="A Guide to Closed Source Development">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
 <meta name="twitter:card" content="summary">
 </head>
@@ -89,7 +90,9 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Coding in the Open v1.0.0</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Coding in the Open
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -101,7 +104,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Coding in the Open</a> 
+      <a href="../">Coding in the Open</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://twitter.com/DataSciCampus" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://github.com/datasciencecampus" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -114,7 +117,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coding in the Open v1.0.0</span></a>
   </div>
 </li>
@@ -129,31 +132,31 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the Start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the End</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./never-open/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../never-open/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Never Open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./further-information/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../further-information/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further Information</span></a>
   </div>
 </li>
@@ -161,7 +164,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview/references.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -177,8 +180,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#guidance-overview" id="toc-guidance-overview" class="nav-link active" data-scroll-target="#guidance-overview">Guidance Overview</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#project-governance" id="toc-project-governance" class="nav-link" data-scroll-target="#project-governance">Project Governance</a></li>
+  <li><a href="#closed-development" id="toc-closed-development" class="nav-link" data-scroll-target="#closed-development">Closed Development</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -187,15 +192,28 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coding in the Open v1.0.0</h1>
-<p class="subtitle lead">Guidance for open sourcing at ONS Data Science Campus.</p>
-</div>
+<h1 class="title">Never Open: How to do it Right</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">How-to Guide</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A Guide to Closed Source Development
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 7, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -203,71 +221,72 @@ div.csl-indent {
 
 </header>
 
-<p>The following pages provide guidance on ‘coding in the open’ - developing open-source codebases or transitioning codebases from private to public domains. This guidance is based upon <strong>NHS Digital guidance</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[1]</a></span>. <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">Click here to download NHS Digital’s fit for publishing checklist</a>.</p>
-<p>The term open-source captures work that is made freely available for others to use and modify <span class="citation" data-cites="OpenSourceInitiative"><a href="#ref-OpenSourceInitiative" role="doc-biblioref">[2]</a></span>.</p>
-<p>The benefits to open-source codebases are greater accountability, collaboration, and trust.</p>
-<p>This guide does not replace any of the guidance in the UK Government’s Aqua Book <span class="citation" data-cites="AquaBook"><a href="#ref-AquaBook" role="doc-biblioref">[3]</a></span>, but instead supplements with considerations related specifically to publishing analytical code on GitHub.</p>
-<p>This guide supports, not replaces, the need for good project governance.</p>
-<section id="guidance-overview" class="level2">
-<h2 class="anchored" data-anchor-id="guidance-overview">Guidance Overview</h2>
-<div id="tbl-pages" class="anchored">
-<table class="table">
-<caption>Table&nbsp;1: Summary of guidance pages.</caption>
-<colgroup>
-<col style="width: 21%">
-<col style="width: 79%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Page</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="./overview/overview.html">Overview</a></td>
-<td>A ‘coding in the open’ overview and general guidance on open source development.</td>
-</tr>
-<tr class="even">
-<td><a href="./open-at-the-start/guidance.html">Open at the start</a></td>
-<td>Guidance on considerations when developing in the open.</td>
-</tr>
-<tr class="odd">
-<td><a href="./open-at-the-end/guidance.html">Open at the end</a></td>
-<td>Guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance.</td>
-</tr>
-<tr class="even">
-<td><a href="./never-open/index.html">Never open</a></td>
-<td>Reasons why code may not be published and how to document this.</td>
-</tr>
-<tr class="odd">
-<td><a href="./further-information/peer-review.html">Further information</a></td>
-<td>Including general considerations and potential risks.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>These pages are accessible in the sidebar.</p>
-<p>All sources are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./overview/references.html">references</a> page for convenience.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This guide presents a series of reference steps to help developers in assessing a codebase for closed source development suitability. It also walks through best-practice considerations for closed-source development.</p>
+<p>This guide does not explain the purpose of the actions set out below. In line with the <a href="https://diataxis.fr/">Diátaxis system</a>, this can be found in <a href="../never-open/explanation.html">A Discussion of Closed Source Development</a>.</p>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-NHSdigital" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
-</div>
-<div id="ref-OpenSourceInitiative" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
-</div>
-<div id="ref-AquaBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">HM Treasury, <span>“The aqua book.”</span> <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government</a></div>
-</div>
-</div>
+<section id="project-governance" class="level2">
+<h2 class="anchored" data-anchor-id="project-governance">Project Governance</h2>
+<ol type="1">
+<li>If you are uncertain if the code can be published due to the nature of the work, consider the following sources of advice:
+<ul>
+<li>Does the code meet any of the Central Digital &amp; Data Office’s descriptions of appropriate projects for closed-source code <span class="citation" data-cites="CDDOClosed"><a href="#ref-CDDOClosed" role="doc-biblioref">[1]</a></span>? Namely, does the code publish counter fraud algorithms? Or does the code make unpublished policy apparent?</li>
+<li>Have the outcomes of the ethical review <span class="citation" data-cites="selfAssess"><a href="#ref-selfAssess" role="doc-biblioref">[2]</a></span> indicated closed source measures as a required mitigation?</li>
+<li>Has the expectation and reasons for closed-source been clearly established with Campus leadership?</li>
+</ul></li>
+<li>If the sensitivity of the project is due to the personally identifiable data, ensure that the code and data are decoupled and plan to publish the codebase with synthetic data.</li>
+<li>If the outcome of these questions is to pursue an open source strategy, consult the guide’s sections on <a href="../open-at-the-start/guidance.html">open at the start</a> or <a href="../open-at-the-end/guidance.html">open at the end</a> as appropriate.</li>
+</ol>
+</section>
+<section id="closed-development" class="level2">
+<h2 class="anchored" data-anchor-id="closed-development">Closed Development</h2>
+<p>If a ‘never open’ approach has been determined, follow this guidance to mitigate risk associated with potential freedom of information requests <span class="citation" data-cites="ICOguidance"><a href="#ref-ICOguidance" role="doc-biblioref">[3]</a></span>.</p>
+<ol type="1">
+<li>Record the reasons for not publishing the code within the project governance documentation. Ensure that this documentation is reasoned and explicit - enough for someone to be able to represent this decision accurately in your absence. Ensure that the project governance is stored somewhere colleagues can access and that your project delivery colleagues are aware of this location.</li>
+<li>Develop as if the repository were open. Ensure that poor practice is not introduced to the code base. Consult the guidance provided in the <a href="../open-at-the-start/guidance.html">open-at-the-start</a> section.<br>
+</li>
+<li>Agree a set of mitigation behaviours with the development team in writing. Keep a record in order to bring new developers up to speed efficiently.<br>
+</li>
+<li>Ensure that the analytical code is completely decoupled from the data. Check that no data (apart from dummy or test fixtures) are committed to the repository <strong>at any point in the version history</strong>.<br>
+</li>
+<li>Check that filepaths do not expose valuable intel about sensitive infrastructure. Filepaths to Google Cloud Platform buckets for example, should be stored in a file covered by the <code>.gitignore</code> and not committed to version history. Similarly, SharePoint links should not be committed to repositories.<br>
+</li>
+<li>Ensure that the precommit hooks are installed and used for all developers. Particularly <code>detect-secrets</code><span class="citation" data-cites="DetectSecrets"><a href="#ref-DetectSecrets" role="doc-biblioref">[4]</a></span> and <code>nbstripout</code><span class="citation" data-cites="NBStripout"><a href="#ref-NBStripout" role="doc-biblioref">[5]</a></span>.<br>
+</li>
+<li>Check the repository for the presence of known secrets or keys with <code>git grep</code>. From the command line, navigate to the repository and use the command <code>git grep &lt;INSERT_THE_CREDENTIAL&gt;</code> to ensure it is not referenced in any of the repository file contents. For more on searching git repositories, consult the Git Tools - Searching documentation <span class="citation" data-cites="GitSearch"><a href="#ref-GitSearch" role="doc-biblioref">[6]</a></span>.<br>
+</li>
+<li>Ensure that conversations about the context of the work occur within dedicated, private GitHub projects (sometimes referred to as kanbans). Check that repository issues do not expose sensitive intelligence that may expose unpublished policy.</li>
+</ol>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>You have been presented with guidance for understanding whether your project is suitable for a ‘closed development’ approach. You have also followed along with steps on and how to go about ensuring that closed development does not introduce poor safety practice into the codebase. If you have further suggestions for this guide, please click on the “Report an issue” button in the table of contents to the right of this page.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-CDDOClosed" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Central Digital and Data Office, <span>“When code should be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
+</div>
+<div id="ref-selfAssess" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">UK Statistics Authority Data Ethics Advisory Committee, <span>“Ethics self-assessment tool.”</span> <a href="https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/">https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/</a></div>
+</div>
+<div id="ref-ICOguidance" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Information Commissioners Office, <span>“<span class="nocase">Information Commissioners Office Guidance on Freedom of Information Requests</span>.”</span> <a href="https://ico.org.uk/for-organisations/guide-to-freedom-of-information/">https://ico.org.uk/for-organisations/guide-to-freedom-of-information/</a></div>
+</div>
+<div id="ref-DetectSecrets" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Aaron Loo, <span>“Detect-secrets.”</span> <a href="https://github.com/Yelp/detect-secrets">https://github.com/Yelp/detect-secrets</a></div>
+</div>
+<div id="ref-NBStripout" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">Florian Rathgeber, <span>“Nbstripout.”</span> <a href="https://github.com/kynan/nbstripout">https://github.com/kynan/nbstripout</a></div>
+</div>
+<div id="ref-GitSearch" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">T. G. Project, <span>“Git tools - searching.”</span> <a href="https://git-scm.com/book/en/v2/Git-Tools-Searching">https://git-scm.com/book/en/v2/Git-Tools-Searching</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -616,22 +635,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./overview/index.html" class="pagination-link">
-        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="./assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="./overview/references.html">references</a> page. Updated on 2023-04-11.</div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="../overview/references.html">references</a> page. Updated on 2023-04-11.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

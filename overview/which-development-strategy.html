@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-11-07">
+<meta name="description" content="A workflow for assessing a project for open sourcing.">
 
-<title>Coding in the Open - General Considerations</title>
+<title>Coding in the Open - Which Development Strategy is Right for a Project?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +46,6 @@ div.csl-indent {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../open-at-the-start/guidance.html" rel="next">
-<link href="../index.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -75,8 +75,8 @@ div.csl-indent {
 
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - General Considerations">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Coding in the Open - Which Development Strategy is Right for a Project?">
+<meta name="twitter:description" content="A workflow for assessing a project for open sourcing.">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
 <meta name="twitter:card" content="summary">
 </head>
@@ -90,7 +90,9 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../general-considerations/guidance.html">Guidance</a></li><li class="breadcrumb-item"><a href="../general-considerations/guidance.html">General Considerations</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Coding in the Open
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -116,7 +118,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Coding in the Open</span></a>
+ <span class="menu-text">Coding in the Open v1.0.0</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -130,79 +132,96 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/guidance.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">General Considerations</span></a>
+  <a href="../overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-start/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the start</span></a>
+  <a href="../open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the Start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-end/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the end</span></a>
+  <a href="../open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the End</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../never-open/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Never open</span></a>
+  <a href="../never-open/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Never Open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../what-could-go-wrong/checklist.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What could go wrong?</span></a>
+  <a href="../further-information/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Further Information</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/references.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
-<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.</p>
-</div>
-</div>
-</div></div></nav>
+</nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#foreword" id="toc-foreword" class="nav-link active" data-scroll-target="#foreword">Foreword</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link" data-scroll-target="#problem">Problem</a></li>
+  <li><a href="#requirements" id="toc-requirements" class="nav-link" data-scroll-target="#requirements">Requirements</a></li>
+  <li><a href="#review-the-project" id="toc-review-the-project" class="nav-link" data-scroll-target="#review-the-project">Review the Project</a>
+  <ul class="collapse">
+  <li><a href="#domain-sensitivity" id="toc-domain-sensitivity" class="nav-link" data-scroll-target="#domain-sensitivity">1. Domain Sensitivity</a></li>
+  <li><a href="#project-risks" id="toc-project-risks" class="nav-link" data-scroll-target="#project-risks">2. Project Risks</a></li>
+  <li><a href="#the-code-repository" id="toc-the-code-repository" class="nav-link" data-scroll-target="#the-code-repository">3. The Code Repository</a></li>
+  <li><a href="#code-quality" id="toc-code-quality" class="nav-link" data-scroll-target="#code-quality">4. Code Quality</a></li>
+  <li><a href="#version-history" id="toc-version-history" class="nav-link" data-scroll-target="#version-history">5. Version History</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">General Considerations</h1>
-</div>
+<h1 class="title">Which Development Strategy is Right for a Project?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">How-To</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A workflow for assessing a project for open sourcing.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 7, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -210,47 +229,171 @@ Important
 
 </header>
 
-<p>Points to consider (not necessarily in this order):</p>
+<section id="foreword" class="level2">
+<h2 class="anchored" data-anchor-id="foreword">Foreword</h2>
+<p>The intention of this advice is to help and not to remove agency or reduce responsibility in any given instance of where this guidance may be applied. The specifics of any project can be expected to offer cause to defer from this guidance. Colleagues are expected to use their professional judgement in deciding which checks are appropriate for their application.</p>
+</section>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<p>There is a project, it could be already underway or in the initial planning stage. A codebase may already exist, or it could be about to. You have read the guidance available in this site and need a checklist to help you assess whether the project is suitable for publication.</p>
+</section>
+<section id="requirements" class="level2">
+<h2 class="anchored" data-anchor-id="requirements">Requirements</h2>
 <ul>
-<li>Do you intend to publish with/without the commit history? Potentially a much larger job to undertake with a full commit history. If sharing the full commit history is justified, it may be more appropriate to consider an “open from the start” approach where active development is done in the open. Otherwise, a full readthrough of every commit diff checking for risks and vulnerabilities in the code is required.</li>
-<li>Repository tagging/labelling</li>
-<li>Key and Credential Management</li>
-<li>Publishing with intention for further development and/or on-going maintenance:
-<ul>
-<li>contribution guidance (issues/PR templates)</li>
-<li>semantic versioning</li>
-<li>change log</li>
-</ul></li>
-<li>Following coding good practices:
-<ul>
-<li>recommend ONS code quality assurance <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[1]</a></span> as it will cover styles, functional code, unit testing, version control, minimising disclosure risks: repo structure (but still point to our own), pre-commit, gitignore.</li>
-</ul></li>
-<li>Repo structure. Consider appropriate structure. Select from campus templates or govcookiecutter <span class="citation" data-cites="GovCookieCutter"><a href="#ref-GovCookieCutter" role="doc-biblioref">[2]</a></span> or similar.</li>
-<li>Documentation (readmes, and more?)</li>
-<li>Licenses. General guidance is to use MiT for code and OGL for docs and data (as appropriate).</li>
-<li>Use open source tools/software/data</li>
-<li>Dummy data. If you cannot release the data required to run your code, can you release summy data to help users execute scripts? This data may be released as test fixtures.</li>
-<li>Notebooks or not to notebooks… (what about gists? maybe part of documentation)</li>
-<li>Skill-sets/training - are your team operating with an acceptable understanding of what the risks associated with your work are? Steps to help the development team share in best practice should be considered, such as:
-<ul>
-<li>Ensuring the Data Science Campus (DSC) GitHub SyOps has been completed for all members.</li>
-<li>The DSC GitHub training <span class="citation" data-cites="DSCGitHubTraining"><a href="#ref-DSCGitHubTraining" role="doc-biblioref">[3]</a></span> has been completed and refreshed as needed.</li>
-<li>pair programming to support junior developers.</li>
-</ul></li>
+<li>Knowledge of the project context and its current status.</li>
+<li>An understanding of capability in the project’s development team.</li>
+<li>Access to project governance, including the outcome of the ethical review.</li>
 </ul>
+</section>
+<section id="review-the-project" class="level2">
+<h2 class="anchored" data-anchor-id="review-the-project">Review the Project</h2>
+<p>Throughout this section, toggle between the context that best suits the status of the project - “planning” or “underway”.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Underway</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The project has been commissioned and work is underway. An ethical evaluation <span class="citation" data-cites="selfAssess"><a href="#ref-selfAssess" role="doc-biblioref">[1]</a></span> has or will be submitted to the Centre for Applied Data Ethics <span class="citation" data-cites="CADE"><a href="#ref-CADE" role="doc-biblioref">[2]</a></span> for assessment. Code has not yet been written. The development team has been identified.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>The project has moved past initiation and code has been written. This likely exists in a private repository but you need to check the assumption that close sourced development is appropriate.</p>
+</div>
+</div>
+</div>
+<section id="domain-sensitivity" class="level3">
+<h3 class="anchored" data-anchor-id="domain-sensitivity">1. Domain Sensitivity</h3>
+<p>Assess the project against the CDDO grounds for not releasing code: <span class="citation" data-cites="CDDOClosed"><a href="#ref-CDDOClosed" role="doc-biblioref">[3]</a></span></p>
+<ol type="1">
+<li>Does the code contain keys or credentials?</li>
+<li>Does the code contain algorithms used to detect fraud?</li>
+<li>Does the code make unreleased policy apparent?</li>
+</ol>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Underway</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>In the case of point 1, practices documented in ONS Duck Book <span class="citation" data-cites="DuckBook"><a href="#ref-DuckBook" role="doc-biblioref">[4]</a></span> should be used to avoid the exposure of sensitive credentials or personally identifiable information.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>If credentials or personally identifiable information are committed to the version history, the simplest path to publication is to ensure these credentials are removed in the latest commit and publish only that single commit. Ensure that this decision is disseminated throughout the project and delivery team, recording the decision and reasons in the project governance.</p>
+</div>
+</div>
+</div>
+<p>In determining whether the project is likely to expose unreleased policy, involve internal and external stakeholders in this decision.</p>
+<p>A project that is not suitable for publication should be clearly identified in the governance documentation from the outset. If this is the case, be aware that much of the best-practice guidance documented here should still be applied to private codebases.</p>
+</section>
+<section id="project-risks" class="level3">
+<h3 class="anchored" data-anchor-id="project-risks">2. Project Risks</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Underway</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<ul>
+<li>If the codebase is to use PII, plan to adhere to the practices set out in the Duck book about the decoupling of code and data.</li>
+<li>If data is required for testing or examples, plan to release dummy data.</li>
+<li>Consider the use of precommit hooks <span class="citation" data-cites="preCommit"><a href="#ref-preCommit" role="doc-biblioref">[5]</a></span> to help mitigate the risk of accidentally committing sensitive data to the version history.</li>
+</ul>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<ul>
+<li>If the codebase works with PII, check that no PII has been committed to any of the version history in scope of publication.</li>
+<li>Check that the development team have worked consistently with pre-commit by running <code>pre-commit run --all-files</code> in all of the commits in scope of the potential release. If the hooks adjust any of the files in the repository, this is an indication that pre-commit rules have not been adhered to.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Understanding the types, severity and likelihood of risks associated with your project may influence a decision about the sorts of interventions required when preparing the codebase for release.</p>
+</section>
+<section id="the-code-repository" class="level3">
+<h3 class="anchored" data-anchor-id="the-code-repository">3. The Code Repository</h3>
+<p>Ensuring that a repository contains all the expected metadata ensures that we help the open source community understand:</p>
+<ol type="1">
+<li>what the work is about</li>
+<li>what is the status of the codebase</li>
+<li>how the code and / or data can be reused</li>
+<li>what the expectations for collaboration are</li>
+</ol>
+<p>Whether the project is at planning stage or is already underway, ensure the repository contains the following information:</p>
+<section id="required" class="level4">
+<h4 class="anchored" data-anchor-id="required">Required</h4>
+<ul>
+<li>Repo structure. Consider appropriate structure. Consider using Campus templates or govcookiecutter <span class="citation" data-cites="GovCookieCutter"><a href="#ref-GovCookieCutter" role="doc-biblioref">[6]</a></span>.</li>
+<li>Ensure the documentation is up-to-date and correct.</li>
+<li>Licenses. General guidance is to use MiT <span class="citation" data-cites="MIT"><a href="#ref-MIT" role="doc-biblioref">[7]</a></span> for code and Open Government License <span class="citation" data-cites="ogl3"><a href="#ref-ogl3" role="doc-biblioref">[8]</a></span> for docs and data.</li>
+</ul>
+</section>
+<section id="optional" class="level4">
+<h4 class="anchored" data-anchor-id="optional">Optional</h4>
+<ul>
+<li>Contribution guidance (issues/PR templates)</li>
+<li>Repository tagging / labelling, eg in development, archived etc.</li>
+<li>Semantic versioning</li>
+<li>Change log</li>
+</ul>
+</section>
+</section>
+<section id="code-quality" class="level3">
+<h3 class="anchored" data-anchor-id="code-quality">4. Code Quality</h3>
+<p>Ensuring that the code is fit for release inevitably involves reviewing code. Guidance for reviewing code is covered in the <a href="../further-information/peer-review.html">section on peer review</a>.</p>
+<p>It should be noted that the level of peer review should be appropriate to the purposes of releasing the code. Experimental work would understandably require a different level of rigour to a reproducible analytical pipeline involved in producing official statistics.</p>
+<p>Polishing of code that has been archived or decommissioned but released in the public interest may affect the reproducibility of any outputs produced by that codebase. Clearly defining the purposes of the planned publication and the appropriate level of review agreed by project leads and the development team can help to keep the process of peer review as efficient as possible.</p>
+</section>
+<section id="version-history" class="level3">
+<h3 class="anchored" data-anchor-id="version-history">5. Version History</h3>
+<p>Do you intend to publish the full commit history?</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Underway</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<ul>
+<li>If the entire version history is to be published, strongly consider an “open from the start” approach, where active development is done in the open. Review with the development team that they are comfortable with the approach and know how to mitigate risk when developing in the open.</li>
+<li>If not open at the start, be aware that publishing the codebase at intervals may introduce delay to peer review. Build this into your project delivery plan.</li>
+</ul>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<ul>
+<li>If the entire version history is to be published, A full review of every commit, checking for risks and vulnerabilities, is required. This may be burdensome and is discouraged without a clear benefit.</li>
+<li>Publication of the most recent version may be more feasible. Once achieved, consider whether to continue programming in the open or to pursue a strategy of periodic public release.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>Project leads should maintain an awareness of the risks and quality of code present throughout the entire commit history. Coupled with information the amount of resource available and required for review, project leads are able to make decisions about whether to release an entire commit history or the most recent version of the code.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In following these steps, the reader can note the risks associated with a project. Based on the current state of the project, the reader has been offered advice on the types of questions to answer and who to involve in answering them.</p>
+<p>It is intended that this guidance helps the reader arrive at an understanding of which of the strategies is appropriate for their use case and; if appropriate; how to go about preparing the code for release.</p>
+<p>If you have any queries or suggestions about this article, please click on the “Report an issue” button in the toolbar to the right of this page.</p>
 
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-selfAssess" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">UK Statistics Authority Data Ethics Advisory Committee, <span>“Ethics self-assessment tool.”</span> <a href="https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/">https://uksa.statisticsauthority.gov.uk/the-authority-board/committees/national-statisticians-advisory-committees-and-panels/national-statisticians-data-ethics-advisory-committee/ethics-self-assessment-tool/</a></div>
+</div>
+<div id="ref-CADE" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">U. S. Authority, <span>“Centre for applied data ethics.”</span> <a href="https://uksa.statisticsauthority.gov.uk/what-we-do/data-ethics/centre-for-applied-data-ethics/">https://uksa.statisticsauthority.gov.uk/what-we-do/data-ethics/centre-for-applied-data-ethics/</a></div>
+</div>
+<div id="ref-CDDOClosed" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Central Digital and Data Office, <span>“When code should be open or closed.”</span> <a href="https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed">https://www.gov.uk/government/publications/open-source-guidance/when-code-should-be-open-or-closed</a></div>
+</div>
 <div id="ref-DuckBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html</a></div>
+<div class="csl-left-margin">[4] </div><div class="csl-right-inline">Office for National Statistics, <span>“Quality assurance of code for analysis and research.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html">https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html</a></div>
+</div>
+<div id="ref-preCommit" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[5] </div><div class="csl-right-inline">A. Sottile et al, <span>“Pre-commit.”</span> <a href="https://pre-commit.com/">https://pre-commit.com/</a></div>
 </div>
 <div id="ref-GovCookieCutter" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Office for National Statistics Best Practice &amp; Impact, <span>“Govcookiecutter on GitHub.”</span> <a href="https://github.com/best-practice-and-impact/govcookiecutter">https://github.com/best-practice-and-impact/govcookiecutter</a></div>
+<div class="csl-left-margin">[6] </div><div class="csl-right-inline">Office for National Statistics Best Practice &amp; Impact, <span>“Govcookiecutter on GitHub.”</span> <a href="https://github.com/best-practice-and-impact/govcookiecutter">https://github.com/best-practice-and-impact/govcookiecutter</a></div>
 </div>
-<div id="ref-DSCGitHubTraining" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">Office for National Statistics Data Science Campus, <span>“Data science campus GitHub training.”</span> <a href="https://github.com/datasciencecampus/DSCA_GitHub_Training">https://github.com/datasciencecampus/DSCA_GitHub_Training</a></div>
+<div id="ref-MIT" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[7] </div><div class="csl-right-inline">The Open Source Initiative, <span>“The MiT license.”</span> <a href="https://opensource.org/license/mit/">https://opensource.org/license/mit/</a></div>
+</div>
+<div id="ref-ogl3" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[8] </div><div class="csl-right-inline">The National Archives, <span>“Open government license 3.0.”</span> <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/</a></div>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -601,25 +744,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Coding in the Open</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../open-at-the-start/guidance.html" class="pagination-link">
-        <span class="nav-page-text">Open at the start</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="../overview/references.html">references</a> page. Updated on 2023-04-11.</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

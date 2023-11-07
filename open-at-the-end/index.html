@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Coding in the Open - Never open</title>
+<title>Coding in the Open - Open at the End</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,9 +25,11 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../what-could-go-wrong/checklist.html" rel="next">
-<link href="../open-at-the-end/guidance.html" rel="prev">
+<link href="../never-open/index.html" rel="next">
+<link href="../open-at-the-start/index.html" rel="prev">
 <link href="..//assets/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -53,12 +55,44 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-author','listing-reading-time','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - Never open">
+<meta name="twitter:title" content="Coding in the Open - Open at the End">
+<meta name="twitter:image" content="https://www.picpedia.org/post-it-note/images/publish.jpg">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating">
@@ -70,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../general-considerations/guidance.html">Guidance</a></li><li class="breadcrumb-item"><a href="../never-open/guidance.html">Never open</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../overview/index.html">Guidance</a></li><li class="breadcrumb-item"><a href="../open-at-the-end/index.html">Open at the End</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -96,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Coding in the Open</span></a>
+ <span class="menu-text">Coding in the Open v1.0.0</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -110,72 +144,58 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">General Considerations</span></a>
+  <a href="../overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-start/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the start</span></a>
+  <a href="../open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open at the Start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../open-at-the-end/guidance.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open at the end</span></a>
+  <a href="../open-at-the-end/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Open at the End</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../never-open/guidance.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Never open</span></a>
+  <a href="../never-open/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Never Open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../what-could-go-wrong/checklist.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">What could go wrong?</span></a>
+  <a href="../further-information/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Further Information</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../general-considerations/references.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
     </div>
-<div class="quarto-sidebar-footer"><div class="sidebar-footer-item">
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.</p>
-</div>
-</div>
-</div></div></nav>
+</nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="process">process <span class="quarto-category-count">(1)</span></div><div class="category" data-category="project governance">project governance <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Never open</h1>
+<h1 class="title">Open at the End</h1>
 </div>
 
 
@@ -190,23 +210,124 @@ Important
 
 </header>
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Placeholder page</p>
-</div>
-</div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="process" data-listing-file-modified-sort="1699345879607" data-listing-reading-time-sort="1">
+<a href="../open-at-the-end/process-chart.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://www.picpedia.org/post-it-note/images/publish.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Private to Public Publication Process Overview
+</h5>
+<div class="listing-reading-time card-text text-muted">
+1 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('process'); return false;">
+process
+</div>
+</div>
+<div class="card-text listing-description">
+A process chart for code publication, establishing roles and a procedure for review.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1699345879607" data-listing-reading-time-sort="4">
+<a href="../open-at-the-end/guidance.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://www.picpedia.org/post-it-note/images/publish.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open at the end
+</h5>
+<div class="listing-reading-time card-text text-muted">
+4 min
+</div>
+<div class="card-text listing-description">
+Do you intend to release your code? This guidance aims to help you understand the requirements for publication.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="project governance" data-listing-file-modified-sort="1699345879611" data-listing-reading-time-sort="2">
+<a href="../open-at-the-end/risk-assessment-guide.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="https://www.picpedia.org/post-it-note/images/publish.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Brief Risk Assessment Guide.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+2 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('project governance'); return false;">
+project governance
+</div>
+</div>
+<div class="card-text listing-description">
+A suggested format for risk assessing data science projects.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -557,13 +678,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../open-at-the-end/guidance.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open at the end</span>
+      <a href="../open-at-the-start/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open at the Start</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../what-could-go-wrong/checklist.html" class="pagination-link">
-        <span class="nav-page-text">What could go wrong?</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../never-open/index.html" class="pagination-link">
+        <span class="nav-page-text">Never Open</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -573,7 +694,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. Are sources are acknowledged in the <a href="../general-considerations/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="../overview/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

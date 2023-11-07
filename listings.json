@@ -1,0 +1,36 @@
+[
+  {
+    "listing": "/further-information/index.html",
+    "items": [
+      "/further-information/peer-review.html"
+    ]
+  },
+  {
+    "listing": "/overview/index.html",
+    "items": [
+      "/overview/overview.html",
+      "/overview/which-development-strategy.html"
+    ]
+  },
+  {
+    "listing": "/open-at-the-end/index.html",
+    "items": [
+      "/open-at-the-end/process-chart.html",
+      "/open-at-the-end/guidance.html",
+      "/open-at-the-end/risk-assessment-guide.html"
+    ]
+  },
+  {
+    "listing": "/open-at-the-start/index.html",
+    "items": [
+      "/open-at-the-start/guidance.html"
+    ]
+  },
+  {
+    "listing": "/never-open/index.html",
+    "items": [
+      "/never-open/how-to.html",
+      "/never-open/explanation.html"
+    ]
+  }
+]

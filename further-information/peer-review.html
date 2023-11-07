@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Guidance for reviewing code for release and troubleshooting problems.">
 
-<title>Coding in the Open - Coding in the Open v1.0.0</title>
+<title>Coding in the Open - Peer Review.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,22 +43,21 @@ div.csl-indent {
 }</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./overview/index.html" rel="next">
-<link href=".//assets/favicon.ico" rel="icon">
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="..//assets/favicon.ico" rel="icon">
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -73,9 +73,9 @@ div.csl-indent {
 }</script>
 
 
-<link rel="stylesheet" href="./assets/styles.css">
-<meta name="twitter:title" content="Coding in the Open - Coding in the Open v1.0.0">
-<meta name="twitter:description" content="Guidance for open sourcing at ONS Data Science Campus.">
+<link rel="stylesheet" href="../assets/styles.css">
+<meta name="twitter:title" content="Coding in the Open - Peer Review.">
+<meta name="twitter:description" content="Guidance for reviewing code for release and troubleshooting problems.">
 <meta name="twitter:site" content="https://twitter.com/DataSciCampus">
 <meta name="twitter:card" content="summary">
 </head>
@@ -89,7 +89,9 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Coding in the Open v1.0.0</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Coding in the Open
+      </li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -101,7 +103,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Coding in the Open</a> 
+      <a href="../">Coding in the Open</a> 
         <div class="sidebar-tools-main tools-wide">
     <a href="https://twitter.com/DataSciCampus" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-twitter"></i></a>
     <a href="https://github.com/datasciencecampus" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
@@ -114,7 +116,7 @@ div.csl-indent {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Coding in the Open v1.0.0</span></a>
   </div>
 </li>
@@ -129,31 +131,31 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-start/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the Start</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../open-at-the-end/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open at the End</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./never-open/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../never-open/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Never Open</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./further-information/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../further-information/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Further Information</span></a>
   </div>
 </li>
@@ -161,7 +163,7 @@ div.csl-indent {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./overview/references.html" class="sidebar-item-text sidebar-link">
+  <a href="../overview/references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -173,24 +175,21 @@ div.csl-indent {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><a href="https://datasciencecampus.ons.gov.uk/"> <img src="https://datasciencecampus.ons.gov.uk/wp-content/uploads/sites/10/2017/03/data-science-campus-logo-new.svg" alt="Data Science Campus logo"> </a></p>
 </div></div>
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="3">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#guidance-overview" id="toc-guidance-overview" class="nav-link active" data-scroll-target="#guidance-overview">Guidance Overview</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Coding in the Open v1.0.0</h1>
-<p class="subtitle lead">Guidance for open sourcing at ONS Data Science Campus.</p>
+<h1 class="title">Peer Review.</h1>
 </div>
 
+<div>
+  <div class="description">
+    Guidance for reviewing code for release and troubleshooting problems.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -203,71 +202,44 @@ div.csl-indent {
 
 </header>
 
-<p>The following pages provide guidance on ‘coding in the open’ - developing open-source codebases or transitioning codebases from private to public domains. This guidance is based upon <strong>NHS Digital guidance</strong> <span class="citation" data-cites="NHSdigital"><a href="#ref-NHSdigital" role="doc-biblioref">[1]</a></span>. <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">Click here to download NHS Digital’s fit for publishing checklist</a>.</p>
-<p>The term open-source captures work that is made freely available for others to use and modify <span class="citation" data-cites="OpenSourceInitiative"><a href="#ref-OpenSourceInitiative" role="doc-biblioref">[2]</a></span>.</p>
-<p>The benefits to open-source codebases are greater accountability, collaboration, and trust.</p>
-<p>This guide does not replace any of the guidance in the UK Government’s Aqua Book <span class="citation" data-cites="AquaBook"><a href="#ref-AquaBook" role="doc-biblioref">[3]</a></span>, but instead supplements with considerations related specifically to publishing analytical code on GitHub.</p>
-<p>This guide supports, not replaces, the need for good project governance.</p>
-<section id="guidance-overview" class="level2">
-<h2 class="anchored" data-anchor-id="guidance-overview">Guidance Overview</h2>
-<div id="tbl-pages" class="anchored">
-<table class="table">
-<caption>Table&nbsp;1: Summary of guidance pages.</caption>
-<colgroup>
-<col style="width: 21%">
-<col style="width: 79%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Page</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="./overview/overview.html">Overview</a></td>
-<td>A ‘coding in the open’ overview and general guidance on open source development.</td>
-</tr>
-<tr class="even">
-<td><a href="./open-at-the-start/guidance.html">Open at the start</a></td>
-<td>Guidance on considerations when developing in the open.</td>
-</tr>
-<tr class="odd">
-<td><a href="./open-at-the-end/guidance.html">Open at the end</a></td>
-<td>Guidance on moving work from a private domain into the public. This includes a checklist and flowchart to provide additional support when applying the guidance.</td>
-</tr>
-<tr class="even">
-<td><a href="./never-open/index.html">Never open</a></td>
-<td>Reasons why code may not be published and how to document this.</td>
-</tr>
-<tr class="odd">
-<td><a href="./further-information/peer-review.html">Further information</a></td>
-<td>Including general considerations and potential risks.</td>
-</tr>
-</tbody>
-</table>
+<p>This page sets out general guidance for standards of review. It intends to help raise awareness in issues that could be encountered while preparing to release code.</p>
+<p>When reviewing code, it is recommended that you consult pre-existing sources of peer review guidance. The ONS duck book provides low, moderate and high quality peer review checklists <span class="citation" data-cites="DuckBookChecklists"><a href="#ref-DuckBookChecklists" role="doc-biblioref">[1]</a></span>. The NHS fit for publishing checklist <span class="citation" data-cites="NHSFit4Publishing"><a href="#ref-NHSFit4Publishing" role="doc-biblioref">[2]</a></span> is also a useful tool for peer review.</p>
+<p>At the time of writing, the following sources were compared with review considerations collated from Campus colleagues. The following checks were not explicitly covered in the Duckbook or NHS checklists and are presented here for completeness.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<p>These pages are accessible in the sidebar.</p>
-<p>All sources are referenced throughout (you can hover over them for more details). Additionally, they are available at the bottom of each page and in a dedicated <a href="./overview/references.html">references</a> page for convenience.</p>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-NHSdigital" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">NHS Digital, <span>“How to publish your code in the open.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/">https://nhsdigital.github.io/rap-community-of-practice/implementing_RAP/how-to-publish-your-code-in-the-open/</a></div>
+<div class="callout-title-container flex-fill">
+Complementary checks
 </div>
-<div id="ref-OpenSourceInitiative" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[2] </div><div class="csl-right-inline">Open Source Initiative, <span>“The open source definition.”</span> <a href="https://opensource.org/osd/">https://opensource.org/osd/</a></div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="ref-AquaBook" class="csl-entry" role="listitem">
-<div class="csl-left-margin">[3] </div><div class="csl-right-inline">HM Treasury, <span>“The aqua book.”</span> <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government</a></div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Warning</strong>: Not a complete checklist. Please consult the sources above to ensure code is of an appropriate quality prior to publication.</p>
+<ul class="task-list">
+<li><input type="checkbox">Check for broken links in the documentation.</li>
+<li><input type="checkbox">Actively try to break the code by considering edge cases. Are the important exceptions raised correctly?</li>
+<li><input type="checkbox">Is the API intuitive and consistent? Do modules follow the same naming conventions etc?</li>
+<li><input type="checkbox">Create a new environment and rebuild the package. A useful way to detect breaking changes in dependencies.</li>
+<li><input type="checkbox">On pull request, note any merge conflicts between the feature and target branch.</li>
+</ul>
+</div>
 </div>
 </div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-DuckBookChecklists" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">Office for National Statistics, <span>“Duck book peer review checklists.”</span> <a href="https://best-practice-and-impact.github.io/qa-of-code-guidance/checklists.html">https://best-practice-and-impact.github.io/qa-of-code-guidance/checklists.html</a></div>
+</div>
+<div id="ref-NHSFit4Publishing" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[2] </div><div class="csl-right-inline">NHS Digital, <span>“NHS fit for publishing checklist word document.”</span> <a href="https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx">https://nhsdigital.github.io/rap-community-of-practice/images/Fit_for_publishing_checklist.docx</a></div>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -616,22 +588,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./overview/index.html" class="pagination-link">
-        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center"><img src="./assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="./overview/references.html">references</a> page. Updated on 2023-04-11.</div>
+    <div class="nav-footer-center"><img src="../assets/images/ogl.png" class="img-fluid" alt="Open Government License logo"> All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence V3.0</a>, except where otherwise stated. <br>Built using <a href="https://quarto.org/">quarto</a>. All sources are acknowledged in the <a href="../overview/references.html">references</a> page. Updated on 2023-04-11.<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/datasciencecampus/coding-in-the-open/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
