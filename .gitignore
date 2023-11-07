@@ -9,7 +9,7 @@ data/*
 outputs/*
 
 ### ignoring contents of docs folder
-docs/*
+# docs/*
 
 ### Contentious file types (can be removed at user discretion) ###
 
