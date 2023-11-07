@@ -1,0 +1,217 @@
+---
+title: "Which Development Strategy is Right for a Project?"
+description: "A workflow for assessing a project for open sourcing."
+date: last-modified
+categories:        
+    - How-To
+toc: true
+toc-depth: 3
+---
+
+## Foreword
+
+The intention of this advice is to help and not to remove agency or reduce
+responsibility in any given instance of where this guidance may be applied. The
+specifics of any project can be expected to offer cause to defer from this
+guidance. Colleagues are expected to use their professional judgement in
+deciding which checks are appropriate for their application.
+
+## Problem
+
+There is a project, it could be already underway or in the initial planning
+stage. A codebase may already exist, or it could be about to. You have read the
+guidance available in this site and need a checklist to help you assess whether
+the project is suitable for publication.
+
+## Requirements
+
+* Knowledge of the project context and its current status.
+* An understanding of capability in the project's development team.
+* Access to project governance, including the outcome of the ethical review.
+
+## Review the Project
+
+Throughout this section, toggle between the context that best suits the status
+of the project - "planning" or "underway".
+
+::: panel-tabset
+### Planning
+
+The project has been commissioned and work is underway. An ethical evaluation
+@selfAssess has or will be submitted to the Centre for Applied Data Ethics @CADE
+for assessment. Code has not yet been written. The development team has been
+identified.
+
+### Underway
+
+The project has moved past initiation and code has been written. This likely
+exists in a private repository but you need to check the assumption that close
+sourced development is appropriate.
+
+:::
+
+### 1. Domain Sensitivity
+
+Assess the project against the CDDO grounds for not releasing code:
+@CDDOClosed
+
+1. Does the code contain keys or credentials?
+2. Does the code contain algorithms used to detect fraud?
+3. Does the code make unreleased policy apparent?
+
+::: panel-tabset
+#### Planning
+
+In the case of point 1, practices documented in ONS Duck Book @DuckBook should
+be used to avoid the exposure of sensitive credentials or personally
+identifiable information.
+
+#### Underway
+
+If credentials or personally identifiable information are committed to the
+version history, the simplest path to publication is to ensure these credentials
+are removed in the latest commit and publish only that single commit.
+Ensure that this decision is disseminated throughout the project and delivery
+team, recording the decision and reasons in the project governance.  
+
+:::
+
+In determining whether the project is likely to expose unreleased policy,
+involve internal and external stakeholders in this decision. 
+
+A project that is not suitable for publication should be clearly identified in
+the governance documentation from the outset. If this is the case, be aware
+that much of the best-practice guidance documented here should still be applied
+to private codebases.
+
+### 2. Project Risks
+
+:::panel-tabset
+
+In all situations, it is important to ensure that personally identifiable
+information (PII) is not present in the code. There should exist no hard-coded
+values presenting a record of PII anywhere within the version history.
+
+Consider the needs and competency of the development team:
+
+* Check that the Data Science Campus GitHub SyOps has been completed for all
+members of the team. Contact a member of the delivery team if this needs to be
+arranged.
+* The DSC GitHub training @DSCGitHubTraining has been completed or refreshed as
+needed. Contact a member of the delivery team if this needs to be arranged.
+* Plan pair-programming sessions to support junior developers.
+* Agree standards for the expectations of the codebase. This can be recorded
+for posterity in project governance such as a standards charter document or
+directly within the contribution documentation as appropriate.
+
+#### Planning
+* If the codebase is to use PII, plan to adhere to the practices set out in
+the Duck book about the decoupling of code and data.
+* If data is required for testing or examples, plan to release dummy data.
+* Consider the use of precommit hooks @preCommit to help mitigate the risk of
+accidentally committing sensitive data to the version history.
+
+#### Underway
+
+* If the codebase works with PII, check that no PII has been committed to any of
+the version history in scope of publication. 
+* Check that the development team have worked consistently with pre-commit by
+running `pre-commit run --all-files` in all of the commits in scope of the
+potential release. If the hooks adjust any of the files in the repository, this
+is an indication that pre-commit rules have not been adhered to.
+
+:::
+
+Understanding the types, severity and likelihood of risks associated with your
+project may influence a decision about the sorts of interventions required when
+preparing the codebase for release.
+
+
+### 3. The Code Repository
+
+Ensuring that a repository contains all the expected metadata ensures that we
+help the open source community understand:
+
+1. what the work is about
+2. what is the status of the codebase
+3. how the code and / or data can be reused
+4. what the expectations for collaboration are
+
+Whether the project is at planning stage or is already underway, ensure the
+repository contains the following information:
+
+
+#### Required
+
+* Repo structure. Consider appropriate structure. Consider using Campus
+templates or govcookiecutter @GovCookieCutter.
+* Ensure the documentation is up-to-date and correct.
+* Licenses. General guidance is to use MiT @MIT for code and Open Government
+License @ogl3 for docs and data.
+
+#### Optional
+
+* Contribution guidance (issues/PR templates)
+* Repository tagging / labelling, eg in development, archived etc. 
+* Semantic versioning
+* Change log
+
+### 4. Code Quality
+
+Ensuring that the code is fit for release inevitably involves reviewing code.
+Guidance for reviewing code is covered in the
+[section on peer review](/./further-information/peer-review.qmd).
+
+It should be noted that the level of peer review should be appropriate to the
+purposes of releasing the code. Experimental work would understandably require
+a different level of rigour to a reproducible analytical pipeline involved in
+producing official statistics.
+
+Polishing of code that has been archived or decommissioned but released in the
+public interest may affect the reproducibility of any outputs produced by that
+codebase. Clearly defining the purposes of the planned publication and the
+appropriate level of review agreed by project leads and the development team can
+help to keep the process of peer review as efficient as possible.
+
+### 5. Version History
+
+Do you intend to publish the full commit history? 
+
+::: panel-tabset
+#### Planning
+
+* If the entire version history is to be published, strongly consider an
+"open from the start" approach, where active development is done
+in the open. Review with the development team that they are comfortable with
+the approach and know how to mitigate risk when developing in the open.
+* If not open at the start, be aware that publishing the codebase at intervals
+may introduce delay to peer review. Build this into your project delivery plan. 
+
+#### Underway
+
+* If the entire version history is to be published, A full review of every
+commit, checking for risks and vulnerabilities, is required. This may be
+burdensome and is discouraged without a clear benefit.
+* Publication of the most recent version may be more feasible. Once
+achieved, consider whether to continue programming in the open or to pursue a
+strategy of periodic public release.
+:::
+
+Project leads should maintain an awareness of the risks and quality of code
+present throughout the entire commit history. Coupled with information the
+amount of resource available and required for review, project leads are able to
+make decisions about whether to release an entire commit history or the most
+recent version of the code.
+
+## Conclusion
+
+In following these steps, the reader can note the risks associated with a
+project. Based on the current state of the project, the reader has been offered
+advice on the types of questions to answer and who to involve in answering them.
+
+It is intended that this guidance helps the reader arrive at an understanding
+of which of the strategies is appropriate for their use case and; if
+appropriate; how to go about preparing the code for release.
+
+If you have any queries or suggestions about this article, please click on the
+"Report an issue" button in the toolbar to the right of this page.

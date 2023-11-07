@@ -1,0 +1,37 @@
+---
+title: "Peer Review."
+description: "Guidance for reviewing code for release and troubleshooting problems."
+
+---
+
+This page sets out general guidance for standards of review. It intends to help
+raise awareness in issues that could be encountered while preparing to release
+code. 
+
+When reviewing code, it is recommended that you consult pre-existing sources of
+peer review guidance. The ONS duck book provides low, moderate and high quality
+peer review checklists @DuckBookChecklists. The NHS fit for publishing
+checklist @NHSFit4Publishing is also a useful tool for peer review.
+
+At the time of writing, the following sources were compared with review
+considerations collated from Campus colleagues. The following checks were not
+explicitly covered in the Duckbook or NHS checklists and are presented
+here for completeness. 
+
+::: {.callout-tip collapse="true"}
+#### Complementary checks
+
+**Warning**: Not a complete checklist. Please consult the sources above to
+ensure code is of an appropriate quality prior to publication.
+
+- [ ] Check for broken links in the documentation.
+- [ ] Actively try to break the code by considering edge cases. Are the
+important exceptions raised correctly?
+- [ ] Is the API intuitive and consistent? Do modules follow the same naming
+conventions etc?
+- [ ] Create a new environment and rebuild the package. A useful way to
+detect breaking changes in dependencies.
+- [ ] On pull request, note any merge conflicts between the feature and target
+branch.
+
+:::

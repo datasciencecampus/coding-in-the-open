@@ -1,5 +1,6 @@
 ---
 title: "Open at the end"
+description: "Do you intend to release your code? This guidance aims to help you understand the requirements for publication."
 ---
 
 ## A Process
@@ -35,20 +36,8 @@ So you've decided to go ahead with publishing your code, that's great!
 
 It's probably a good idea at this point to write down all of the potential things that could go wrong, and how you plan to reduce the likelihood or impact of those things. 
 
-If you've never written a risk assessment before, not to worry it's super easy. I've provided a quick template below. 
-
-An appropriate table format for [a risk log can be found here](/open-at-the-end//risk-table.qmd).
-
-Along with this risk exposure diagram to help you assess the impact, likelihood and exposure scores
-
-![Risk Exposure Matrix](/assets/images/risk-exposure-diagram.png)
-
-Important things to consider in your risk assessment - follow the reference link to a helpful NHS checklist template @NHSFit4Publishing: 
-
-- How will you ensure no passwords, data or other sensitive information is shared by making your repo public?
-- How will you safeguard against people accidentally pushing this information in the future after the repo is made public? 
-- How will you manage users expectations of quality and on-going maintenance?
-- How will you use licencing to protect any proprietary rights and set limitations on liability from others using your code?
+If you've never written one before, not to worry, here is a
+[brief guide to completing a risk assessment](/./open-at-the-end/risk-assessment-guide.qmd). 
 
 ### Step 3 - Preparation
 
@@ -67,13 +56,3 @@ Once the risks identified by the review have completed, the updated checklist @N
 Ask your code reviewer to send you written confirmation of their findings, and forward that along with your risk assessment and summary of what you've done to mitigate any risks to the project lead. 
 
 The project lead will then be able to make a decision as to whether the code is fit for publishing or requires further work in order to meet the necessary standard for release. 
-
-### Fit for publishing checklist
-
-This checklist summarises additional considerations when working with the NHS checklist @NHSFit4Publishing.
-
-- [ ] Are there clearly documented instructions on how to install, run and contribute to the repository?
-- [ ] Check that the code runs within a fresh clone with a new environment.
-- [ ] Check for broken links in the docs.
-- [ ] Are you confident that there are no credentials, secrets, or sensitive data in the repository (including the commit history if in scope for publication)?
-- [ ] Are you satisfied that the residual risk is within your organisations tolerance?

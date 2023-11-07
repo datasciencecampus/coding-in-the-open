@@ -1,0 +1,82 @@
+---
+title: "Never Open: How to do it Right"
+date: last-modified
+description: "A Guide to Closed Source Development"
+categories:        
+    - How-to Guide
+toc: true
+---
+
+## Introduction
+
+This guide presents a series of reference steps to help developers in assessing
+a codebase for closed source development suitability. It also walks through
+best-practice considerations for closed-source development.
+
+This guide does not explain the purpose of the actions set out below. In line
+with the [Diátaxis system](https://diataxis.fr/), this can be found in
+[A Discussion of Closed Source Development](/never-open/explanation.qmd).
+
+## Project Governance
+
+1. If you are uncertain if the code can be published due to the nature of the
+work, consider the following sources of advice:
+    * Does the code meet any of the Central Digital & Data Office's
+    descriptions of appropriate projects for closed-source code @CDDOClosed?
+    Namely, does the code publish counter fraud algorithms? Or does the code
+    make unpublished policy apparent?
+    * Have the outcomes of the ethical review @selfAssess indicated closed
+    source measures as a required mitigation?
+    * Has the expectation and reasons for closed-source been clearly
+    established with Campus leadership? 
+2. If the sensitivity of the project is due to the personally identifiable
+data, ensure that the code and data are decoupled and plan to publish the
+codebase with synthetic data.
+3. If the outcome of these questions is to pursue an open source strategy,
+consult the guide's sections on
+[open at the start](/open-at-the-start/guidance.qmd) or
+[open at the end](/open-at-the-end/guidance.qmd) as appropriate. 
+
+## Closed Development
+
+If a 'never open' approach has been determined, follow this guidance to
+mitigate risk associated with potential freedom of information
+requests @ICOguidance.
+
+1. Record the reasons for not publishing the code within the project governance
+documentation. Ensure that this documentation is reasoned and explicit - enough
+for someone to be able to represent this decision accurately in your absence.
+Ensure that the project governance is stored somewhere colleagues can access
+and that your project delivery colleagues are aware of this location.
+2. Develop as if the repository were open. Ensure that poor practice is not
+introduced to the code base. Consult the guidance provided in the
+[open-at-the-start](/open-at-the-start/guidance.qmd) section.  
+2. Agree a set of mitigation behaviours with the development team in writing.
+Keep a record in order to bring new developers up to speed efficiently.  
+3. Ensure that the analytical code is completely decoupled from the data.
+Check that no data (apart from dummy or test fixtures) are committed to the
+repository **at any point in the version history**.   
+4. Check that filepaths do not expose valuable intel about sensitive
+infrastructure. Filepaths to Google Cloud Platform buckets for example, should
+be stored in a file covered by the `.gitignore` and not committed to version
+history. Similarly, SharePoint links should not be committed to repositories.  
+5. Ensure that the precommit hooks are installed and used for all developers.
+Particularly `detect-secrets`@DetectSecrets and `nbstripout`@NBStripout.  
+6. Check the repository for the presence of known secrets or keys with
+`git grep`. From the command line, navigate to the repository and use the
+command `git grep <INSERT_THE_CREDENTIAL>` to ensure it is not referenced in
+any of the repository file contents. For more on searching git repositories,
+consult the Git Tools - Searching documentation @GitSearch.  
+7. Ensure that conversations about the context of the work occur within
+dedicated, private GitHub projects (sometimes referred to as kanbans). Check
+that repository issues do not expose sensitive intelligence that may expose
+unpublished policy.
+
+## Conclusion
+
+You have been presented with guidance for understanding whether your project is
+suitable for a  'closed development' approach. You have also followed along
+with steps on and how to go about ensuring that closed development does not
+introduce poor safety practice into the codebase. If you have further
+suggestions for this guide, please click on the "Report an issue" button in the
+table of contents to the right of this page.

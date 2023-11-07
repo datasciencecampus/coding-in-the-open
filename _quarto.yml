@@ -26,16 +26,12 @@ website:
       - index.qmd
       - section: Guidance
         contents:
-        - ./general-considerations/guidance.qmd
-        - ./open-at-the-start/guidance.qmd
-        - ./open-at-the-end/guidance.qmd
-        - ./never-open/guidance.qmd
-        - ./what-could-go-wrong/checklist.qmd
-      - ./general-considerations/references.qmd
-    footer: |
-      :::{.callout-important}
-      These pages are still in active development, and at this stage do not represent a completed or agreed set of guidance.
-      :::
+        - ./overview/index.qmd
+        - ./open-at-the-start/index.qmd
+        - ./open-at-the-end/index.qmd
+        - ./never-open/index.qmd
+        - ./further-information/index.qmd
+      - ./overview/references.qmd
     collapse-level: 2
     tools:
       - icon: twitter
@@ -47,7 +43,7 @@ website:
   page-footer: 
     center: |
       ![Open Government License logo](/assets/images/ogl.png) All content is available under the [Open Government Licence V3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.
-      <br>Built using [quarto](https://quarto.org/). Are sources are acknowledged in the [references](/general-considerations/references.qmd) page. Updated on {{< var update-date >}}.
+      <br>Built using [quarto](https://quarto.org/). All sources are acknowledged in the [references](/overview/references.qmd) page. Updated on {{< var update-date >}}.
 
 format:
   html:
