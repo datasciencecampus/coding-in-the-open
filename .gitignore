@@ -8,9 +8,6 @@
 data/*
 outputs/*
 
-### ignoring contents of docs folder
-# docs/*
-
 ### Contentious file types (can be removed at user discretion) ###
 
 # consider using jupytext and .py files for better version control of notebooks!
@@ -333,5 +330,3 @@ $RECYCLE.BIN/
 /_site/
 /.vscode/
 !assets/images/*
-!docs/assets/images/*
-!docs/site_libs/*

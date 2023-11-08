@@ -1,7 +1,5 @@
 project:
   type: website
-  resources: 
-    - "site_libs/"
   output-dir: docs
   preview: 
     port: 1111
