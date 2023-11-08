@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - main
-      - 74-broken-css-styling # debugging css problem
-
 jobs:
   build-deploy:
       runs-on: ubuntu-latest
