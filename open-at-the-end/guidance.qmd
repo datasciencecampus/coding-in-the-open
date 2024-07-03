@@ -7,7 +7,7 @@ description: "Do you intend to release your code? This guidance aims to help you
 
 ### Overview
 
-Transitioning from a private to a public repository is slightly more complicated than coding in the open from the beginning. However that shouldn't stop you from exploring the option, because there are a whole host of [benefits to open sourcing your code](../index.qmd#why-develop-in-the-open-sec-why-open). 
+Transitioning from a private to a public repository is slightly more complicated than coding in the open from the beginning. However that shouldn't stop you from exploring the option, because there are a whole host of [benefits to open sourcing your code](/open-at-the-start/guidance.qmd#overview). 
 
 This guide will help you decide whether moving from private to public is right for your repository, and help you walk through the required steps to do it. 
 
