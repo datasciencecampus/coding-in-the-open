@@ -47,7 +47,7 @@ There is no rush. So take your time, ask questions, and make sure you get it rig
 
 ### Step 4 - Review
 
-[We recommend that someone not connected with the repository reviews the work](/open-at-the-end/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
+We recommend that someone not connected with the repository [reviews the work](/open-at-the-end/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
 
 Once the risks identified by the review have completed, the updated checklist @NHSFit4Publishing should be provided to the project lead for review. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of.
 
