@@ -6,10 +6,9 @@
     ]
   },
   {
-    "listing": "/overview/index.html",
+    "listing": "/open-at-the-start/index.html",
     "items": [
-      "/overview/overview.html",
-      "/overview/which-development-strategy.html"
+      "/open-at-the-start/guidance.html"
     ]
   },
   {
@@ -21,9 +20,10 @@
     ]
   },
   {
-    "listing": "/open-at-the-start/index.html",
+    "listing": "/overview/index.html",
     "items": [
-      "/open-at-the-start/guidance.html"
+      "/overview/overview.html",
+      "/overview/which-development-strategy.html"
     ]
   },
   {
