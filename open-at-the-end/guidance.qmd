@@ -7,7 +7,7 @@ description: "Do you intend to release your code? This guidance aims to help you
 
 ### Overview
 
-Transitioning from a private to a public repository is slightly more complicated than coding in the open from the beginning. However that shouldn't stop you from exploring the option, because there are a whole host of [benefits to open sourcing your code](../index.qmd#why-develop-in-the-open-sec-why-open). 
+Transitioning from a private to a public repository is slightly more complicated than coding in the open from the beginning. However that shouldn't stop you from exploring the option, because there are a whole host of [benefits to open sourcing your code](/open-at-the-start/guidance.qmd#overview). 
 
 This guide will help you decide whether moving from private to public is right for your repository, and help you walk through the required steps to do it. 
 
@@ -20,7 +20,7 @@ The hardest bit is building up the courage to start. The challenge for any code 
 1. What is the worst thing that could happen if someone found a big mistake in your code?
 2. Is that worse than you never finding that mistake and getting something wrong forever?
 3. Would your users find it helpful if you published links to your code in your publications?
-4. How much work is required to get it to a fit state? [(see our fit for publishing checklist)](#fit-for-publishing-checklist)
+4. How much work is required to get it to a fit state? (see NHS Digital's fit for publishing checklist @NHSFit4Publishing)
 
 Your repo doesn't have to be a glowing example of best practice to be made public. For example, if you are working on something experimental and you're not sure whether you want to invest extra time in adding on all the bells and whistles. Let's be honest, we rarely have time for perfect. Striving for fully documented code and test coverage, shouldn't be be a blocker for sharing your good work. 
 
@@ -47,7 +47,7 @@ There is no rush. So take your time, ask questions, and make sure you get it rig
 
 ### Step 4 - Review
 
-[We recommend that someone not connected with the repository reviews the work](/open-at-the-end/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
+We recommend that someone not connected with the repository [reviews the work](/open-at-the-end/process-chart.qmd). Specifically, looking to check to see if they can install and/or run your code from the instructions, and looking out for any sensitive information or vulnerabilities. The external review should be a colleague with the appropriate experience in what risks to look for and should not have been involved in the development work. The external review can happen concurrently with the development team's review of the codebase or following its conclusion (see previous steps).
 
 Once the risks identified by the review have completed, the updated checklist @NHSFit4Publishing should be provided to the project lead for review. You might need to explain some of the things on there, but the idea is that you are giving others an opportunity to challenge, because risk assessments are subjective and there may be things you haven't thought of.
 
